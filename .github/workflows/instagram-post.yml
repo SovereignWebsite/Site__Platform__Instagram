@@ -1,6 +1,6 @@
-# Publishes one approved post (site/posts/<id>/post.json) to Instagram.
+# Sends one approved post (site/posts/<id>/post.json) to Instagram through Buffer's API.
 # Only by hand, with the post id the owner names. No schedule.
-# Secrets IG_TOKEN and IG_USER_ID are set by the owner in the instagram environment; never echoed.
+# The secret BUFFER_API_KEY is set by the owner in the instagram environment; never echoed.
 name: Instagram post
 on:
   workflow_dispatch:
@@ -28,8 +28,7 @@ jobs:
           node-version: 20
       - name: Publish
         env:
-          IG_TOKEN: ${{ secrets.IG_TOKEN }}
-          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
           POST: ${{ inputs.post }}
           DRY: ${{ inputs.dry_run }}
         run: |

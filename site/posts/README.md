@@ -5,6 +5,7 @@ One folder per post: `site/posts/<yyyy-mm-dd>__<slug>/`, holding the media (JPEG
 ```json
 {
   "kind": "reel",
+  "due_at": "optional, a future UTC time; without it the post goes now",
   "media": ["video.mp4"],
   "caption": "The caption, at most 2200 characters.",
   "source": "where the media came from and its licence",
@@ -13,6 +14,6 @@ One folder per post: `site/posts/<yyyy-mm-dd>__<slug>/`, holding the media (JPEG
 }
 ```
 
-Nothing is posted without `approved`, the owner's yes for that post. The Instagram post workflow runs only by hand, with the post id; its default is a dry run that checks the post and sends nothing.
+Nothing is posted without `approved`, the owner's yes for that post. Posts go through Buffer's API (a Meta partner, publishing through Instagram's official API) with the owner's key, held only as the `BUFFER_API_KEY` secret of the `instagram` environment. The Instagram post workflow runs only by hand, with the post id; its default is a dry run that checks the post and sends nothing.
 
 Audio: the Instagram API takes no separate audio track, so a track is mixed into the Reel's MP4 before posting; the track file and its `audio` record (prompt, date, plan) stay in the folder as the rights record.

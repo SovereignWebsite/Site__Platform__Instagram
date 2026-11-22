@@ -1,11 +1,12 @@
-// Publish one approved post to Instagram through the official API
-// (Instagram API with Instagram Login). Run only by .github/workflows/instagram-post.yml.
+// Publish one approved post to Instagram through Buffer's API (developers.buffer.com).
+// Buffer is a Meta partner and publishes through Instagram's official API.
+// Run only by .github/workflows/instagram-post.yml.
 // Usage: node tools/ig-post.mjs <post-id> [--dry-run]
 // Reads site/posts/<post-id>/post.json. The media must already be served by this site's Pages.
-// Secrets come from the environment (IG_TOKEN, IG_USER_ID) and are never printed.
+// The secret BUFFER_API_KEY comes from the environment and is never printed.
 import { readFileSync, existsSync } from 'node:fs';
 
-const API = 'https://graph.instagram.com/v21.0';
+const API = 'https://api.buffer.com';
 const SITE = 'https://instagram.platform.sovereignweb.site';
 const [id, flag] = process.argv.slice(2);
 const dry = flag === '--dry-run';
@@ -16,58 +17,92 @@ if (!existsSync(file)) fail(`no ${file}`);
 const post = JSON.parse(readFileSync(file, 'utf8'));
 
 // The owner's yes is recorded in the post itself: who, when and where.
-if (!post.approved || !post.approved.by || !post.approved.at || !post.approved.where) fail('post has no approval line (approved.by, .at, .where)');
-if (post.published) fail(`already published: ${post.published.media_id}`);
+const a = post.approved;
+if (!a || !a.by || !a.at || !a.where) fail('post has no approval line (approved.by, .at, .where)');
+if (post.published) fail(`already sent: ${JSON.stringify(post.published)}`);
 const kind = post.kind;
 if (!['image', 'reel', 'carousel'].includes(kind)) fail('kind must be image, reel or carousel');
 const caption = String(post.caption || '');
 if (caption.length > 2200) fail('caption over 2200 characters');
-if (/[\u2013\u2014]/.test(caption)) fail('caption has an en or em dash');
-const media = (post.media || []).map(m => `${SITE}/posts/${id}/${m}`);
+if (/[–—]/.test(caption)) fail('caption has an en or em dash');
+const media = post.media || [];
 if (!media.length) fail('no media');
 if (kind === 'carousel' && (media.length < 2 || media.length > 10)) fail('a carousel has 2 to 10 items');
+if (kind === 'reel' && (media.length !== 1 || !/\.mp4$/i.test(media[0]))) fail('a reel is one MP4');
+for (const m of media) {
+  if (!/^[a-z0-9._-]+\.(jpe?g|mp4)$/i.test(m)) fail(`media must be JPEG or MP4 in the post folder: ${m}`);
+  const s = readFileSync(`site/posts/${id}/${m}`);
+  if (/\.jpe?g$/i.test(m)) {
+    if (s.length > 8 * 1024 * 1024) fail(`${m} over 8 MB`);
+    const d = jpegSize(s);
+    if (!d) fail(`${m} is not a readable JPEG`);
+    const r = d.w / d.h;
+    if (d.w < 320 || d.w > 1440) fail(`${m} is ${d.w} px wide; Instagram takes 320 to 1440`);
+    if (r < 0.8 - 1e-3 || r > 1.91 + 1e-3) fail(`${m} ratio ${r.toFixed(2)}; Instagram takes 4:5 to 1.91:1`);
+  }
+}
+// The schedule: shareNow unless the post names a time (UTC, ISO 8601).
+const mode = post.due_at ? 'customScheduled' : 'shareNow';
+if (post.due_at && !(Date.parse(post.due_at) > Date.now())) fail('due_at must be a future UTC time');
 
-console.log(`post ${id}: ${kind}, ${media.length} item(s), caption ${caption.length} chars`);
-for (const u of media) {
+const urls = media.map(m => `${SITE}/posts/${id}/${m}`);
+console.log(`post ${id}: ${kind}, ${urls.length} item(s), caption ${caption.length} chars, ${mode}${post.due_at ? ' ' + post.due_at : ''}`);
+console.log(`approved by ${a.by} at ${a.at}`);
+for (const u of urls) {
   const r = await fetch(u, { method: 'HEAD' });
   if (!r.ok) fail(`media not public yet: ${u} (${r.status})`);
 }
-if (dry) { console.log('dry run: checks passed, nothing sent'); process.exit(0); }
 
-const token = process.env.IG_TOKEN, user = process.env.IG_USER_ID;
-if (!token || !user) fail('IG_TOKEN and IG_USER_ID secrets are not set');
+const key = process.env.BUFFER_API_KEY;
+if (!key) { if (dry) { console.log('dry run: checks passed; BUFFER_API_KEY not set, Buffer not contacted'); process.exit(0); } fail('BUFFER_API_KEY secret is not set'); }
 
-async function call(path, params) {
-  const r = await fetch(`${API}/${path}`, {
-    method: params ? 'POST' : 'GET',
-    headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
-    body: params ? JSON.stringify(params) : undefined,
+async function gql(query, variables = {}) {
+  const r = await fetch(API, {
+    method: 'POST',
+    headers: { Authorization: `Bearer ${key}`, 'Content-Type': 'application/json' },
+    body: JSON.stringify({ query, variables }),
   });
   const j = await r.json().catch(() => ({}));
-  if (!r.ok || j.error) fail(`API ${path.split('?')[0]}: ${r.status} ${j.error ? j.error.message : ''}`);
-  return j;
+  if (!r.ok || j.errors) fail(`Buffer API ${r.status}: ${(j.errors || []).map(e => e.message).join('; ') || 'no body'}`);
+  return j.data;
 }
-async function ready(container) {
-  for (let i = 0; i < 60; i++) {
-    const s = await call(`${container}?fields=status_code`);
-    if (s.status_code === 'FINISHED') return;
-    if (s.status_code === 'ERROR' || s.status_code === 'EXPIRED') fail(`container ${s.status_code}`);
-    await new Promise(r => setTimeout(r, 5000));
+
+// Find the one Instagram channel in the key's organisations.
+const orgs = (await gql('query { account { organizations { id } } }')).account.organizations;
+const channels = [];
+for (const o of orgs) {
+  const d = await gql('query C($o: OrganizationId!) { channels(input: { organizationId: $o }) { id service isQueuePaused } }', { o: o.id });
+  channels.push(...d.channels.filter(c => c.service === 'instagram'));
+}
+if (channels.length !== 1) fail(`expected one Instagram channel in Buffer, found ${channels.length}`);
+const channel = channels[0];
+if (channel.isQueuePaused) fail('the Instagram queue is paused in Buffer');
+console.log('Buffer: one Instagram channel found');
+if (dry) { console.log('dry run: checks passed, nothing sent'); process.exit(0); }
+
+const assets = urls.map((u, i) => /\.mp4$/i.test(u)
+  ? { video: { url: u } }
+  : { image: { url: u, metadata: { altText: (post.alt && post.alt[i]) || caption.slice(0, 120) } } });
+const input = {
+  text: caption, channelId: channel.id, schedulingType: 'automatic', mode, assets,
+  metadata: { instagram: { type: kind === 'reel' ? 'reel' : kind === 'carousel' ? 'carousel' : 'post', shouldShareToFeed: true } },
+};
+if (post.due_at) input.dueAt = post.due_at;
+const res = (await gql(`mutation P($input: CreatePostInput!) { createPost(input: $input) {
+  ... on PostActionSuccess { post { id dueAt } }
+  ... on MutationError { message } } }`, { input })).createPost;
+if (!res.post) fail(`Buffer refused the post: ${res.message}`);
+console.log(`sent to Buffer: post ${res.post.id}, due ${res.post.dueAt || 'now'}`);
+
+function jpegSize(b) {
+  if (b[0] !== 0xff || b[1] !== 0xd8) return null;
+  let i = 2;
+  while (i < b.length) {
+    if (b[i] !== 0xff) return null;
+    const m = b[i + 1], len = b.readUInt16BE(i + 2);
+    if (m >= 0xc0 && m <= 0xcf && ![0xc4, 0xc8, 0xcc].includes(m)) return { h: b.readUInt16BE(i + 5), w: b.readUInt16BE(i + 7) };
+    i += 2 + len;
   }
-  fail('container not ready after 5 minutes');
+  return null;
 }
-const item = (u, extra = {}) => /\.mp4$/i.test(u) ? { media_type: kind === 'reel' ? 'REELS' : 'VIDEO', video_url: u, ...extra } : { image_url: u, ...extra };
-
-let creation;
-if (kind === 'carousel') {
-  const children = [];
-  for (const u of media) { const c = await call(`${user}/media`, item(u, { is_carousel_item: true })); await ready(c.id); children.push(c.id); }
-  creation = (await call(`${user}/media`, { media_type: 'CAROUSEL', children: children.join(','), caption })).id;
-} else {
-  creation = (await call(`${user}/media`, { ...item(media[0]), caption })).id;
-}
-await ready(creation);
-const done = await call(`${user}/media_publish`, { creation_id: creation });
-console.log(`published: media id ${done.id}`);
-
 function fail(m) { console.error(`ig-post: ${m}`); process.exit(1); }
