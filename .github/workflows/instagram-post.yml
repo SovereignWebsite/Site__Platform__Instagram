@@ -1,0 +1,36 @@
+# Publishes one approved post (site/posts/<id>/post.json) to Instagram.
+# Only by hand, with the post id the owner names. No schedule.
+# Secrets IG_TOKEN and IG_USER_ID are set by the owner in the instagram environment; never echoed.
+name: Instagram post
+on:
+  workflow_dispatch:
+    inputs:
+      post:
+        description: Post id (yyyy-mm-dd__slug) under site/posts/
+        required: true
+      dry_run:
+        description: Check only, send nothing
+        type: boolean
+        default: true
+permissions:
+  contents: read
+concurrency: instagram-post
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    environment: instagram
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: dev
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Publish
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          POST: ${{ inputs.post }}
+          DRY: ${{ inputs.dry_run }}
+        run: |
+          if [ "$DRY" = "true" ]; then node tools/ig-post.mjs "$POST" --dry-run; else node tools/ig-post.mjs "$POST"; fi
