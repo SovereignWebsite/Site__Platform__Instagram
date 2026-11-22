@@ -90,9 +90,35 @@ code{font-size:.9em}main a,main code{overflow-wrap:anywhere}
 </header>
 <main id="main">
 <div class="mark">instagram.platform.sovereignweb.site</div>
-<h1>Instagram</h1>
-<p>What Instagram's API offers and how a sovereign website publishes and shows posts with it. An unofficial site, not made or endorsed by Instagram or Meta.</p>
-<p>This site was made by one request to the Sovereign Website pipeline. Its files, its history and its address are in a repository its owner controls, and can move anywhere.</p>
+<h1>Instagram, from a sovereign website</h1>
+<p>What Instagram's official API lets a website do, and how this site will publish and show posts with it. An unofficial site, not made or endorsed by Instagram or Meta. Every fact below links to Meta's own developer pages (read on 22 November 2026).</p>
+
+<h2>What the API allows</h2>
+<ul class="plain">
+<li><strong>Who:</strong> Instagram professional accounts, business or creator (<a href="https://developers.facebook.com/documentation/instagram-platform/instagram-api-with-instagram-login">Instagram API with Instagram Login</a>). Personal accounts are not listed.</li>
+<li><strong>Publish:</strong> single images, videos and reels, and carousels of up to 20 items; stories through the media endpoint (<a href="https://developers.facebook.com/docs/instagram-platform/content-publishing">content publishing</a>, <a href="https://developers.facebook.com/documentation/instagram-platform/instagram-graph-api/reference/ig-user/media">media reference</a>).</li>
+<li><strong>Read:</strong> the account's own media and its insights (<a href="https://developers.facebook.com/documentation/instagram-platform/overview">overview</a>).</li>
+<li><strong>Limits:</strong> 100 API-published posts in a moving 24 hours, a carousel counting as one (<a href="https://developers.facebook.com/docs/instagram-platform/content-publishing">content publishing</a>); 400 media containers in 24 hours (<a href="https://developers.facebook.com/documentation/instagram-platform/instagram-graph-api/reference/ig-user/media">media reference</a>).</li>
+<li><strong>Images:</strong> JPEG only, at most 8 MB, aspect ratio from 4:5 to 1.91:1, 320 to 1440 pixels wide (<a href="https://developers.facebook.com/documentation/instagram-platform/instagram-graph-api/reference/ig-user/media">media reference</a>).</li>
+<li><strong>Reels:</strong> MP4 or MOV, H.264 or HEVC, 3 seconds to 15 minutes, at most 300 MB (<a href="https://developers.facebook.com/documentation/instagram-platform/instagram-graph-api/reference/ig-user/media">media reference</a>).</li>
+<li><strong>Tokens:</strong> a short-lived token lasts one hour; a long-lived one lasts 60 days and can be refreshed before it expires (<a href="https://developers.facebook.com/documentation/instagram-platform/overview">overview</a>).</li>
+</ul>
+
+<h2>How a post is published</h2>
+<ol>
+<li>The image or video is put on this site first, because Instagram fetches it: "the media must be hosted on a publicly accessible server" (<a href="https://developers.facebook.com/docs/instagram-platform/content-publishing">content publishing</a>).</li>
+<li>A container is created with the media's address and the caption.</li>
+<li>The container is published.</li>
+</ol>
+
+<h2>How this site will do it</h2>
+<ul class="plain">
+<li>Each post is a folder in the repository: the media, the caption, any music with its rights record, and the owner's approval line. Nothing is posted without that approval.</li>
+<li>Publishing runs in the repository's own pipeline, by hand, with the account's token held as a repository secret that only the owner sets. The token is never in a page, a commit or a log.</li>
+<li>The feed shown here is copied into the site when it is built, so this page holds no token and calls nothing from your browser.</li>
+<li>No logging in through a browser and no automated clicking: only the official API.</li>
+</ul>
+<p>Status, 22 November 2026: the pipeline is a draft that runs as a dry run by default; nothing has been posted yet. Meta's start page: <a href="https://developers.facebook.com/docs/instagram-platform">Instagram Platform</a>.</p>
 <footer>
 <nav class="site-links" aria-label="About this site">
   <a href="/start/">Start here</a>
