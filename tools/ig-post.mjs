@@ -17,8 +17,23 @@ if (!existsSync(file)) fail(`no ${file}`);
 const post = JSON.parse(readFileSync(file, 'utf8'));
 
 // The owner's yes is recorded in the post itself: who, when and where.
-const a = post.approved;
-if (!a || !a.by || !a.at || !a.where) fail('post has no approval line (approved.by, .at, .where)');
+// Either the owner's yes for this post, or the standing review rule (site/policy/abp.json posting_rules):
+// three clear reviews, by the keeper, a security agent and a counsel agent, each in its own file.
+let a = post.approved;
+if (!a || !a.by || !a.at || !a.where) {
+  const roles = { keeper: /^instagram\./, security: /^security\./, counsel: /^counsel\./ };
+  const why = [];
+  for (const [role, re] of Object.entries(roles)) {
+    const f = `site/posts/${id}/review-${role}.json`;
+    if (!existsSync(f)) { why.push(`no review-${role}.json`); continue; }
+    const r = JSON.parse(readFileSync(f, 'utf8'));
+    if (!re.test(r.agent || '')) why.push(`review-${role}.json is not by a ${role} agent`);
+    else if (r.verdict !== 'clear' || r.private_data !== false || !Array.isArray(r.red_flags) || r.red_flags.length) why.push(`review-${role}.json is not clear`);
+    else if (!r.at) why.push(`review-${role}.json has no time`);
+  }
+  if (why.length) fail(`no approval line, and the standing review rule is not met: ${why.join('; ')}`);
+  a = { by: 'standing review rule (keeper, security, counsel)', at: new Date().toISOString().slice(0, 16) + 'Z' };
+}
 if (post.published) fail(`already sent: ${JSON.stringify(post.published)}`);
 const kind = post.kind;
 if (!['image', 'reel', 'carousel'].includes(kind)) fail('kind must be image, reel or carousel');

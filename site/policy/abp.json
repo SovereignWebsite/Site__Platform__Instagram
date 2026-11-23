@@ -82,6 +82,28 @@
         "invent a fact, a price or a customer"
       ]
     },
+    "reviewer": {
+      "who": "The security agent and the counsel agent the owner names for this account (security.*@SovereignWebsite.dinis, counsel.*@SovereignWebsite.dinis), each with a published key in the Factory's team/keys.json.",
+      "source": "Dinis Cruz, 23 November 2026, in the keeper's (instagram.c's) session: \"can you make the ABP rule that if you, security and council review this and there are not red flags or private data, then publish these videos\".",
+      "may_change": [
+        "site/posts/<post>/review-security.json (the security agent only)",
+        "site/posts/<post>/review-counsel.json (the counsel agent only)"
+      ],
+      "branches": [
+        "dev"
+      ],
+      "every_commit": [
+        "signed with its own published key",
+        "an Agent: trailer naming it",
+        "a Claude-Session: trailer naming its session"
+      ],
+      "never": [
+        "change a post's media, caption or approval line",
+        "run the posting workflow",
+        "push to main",
+        "print, commit or read a private key or token"
+      ]
+    },
     "factory": {
       "who": "SovereignWebsite__Factory's Org apply pipeline, which created this repository.",
       "may": [
@@ -132,5 +154,20 @@
     }
   },
   "changes": "A change to this file or to .github/ takes effect only with the owner's yes (until handover, Dinis's), given in the keeper's own session. The commit that makes it says where that yes was given. A keeper may add rules but not remove the core ones: the site pipeline refuses a policy whose keeper.never or pages.allowed is weaker than the template's.",
-  "enforced_today": "The pipeline enforces the checks above on every push: if one fails, nothing is published. The rules for agents (paths, branches, signing, trailers) are followed by the agents and reviewed in their sessions and in the repository's history; they are not yet checked automatically on this site."
+  "enforced_today": "The pipeline enforces the checks above on every push: if one fails, nothing is published. The rules for agents (paths, branches, signing, trailers) are followed by the agents and reviewed in their sessions and in the repository's history; they are not yet checked automatically on this site.",
+  "posting_rules": {
+    "about": "When something may be posted to Instagram from this site. The keeper runs the posting workflow; nothing else posts.",
+    "owner_yes": "Any post whose post.json carries the owner's approval line (approved.by, .at, .where, his words) may be posted.",
+    "standing_review_rule": {
+      "source": "Dinis Cruz, 23 November 2026, in instagram.c's session (https://claude.ai/code/session_01Kw9UwBf2gRkufCCnZs335u): \"can you make the ABP rule that if you, security and council review this and there are not red flags or private data, then publish these videos, since I want to also start consuming these from the site\".",
+      "applies_to": "Videos made by the studio agent (contributor) in their own post folders.",
+      "conditions": [
+        "three reviews in the post folder, each with verdict \"clear\", red_flags empty and private_data false: review-keeper.json by the keeper, review-security.json by the security agent, review-counsel.json by the counsel agent",
+        "each review file added in a commit signed by its own agent's published key (the keeper checks this before posting)",
+        "the post passes the posting script's own checks (format, size, captions, no dashes)",
+        "a red flag or private data from any reviewer stops the post; it then needs the owner's yes"
+      ],
+      "stop": "The owner stops this rule at any time by saying so; the keeper then removes it from this file."
+    }
+  }
 }
