@@ -35,6 +35,30 @@
         "add a server, cookies or tracking"
       ]
     },
+    "contributor": {
+      "who": "studio.c@SovereignWebsite.dinis, which makes media (images and Reels) for this site's Instagram posts. Its public signing key is in the Factory's team/keys.json.",
+      "source": "Dinis Cruz, 23 November 2026, in the keeper's (instagram.c's) session, https://claude.ai/code/session_01Kw9UwBf2gRkufCCnZs335u: \"yes, let studio.c push to the posts folders\".",
+      "may_change": [
+        "site/posts/<yyyy-mm-dd>__<slug>/** for posts it makes"
+      ],
+      "branches": [
+        "dev"
+      ],
+      "every_commit": [
+        "signed with its own published key",
+        "an Agent: trailer naming it",
+        "a Claude-Session: trailer naming its session"
+      ],
+      "never": [
+        "add or change an approved line in a post.json (that is the owner's yes, recorded by the keeper)",
+        "change another post's folder, the pages, this policy or .github/",
+        "run the posting workflow",
+        "push to main",
+        "print, commit or read a private key or token",
+        "name a private person without their consent",
+        "invent a fact, a price or a customer"
+      ]
+    },
     "factory": {
       "who": "SovereignWebsite__Factory's Org apply pipeline, which created this repository.",
       "may": [
