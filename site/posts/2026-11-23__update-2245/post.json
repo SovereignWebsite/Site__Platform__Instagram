@@ -32,5 +32,27 @@
     "title": "Car Buyer: a new website in its first two hours, built by AI agents"
   },
   "youtube_due_at": "2026-11-25T17:38:00Z",
-  "linkedin_due_at": "2026-11-25T14:38:00Z"
+  "linkedin_due_at": "2026-11-25T14:38:00Z",
+  "published": {
+    "channels": {
+      "instagram": {
+        "via": "buffer",
+        "buffer_post_id": "6b04c884f72f10e1883ea8b4",
+        "sent_at": "2026-11-23T23:13:09Z",
+        "run": "https://github.com/SovereignWebsite/Site__Platform__Instagram/actions/runs/45286803086"
+      },
+      "youtube": {
+        "via": "buffer",
+        "buffer_post_id": "6b04c88f18db0405bdb0ce47",
+        "scheduled_for": "2026-11-25T17:38:00Z",
+        "run": "https://github.com/SovereignWebsite/Site__Platform__Instagram/actions/runs/45286803086"
+      },
+      "linkedin": {
+        "via": "buffer",
+        "buffer_post_id": "6b04c88f18db0405bdb0ce86",
+        "scheduled_for": "2026-11-25T14:38:00Z",
+        "run": "https://github.com/SovereignWebsite/Site__Platform__Instagram/actions/runs/45286803086"
+      }
+    }
+  }
 }

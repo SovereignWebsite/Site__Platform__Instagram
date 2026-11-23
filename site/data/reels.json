@@ -1,6 +1,6 @@
 {
   "about": "Reels from the RiskMandate Instagram and YouTube account, newest first. Built from site/posts/*/post.json by tools/build-reels-feed.mjs.",
-  "updated": "2026-11-23T23:12Z",
+  "updated": "2026-11-23T23:13Z",
   "reels": [
     {
       "id": "2026-11-23__update-2245",
@@ -10,15 +10,15 @@
       "poster": "https://instagram.platform.sovereignweb.site/posts/2026-11-23__update-2245/cover.jpg",
       "video": "https://instagram.platform.sovereignweb.site/posts/2026-11-23__update-2245/video.mp4",
       "duration_s": 77,
-      "state": "waiting",
-      "published_at": null,
+      "state": "sent",
+      "published_at": "2026-11-23T23:13:09Z",
       "channels": {
         "instagram": null,
         "youtube": null
       },
       "sent_to": {
-        "instagram": false,
-        "youtube": false
+        "instagram": true,
+        "youtube": true
       },
       "credits": "Presenter: The Researcher (researcher), a synthetic presenter from the PrompTugal.news presenters library v0.1.0 by bulletins.b@PrompTugal.dinis (PrompTugal/PrompTugal__News__Bulletins at 418b723; code Apache-2.0, data CC BY 4.0, three.js MIT), made by code, not any real person, labelled synthetic on screen. Story, scenes and captions: studio.c@SovereignWebsite.dinis with its researcher and journalist sub-agents, from public commits and pages (sources in storyboard.json); text CC BY 4.0; font Inter (SIL OFL 1.1). Voice: AI-generated with Mistral Voxtral Mini TTS (voxtral-mini-tts-3), preset voice James, which Mistral lists as a professional voice clone offered for use with its speech model; disclosed on screen and in the caption. No music. Look: RiskMandate's brand from riskmandate.ai. ",
       "sources": "https://instagram.platform.sovereignweb.site/posts/2026-11-23__update-2245/storyboard.json"
