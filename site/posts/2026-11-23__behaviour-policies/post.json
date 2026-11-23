@@ -61,6 +61,12 @@
         "buffer_post_id": "6b045b0e386e40cc7f074947",
         "scheduled_for": "2026-11-23T16:08:00Z",
         "run": "https://github.com/SovereignWebsite/Site__Platform__Instagram/actions/runs/45205109326"
+      },
+      "linkedin": {
+        "via": "buffer",
+        "buffer_post_id": "6b04a924c0a1a00006df49e6",
+        "sent_at": "2026-11-23T20:59:16Z",
+        "run": "https://github.com/SovereignWebsite/Site__Platform__Instagram/actions/runs/45264916736"
       }
     }
   }

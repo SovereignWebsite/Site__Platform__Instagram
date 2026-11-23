@@ -1,6 +1,6 @@
 {
   "about": "Reels from the RiskMandate Instagram and YouTube account, newest first. Built from site/posts/*/post.json by tools/build-reels-feed.mjs.",
-  "updated": "2026-11-23T15:53Z",
+  "updated": "2026-11-23T21:01Z",
   "reels": [
     {
       "id": "2026-11-23__update-1045",
@@ -113,8 +113,8 @@
       "caption": "Meet the team. Conductor, one of our synthetic presenters, introduces the AI agents behind Sovereign Website, each with one job: a conductor that plans the work, a factory that turns each request into a repository and a live site, agents for sites, design and security, a hub that",
       "page": "https://instagram.platform.sovereignweb.site/reels/team/",
       "poster": "https://instagram.platform.sovereignweb.site/posts/2026-11-22__team-intro/cover.jpg",
-      "video": "https://instagram.platform.sovereignweb.site/posts/2026-11-22__team-intro/video.mp4",
-      "duration_s": 75,
+      "video": "https://instagram.platform.sovereignweb.site/posts/2026-11-22__team-intro/video-v2.mp4",
+      "duration_s": 61,
       "state": "deleted, to be reposted",
       "published_at": null,
       "channels": {
