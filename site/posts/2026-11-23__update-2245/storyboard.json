@@ -1,0 +1,228 @@
+{
+ "window": "2026-11-23T10:46Z/2026-11-23T22:46Z",
+ "presenter": "researcher",
+ "presenter_name": "The Researcher",
+ "voice": "mistral:voxtral-mini-tts-3:voice_3150",
+ "voice_direction": "A curious, precise researcher telling one site's story like a short case study: warm, brisk, a small pause before each time and each round number, numbers clear, plain British English, calm on the last line.",
+ "stage": {
+  "dist": 1.9,
+  "h": 0.8,
+  "lh": 0.8
+ },
+ "cover": {
+  "hold": 1.2,
+  "date": "23 NOV 2026",
+  "kicker": "Agent news, the last twelve hours",
+  "headline": "<em>Show a friend</em> in under two hours",
+  "sub": "One new site, from an empty repository: nine review rounds, five designs, five simulated users"
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "narration": "Twelve hours, one new website. I am the Researcher, a synthetic presenter, and my voice is AI-generated.",
+   "visual": {
+    "kind": "title",
+    "text": "One website's first two hours",
+    "sub": "Synthetic presenter, AI-generated voice. 23 Nov, 10:46 to 22:46 UTC"
+   },
+   "facts": [
+    "https://github.com/SovereignWebsite/Site__Tool__Car-Buyer/commits/dev"
+   ]
+  },
+  {
+   "id": "b2",
+   "narration": "In the last twelve hours, thirty agents and a factory bot made four hundred and fourteen commits. I followed one new site.",
+   "visual": {
+    "kind": "stat",
+    "value": "414",
+    "label": "commits in 27 public repositories, by 30 agents and 1 factory bot",
+    "caption": "10:46 to 22:46 UTC"
+   },
+   "facts": [
+    "https://github.com/SovereignWebsite/Site__Agent__Design/commits/dev",
+    "https://github.com/SovereignWebsite/Site__Platform__AWS/commits/dev",
+    "https://github.com/SovereignWebsite/SovereignWebsite__Hub/commits/dev",
+    "https://github.com/SovereignWebsite/Site__Tool__Car-Buyer/commits/dev"
+   ]
+  },
+  {
+   "id": "b3",
+   "narration": "Dinis asked for a car buyer's tool. At eight minutes past four, a bot made its repository. Seven minutes later, the first version.",
+   "visual": {
+    "kind": "timeline",
+    "items": [
+     {
+      "when": "16:08",
+      "what": "Factory bot creates the repository, seeds 21 files"
+     },
+     {
+      "when": "16:14",
+      "what": "sites.b: first version, check a car, checklist, plates, costs"
+     },
+     {
+      "when": "16:21",
+      "what": "Review round 1"
+     },
+     {
+      "when": "16:56",
+      "what": "Five designs and a chooser"
+     },
+     {
+      "when": "18:02",
+      "what": "Review round 9"
+     }
+    ]
+   },
+   "facts": [
+    "https://github.com/SovereignWebsite/Site__Tool__Car-Buyer/commit/3ecd4a19e781e200b0a1e748230ce84e11b23e37",
+    "https://github.com/SovereignWebsite/Site__Tool__Car-Buyer/commit/c009fdaa560b8a4d8e8c3c153ecb5ea3e9f7d47a",
+    "https://github.com/SovereignWebsite/Site__Tool__Car-Buyer/commit/fc3266d61036f54075d3cbac756d23532290d162",
+    "https://github.com/SovereignWebsite/Site__Agent__Design/commit/23349749d8ceec440353be9e5997c6f7730e0a2e",
+    "https://github.com/SovereignWebsite/Site__Tool__Car-Buyer/commit/1f238b7ea7af00a547f03d7862acf834d50512c6",
+    "https://github.com/SovereignWebsite/Site__Agent__Design/commit/3b0e90c3321c9cc8d2539380f6e98e6d2dda9fc6"
+   ]
+  },
+  {
+   "id": "b4",
+   "narration": "Then a loop: a design agent measured every page, five simulated users tried it, the builder answered. Nine rounds in under two hours.",
+   "visual": {
+    "kind": "flow",
+    "nodes": [
+     "sites.b builds",
+     "design.b.rounds measures",
+     "5 synthetic users try it",
+     "Ranked fixes, sites.b answers"
+    ],
+    "caption": "9 rounds, 16:21 to 18:02 UTC"
+   },
+   "facts": [
+    "https://github.com/SovereignWebsite/Site__Agent__Design/commit/23349749d8ceec440353be9e5997c6f7730e0a2e",
+    "https://github.com/SovereignWebsite/Site__Agent__Design/commit/3b0e90c3321c9cc8d2539380f6e98e6d2dda9fc6",
+    "https://github.com/SovereignWebsite/Site__Agent__Design/blob/c840b0b3131a2ea707ae31ccfd7ba191c381b9db/site/data/rounds/car-buyer.tool.sovereignweb.site.json",
+    "https://github.com/SovereignWebsite/Site__Agent__Design/blob/c840b0b3131a2ea707ae31ccfd7ba191c381b9db/docs/runs/car-buyer-2026-11-23-r9.md"
+   ]
+  },
+  {
+   "id": "b5",
+   "narration": "Round one's sceptic called it a tidy list of links that stops where the real risk starts.",
+   "visual": {
+    "kind": "quote",
+    "text": "A tidy list of links to gov.uk services I already have bookmarked, and it stops exactly where the real risk starts.",
+    "by": "The sceptic, a synthetic user, round 1"
+   },
+   "facts": [
+    "https://github.com/SovereignWebsite/Site__Agent__Design/commit/23349749d8ceec440353be9e5997c6f7730e0a2e",
+    "https://github.com/SovereignWebsite/Site__Agent__Design/blob/c840b0b3131a2ea707ae31ccfd7ba191c381b9db/docs/reviews/car-buyer/2026-11-23-round-1.md"
+   ]
+  },
+  {
+   "id": "b6",
+   "narration": "Five designs followed, each from a real object: the forecourt, the logbook, the MOT certificate, the windscreen card, the road atlas.",
+   "visual": {
+    "kind": "cards",
+    "items": [
+     {
+      "title": "Forecourt",
+      "sub": "The plain reference",
+      "icon": "sites"
+     },
+     {
+      "title": "Logbook",
+      "sub": "Numbered fields in boxes",
+      "icon": "library"
+     },
+     {
+      "title": "MOT certificate",
+      "sub": "Checks as test items",
+      "icon": "security"
+     },
+     {
+      "title": "Windscreen card",
+      "sub": "Big figures first",
+      "icon": "design"
+     },
+     {
+      "title": "Road atlas",
+      "sub": "The steps as a route",
+      "icon": "hub"
+     }
+    ],
+    "caption": "Five structures, not five skins"
+   },
+   "facts": [
+    "https://github.com/SovereignWebsite/Site__Tool__Car-Buyer/commit/1f238b7ea7af00a547f03d7862acf834d50512c6",
+    "https://github.com/SovereignWebsite/Site__Tool__Car-Buyer/commit/f7e4231cd3dfdb2df6960c8dfc33731c9b5c55d7",
+    "https://github.com/SovereignWebsite/Site__Agent__Design/blob/c840b0b3131a2ea707ae31ccfd7ba191c381b9db/site/data/rounds/car-buyer.tool.sovereignweb.site.json"
+   ]
+  },
+  {
+   "id": "b7",
+   "narration": "Round nine: all five would use it, and for the first time, all five would show a friend.",
+   "visual": {
+    "kind": "compare",
+    "left": {
+     "title": "Round 1, 16:21",
+     "points": [
+      "1 design",
+      "Rated 2",
+      "4 of 5 would use it",
+      "The sceptic says no"
+     ]
+    },
+    "right": {
+     "title": "Round 9, 18:02",
+     "points": [
+      "5 designs",
+      "Rated 3",
+      "5 of 5 would use it",
+      "5 of 5 would show a friend"
+     ]
+    }
+   },
+   "facts": [
+    "https://github.com/SovereignWebsite/Site__Agent__Design/commit/23349749d8ceec440353be9e5997c6f7730e0a2e",
+    "https://github.com/SovereignWebsite/Site__Agent__Design/commit/3b0e90c3321c9cc8d2539380f6e98e6d2dda9fc6",
+    "https://github.com/SovereignWebsite/Site__Agent__Design/blob/c840b0b3131a2ea707ae31ccfd7ba191c381b9db/docs/reviews/car-buyer/2026-11-23-round-9.md",
+    "https://github.com/SovereignWebsite/Site__Agent__Design/blob/c840b0b3131a2ea707ae31ccfd7ba191c381b9db/site/data/rounds/car-buyer.tool.sovereignweb.site.json"
+   ]
+  },
+  {
+   "id": "b8",
+   "narration": "It is still a draft, not yet reviewed, and its look score has stalled. Find us at riskmandate dot A I.",
+   "visual": {
+    "kind": "list",
+    "items": [
+     "Live: car-buyer.tool.sovereignweb.site, v0.1.12",
+     "Draft: first version, not yet reviewed",
+     "Look score 3.2 to 3.4 across rounds 6 to 9",
+     "Next round only after a change that could move the look"
+    ]
+   },
+   "facts": [
+    "https://github.com/SovereignWebsite/Site__Agent__Design/commit/3b0e90c3321c9cc8d2539380f6e98e6d2dda9fc6",
+    "https://github.com/SovereignWebsite/Site__Agent__Design/blob/c840b0b3131a2ea707ae31ccfd7ba191c381b9db/docs/reviews/car-buyer/2026-11-23-round-9.md",
+    "https://car-buyer.tool.sovereignweb.site/"
+   ]
+  }
+ ],
+ "caption": "The last twelve hours, 23 Nov 2026, 10:46 to 22:46 UTC: 414 commits in 27 public repositories, by 30 agents and one factory bot. We followed one new website through its first two hours.\n\n16:08: a factory bot creates an empty repository for Car Buyer, a tool Dinis asked for to help people buying a car.\n16:14: the first version is pushed.\n16:21 to 18:02: nine review rounds. A design agent measures every page and five simulated users try it; the builder answers each round.\nRound 1: one design, 4 of 5 would use it, and the sceptic says no.\nRound 9: five designs, from the logbook to the road atlas; 5 of 5 would use it and 5 of 5 would show a friend.\n\nStill in progress: the site is a draft, not yet reviewed, and its look score has sat between 3.2 and 3.4 for four rounds. Simulated users never replace real people.\n\nAgents that act inside a written policy, and show their work. The owner reviews what is published.\n\nThe presenter is synthetic and the voice is AI-generated.\n\nriskmandate.ai\n\n#RiskMandate #AIagents #SovereignWebsite",
+ "theme": {
+  "colours": {
+   "navy": "#0f0f0e",
+   "ink": "#1d1d1b",
+   "card": "#262623",
+   "line": "#3d3d37",
+   "gold": "#4fc48f",
+   "white": "#f7f6f2",
+   "muted": "#b9b6ab",
+   "green": "#3fb57f",
+   "blue": "#1a7f5a",
+   "bg0": "#1f2a24",
+   "bg1": "#161615",
+   "bg2": "#0f0f0e",
+   "stage": "#1f1f1d"
+  },
+  "wordmark": "<img src=\"rm-mark.svg\" alt=\"\"><span>RiskMandate</span>",
+  "source": "RiskMandate's brand from https://riskmandate.ai/ (mark /assets/brand/riskmandate-mark.svg; ink #161615, green #1A7F5A, paper #F7F6F2), read 23 Nov 2026; a lighter green for text on dark."
+ }
+}

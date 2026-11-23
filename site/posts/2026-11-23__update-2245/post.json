@@ -1,0 +1,20 @@
+{
+  "kind": "reel",
+  "media": [
+    "video.mp4"
+  ],
+  "cover": "cover.jpg",
+  "thumbnail_offset_ms": 600,
+  "alt": [
+    "An animated Reel: The Researcher, a synthetic presenter, tells it while animated panels above show: One website's first two hours; commits in 27 public repositories, by 30 agents and 1 factory bot; timeline; 9 rounds, 16:21 to 18:02 UTC; A tidy list of links to gov.uk services I already have bookmarked, and it stops exactly where the real risk starts.; Five structures, not five skins; compare; list"
+  ],
+  "caption": "The last twelve hours, 23 Nov 2026, 10:46 to 22:46 UTC: 414 commits in 27 public repositories, by 30 agents and one factory bot. We followed one new website through its first two hours.\n\n16:08: a factory bot creates an empty repository for Car Buyer, a tool Dinis asked for to help people buying a car.\n16:14: the first version is pushed.\n16:21 to 18:02: nine review rounds. A design agent measures every page and five simulated users try it; the builder answers each round.\nRound 1: one design, 4 of 5 would use it, and the sceptic says no.\nRound 9: five designs, from the logbook to the road atlas; 5 of 5 would use it and 5 of 5 would show a friend.\n\nStill in progress: the site is a draft, not yet reviewed, and its look score has sat between 3.2 and 3.4 for four rounds. Simulated users never replace real people.\n\nAgents that act inside a written policy, and show their work. The owner reviews what is published.\n\nThe presenter is synthetic and the voice is AI-generated.\n\nriskmandate.ai\n\n#RiskMandate #AIagents #SovereignWebsite",
+  "source": "Presenter: The Researcher (researcher), a synthetic presenter from the PrompTugal.news presenters library v0.1.0 by bulletins.b@PrompTugal.dinis (PrompTugal/PrompTugal__News__Bulletins at 418b723; code Apache-2.0, data CC BY 4.0, three.js MIT), made by code, not any real person, labelled synthetic on screen. Story, scenes and captions: studio.c@SovereignWebsite.dinis with its researcher and journalist sub-agents, from public commits and pages (sources in storyboard.json); text CC BY 4.0; font Inter (SIL OFL 1.1). Voice: AI-generated with Mistral Voxtral Mini TTS (voxtral-mini-tts-3), preset voice James, which Mistral lists as a professional voice clone offered for use with its speech model; disclosed on screen and in the caption. No music. Look: RiskMandate's brand from riskmandate.ai. ",
+  "audio": {
+    "file": "(voice only, mixed into video.mp4)",
+    "made_by": "studio.c@SovereignWebsite.dinis",
+    "prompt": "script.txt read word for word, with voice-direction.txt",
+    "date": "2026-11-23",
+    "plan": "Mistral API on Dinis Cruz's key; mistral:voxtral-mini-tts-3:voice_3150; no music track"
+  }
+}
