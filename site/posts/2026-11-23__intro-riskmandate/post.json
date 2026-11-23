@@ -16,12 +16,20 @@
     "by": "Dinis Cruz",
     "at": "2026-11-23T13:25Z",
     "where": "https://claude.ai/code/session_01Kw9UwBf2gRkufCCnZs335u",
-    "words": "yes, post the intro"
+    "words": "yes, post the intro",
+    "linkedin": {
+      "by": "Dinis Cruz",
+      "words": "linked in is connected now can you also post on that account? can you start with our first two posts"
+    }
   },
   "published": {
     "via": "buffer",
     "buffer_post_id": "6b043f1bf3aecf260a978f03",
     "sent_at": "2026-11-23T13:26:51Z",
     "run": "https://github.com/SovereignWebsite/Site__Platform__Instagram/actions/runs/45183949699"
-  }
+  },
+  "channels": [
+    "instagram",
+    "linkedin"
+  ]
 }

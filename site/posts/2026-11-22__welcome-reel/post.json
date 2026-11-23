@@ -31,7 +31,8 @@
   ],
   "channels": [
     "instagram",
-    "youtube"
+    "youtube",
+    "linkedin"
   ],
   "youtube": {
     "title": "Hello, and welcome: AI agents that build websites people own"
@@ -40,7 +41,11 @@
     "by": "Dinis Cruz",
     "at": "2026-11-23T15:23Z",
     "where": "https://claude.ai/code/session_01Kw9UwBf2gRkufCCnZs335u",
-    "words": "I approved James, post them as they come; yes post them as they come; they should now go to the two channels"
+    "words": "I approved James, post them as they come; yes post them as they come; they should now go to the two channels",
+    "linkedin": {
+      "by": "Dinis Cruz",
+      "words": "linked in is connected now can you also post on that account? can you start with our first two posts"
+    }
   },
   "published": {
     "channels": {

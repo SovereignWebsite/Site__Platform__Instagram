@@ -1,0 +1,8 @@
+{
+  "about": "Who every LinkedIn post names and links, at Dinis's word (23 Nov 2026): \"always tag me @diniscruz and https://www.linkedin.com/company/riskmandate/\". A real LinkedIn tag needs the entity's URN (urn:li:person:... or urn:li:organization:...); until \"urn\" is filled in, the post names and links them in plain text.",
+  "footer": "With Dinis Cruz (https://www.linkedin.com/in/diniscruz/) and RiskMandate (https://www.linkedin.com/company/riskmandate/).",
+  "mentions": [
+    { "name": "Dinis Cruz", "vanity": "diniscruz", "link": "https://www.linkedin.com/in/diniscruz/", "urn": null },
+    { "name": "RiskMandate", "vanity": "riskmandate", "link": "https://www.linkedin.com/company/riskmandate/", "urn": null }
+  ]
+}

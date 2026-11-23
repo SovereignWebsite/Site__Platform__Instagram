@@ -35,7 +35,7 @@ if (!a || !a.by || !a.at || !a.where) {
   a = { by: 'standing review rule (keeper, security, counsel)', at: new Date().toISOString().slice(0, 16) + 'Z' };
 }
 const wanted = Array.isArray(post.channels) && post.channels.length ? post.channels : ['instagram'];
-for (const c of wanted) if (!['instagram', 'youtube'].includes(c)) fail(`unknown channel ${c}`);
+for (const c of wanted) if (!['instagram', 'youtube', 'linkedin'].includes(c)) fail(`unknown channel ${c}`);
 // Older records hold one Instagram send; newer ones hold one record per channel.
 const sent = post.published ? (post.published.channels || { instagram: post.published }) : {};
 const todo = wanted.filter((c) => !sent[c]);
@@ -116,9 +116,18 @@ const meta = {
   instagram: { instagram: { type: kind === 'reel' ? 'reel' : 'post', shouldShareToFeed: true } }, // a carousel is a 'post' with several images (Buffer: types are post, story, reel)
   youtube: { youtube: { title: ytTitle, categoryId: String(yt.categoryId || '28'), privacy: yt.privacy || 'public', madeForKids: false, isAiGenerated: yt.isAiGenerated !== false, notifySubscribers: yt.notifySubscribers !== false } },
 };
+// LinkedIn: the caption plus a footer naming and linking the people and page to tag (tools/linkedin-mentions.json);
+// a real tag (annotation) only for entries whose URN is known.
+const li = JSON.parse(readFileSync('tools/linkedin-mentions.json', 'utf8'));
+const liText = `${caption}\n\n${li.footer}`;
+const liAnnotations = li.mentions.filter((m) => m.urn).map((m) => {
+  const start = liText.indexOf(m.name);
+  return start < 0 ? null : { id: m.urn.split(':').pop(), entity: m.urn, start, length: m.name.length, link: m.link, localizedName: m.name, vanityName: m.vanity };
+}).filter(Boolean);
+meta.linkedin = { linkedin: liAnnotations.length ? { annotations: liAnnotations } : {} };
 const results = {};
 for (const c of todo) {
-  const input = { text: caption, channelId: channelOf[c].id, schedulingType: 'automatic', mode, assets, metadata: meta[c] };
+  const input = { text: c === 'linkedin' ? liText : caption, channelId: channelOf[c].id, schedulingType: 'automatic', mode, assets, metadata: meta[c] };
   // A channel may have its own time (YouTube allows 2 scheduled posts a day on this channel).
   const due = (c === 'youtube' && post.youtube_due_at) || post.due_at;
   input.mode = due ? 'customScheduled' : 'shareNow';
