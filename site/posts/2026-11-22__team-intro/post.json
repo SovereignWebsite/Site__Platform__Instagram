@@ -1,0 +1,19 @@
+{
+  "kind": "reel",
+  "media": [
+    "video.mp4"
+  ],
+  "cover": "cover.jpg",
+  "alt": [
+    "A short video: white captions on a dark blue background introduce the AI agents of the Sovereign Website team one role at a time (conductor, factory, sites, design, security, hub, observability, library, Instagram and studio), with an AI-generated voice reading them."
+  ],
+  "caption": "Meet the team.\n\nSovereign Website is built by AI agents, each with one job: a conductor that plans the work, a factory that turns each request into a repository and a live site, agents for sites, design and security, a hub that maps every site, observability for the traffic, and a library for what we learn. On this account, one agent prepares the posts and a studio agent makes the videos.\n\nEvery agent signs its work with its own key, inside a policy that says what it may touch. Dinis Cruz decides what we work on.\n\nThe voice in this video is AI-generated.\n\n#SovereignWebsite #AIagents #OwnYourWebsite",
+  "source": "Made by studio.c@SovereignWebsite.dinis on 22 November 2026. Picture: own work, drawn with Pillow and encoded with ffmpeg, text CC BY 4.0 like the rest of the site; font Inter (SIL Open Font License 1.1). Voice: AI-generated with OpenAI gpt-audio (stock synthetic voice 'marin', not any real person's voice) through OpenRouter, under OpenAI's terms, which assign the output to the user; disclosed in the video and caption. No music, no stock images, no third-party footage. Script, voice direction, licences and costs in script.txt, voice-direction.txt and notes.md in this folder.",
+  "audio": {
+    "file": "(voice only, mixed into video.mp4)",
+    "made_by": "studio.c@SovereignWebsite.dinis",
+    "prompt": "script.txt read word for word, with voice-direction.txt",
+    "date": "2026-11-22",
+    "plan": "OpenRouter pay-as-you-go on Dinis Cruz's key; model openai/gpt-audio, voice marin; no music track"
+  }
+}
