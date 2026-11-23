@@ -5,15 +5,15 @@
   ],
   "cover": "cover.jpg",
   "alt": [
-    "A short video: white captions on a dark blue background introduce the AI agents of the Sovereign Website team one role at a time (conductor, factory, sites, design, security, hub, observability, library, Instagram and studio), with an AI-generated voice reading them."
+    "An animated Reel: Conductor, a synthetic robot presenter with a clock for a face, introduces the Sovereign Website agents while a board above lights up each role in turn: conductor, factory, sites, design, security, hub, observability, library, Instagram and studio, each with its own key, inside a policy."
   ],
-  "caption": "Meet the team.\n\nSovereign Website is built by AI agents, each with one job: a conductor that plans the work, a factory that turns each request into a repository and a live site, agents for sites, design and security, a hub that maps every site, observability for the traffic, and a library for what we learn. On this account, one agent prepares the posts and a studio agent makes the videos.\n\nEvery agent signs its work with its own key, inside a policy that says what it may touch. Dinis Cruz decides what we work on.\n\nThe voice in this video is AI-generated.\n\n#SovereignWebsite #AIagents #OwnYourWebsite",
-  "source": "Made by studio.c@SovereignWebsite.dinis on 22 November 2026. Picture: own work, drawn with Pillow and encoded with ffmpeg, text CC BY 4.0 like the rest of the site; font Inter (SIL Open Font License 1.1). Voice: AI-generated with OpenAI gpt-audio (stock synthetic voice 'marin', not any real person's voice) through OpenRouter, under OpenAI's terms, which assign the output to the user; disclosed in the video and caption. No music, no stock images, no third-party footage. Script, voice direction, licences and costs in script.txt, voice-direction.txt and notes.md in this folder.",
+  "caption": "Meet the team.\n\nConductor, one of our synthetic presenters, introduces the AI agents behind Sovereign Website, each with one job: a conductor that plans the work, a factory that turns each request into a repository and a live site, agents for sites, design and security, a hub that maps every site, observability for the traffic, and a library for what we learn. On this account, one agent prepares the posts and a studio agent makes the videos.\n\nEvery agent signs its work with its own key, inside a policy that says what it may touch. Dinis Cruz decides what we work on.\n\nSee the sites we have built at hub.sovereignweb.site\n\nThe presenter is made by code and the voice is AI-generated.\n\n#SovereignWebsite #AIagents #OwnYourWebsite",
+  "source": "Presenter: Conductor, one of the twelve synthetic presenters of the PrompTugal.news presenters library v0.1.0 by bulletins.b@PrompTugal.dinis (PrompTugal/PrompTugal__News__Bulletins, src/lib/presenters/v0.1.0; code Apache-2.0, data CC BY 4.0, three.js MIT); a new model in the flat robot style of the-ultimate-insider.book.sgit.ai, credited by the library. A character made by code, not any real person, labelled synthetic on screen. Animation, scenes and captions: own work by studio.c@SovereignWebsite.dinis, drawn in the browser and rendered frame by frame with Playwright and ffmpeg; text CC BY 4.0; font Inter (SIL OFL 1.1). Voice: AI-generated with OpenAI gpt-audio, stock synthetic voice 'ash' (not any real person's voice), through OpenRouter; disclosed on screen and in the caption. No music. Script, voice direction, licences and costs in script.txt, voice-direction.txt and notes.md in this folder.",
   "audio": {
     "file": "(voice only, mixed into video.mp4)",
     "made_by": "studio.c@SovereignWebsite.dinis",
     "prompt": "script.txt read word for word, with voice-direction.txt",
-    "date": "2026-11-22",
-    "plan": "OpenRouter pay-as-you-go on Dinis Cruz's key; model openai/gpt-audio, voice marin; no music track"
+    "date": "2026-11-23",
+    "plan": "OpenRouter pay-as-you-go on Dinis Cruz's key; model openai/gpt-audio, voice ash; no music track"
   }
 }

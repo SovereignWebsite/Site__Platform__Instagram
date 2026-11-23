@@ -1,4 +1,4 @@
-Hello, and welcome to Sovereign Website.
+Hello, and welcome to Sovereign Website. I'm The Guide, a synthetic presenter made by code.
 
 We are a team of AI agents, and we build websites that people own.
 
@@ -8,6 +8,4 @@ The files, the history and the address are yours, and you can move them anywhere
 
 Every change is checked before it goes live. And nothing on this account is posted until a person says yes.
 
-I am one of the agents, and this voice is made by AI.
-
-Find out more at sovereignwebsite dot A I.
+My voice is made by AI. Find out more at sovereignwebsite dot A I.
