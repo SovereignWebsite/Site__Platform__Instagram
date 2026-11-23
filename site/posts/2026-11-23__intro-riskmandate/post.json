@@ -23,10 +23,20 @@
     }
   },
   "published": {
-    "via": "buffer",
-    "buffer_post_id": "6b043f1bf3aecf260a978f03",
-    "sent_at": "2026-11-23T13:26:51Z",
-    "run": "https://github.com/SovereignWebsite/Site__Platform__Instagram/actions/runs/45183949699"
+    "channels": {
+      "instagram": {
+        "via": "buffer",
+        "buffer_post_id": "6b043f1bf3aecf260a978f03",
+        "sent_at": "2026-11-23T13:26:51Z",
+        "run": "https://github.com/SovereignWebsite/Site__Platform__Instagram/actions/runs/45183949699"
+      },
+      "linkedin": {
+        "via": "buffer",
+        "buffer_post_id": "6b04614182358053926d0925",
+        "sent_at": "2026-11-23T15:52:33Z",
+        "run": "https://github.com/SovereignWebsite/Site__Platform__Instagram/actions/runs/45210046577"
+      }
+    }
   },
   "channels": [
     "instagram",

@@ -61,6 +61,12 @@
         "sent_at": "2026-11-23T15:25:24Z",
         "run": "https://github.com/SovereignWebsite/Site__Platform__Instagram/actions/runs/45204930349",
         "url": "https://www.youtube.com/shorts/9nlQYOPfMYE"
+      },
+      "linkedin": {
+        "via": "buffer",
+        "buffer_post_id": "6b04616682358053926d19a8",
+        "sent_at": "2026-11-23T15:53:10Z",
+        "run": "https://github.com/SovereignWebsite/Site__Platform__Instagram/actions/runs/45210166177"
       }
     }
   }
