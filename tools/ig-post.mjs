@@ -65,7 +65,8 @@ for (const m of media) {
 if (post.thumbnail_offset_ms !== undefined && !(Number.isInteger(post.thumbnail_offset_ms) && post.thumbnail_offset_ms >= 0)) fail('thumbnail_offset_ms must be a whole number of milliseconds');
 // The schedule: shareNow unless the post names a time (UTC, ISO 8601).
 const mode = post.due_at ? 'customScheduled' : 'shareNow';
-if (post.due_at && !(Date.parse(post.due_at) > Date.now())) fail('due_at must be a future UTC time');
+if (post.due_at && !(Date.parse(post.due_at) > Date.now()) && !(post.published && todo.every((c) => c === 'youtube' && post.youtube_due_at))) fail('due_at must be a future UTC time');
+if (post.youtube_due_at && todo.includes('youtube') && !(Date.parse(post.youtube_due_at) > Date.now())) fail('youtube_due_at must be a future UTC time');
 
 const urls = media.map(m => `${SITE}/posts/${id}/${m}`);
 console.log(`post ${id}: ${kind}, ${urls.length} item(s), caption ${caption.length} chars, ${mode}${post.due_at ? ' ' + post.due_at : ''}`);
@@ -118,7 +119,10 @@ const meta = {
 const results = {};
 for (const c of todo) {
   const input = { text: caption, channelId: channelOf[c].id, schedulingType: 'automatic', mode, assets, metadata: meta[c] };
-  if (post.due_at) input.dueAt = post.due_at;
+  // A channel may have its own time (YouTube allows 2 scheduled posts a day on this channel).
+  const due = (c === 'youtube' && post.youtube_due_at) || post.due_at;
+  input.mode = due ? 'customScheduled' : 'shareNow';
+  if (due) input.dueAt = due;
   const res = (await gql(`mutation P($input: CreatePostInput!) { createPost(input: $input) {
     ... on PostActionSuccess { post { id dueAt } }
     ... on MutationError { message } } }`, { input })).createPost;

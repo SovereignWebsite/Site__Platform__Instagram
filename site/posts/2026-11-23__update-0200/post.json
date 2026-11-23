@@ -31,17 +31,28 @@
     }
   ],
   "channels": [
-    "instagram"
+    "instagram",
+    "youtube"
   ],
   "youtube": {
     "title": "That night, nothing posted without a yes. That was the rule as the agent team got its own Instagram "
   },
-  "youtube_pending": "YouTube allows 2 scheduled posts a day on this channel (Buffer, 23 Nov); send to YouTube on another day.",
   "approved": {
     "by": "Dinis Cruz",
     "at": "2026-11-23T15:37Z",
     "where": "https://claude.ai/code/session_01Kw9UwBf2gRkufCCnZs335u",
     "words": "I approved James, post them as they come; yes post them as they come; they should now go to the two channels"
   },
-  "due_at": "2026-11-23T17:38:00Z"
+  "due_at": "2026-11-23T17:38:00Z",
+  "published": {
+    "channels": {
+      "instagram": {
+        "via": "buffer",
+        "buffer_post_id": "6b045f26e5918dfd0f6a7ff3",
+        "scheduled_for": "2026-11-23T17:38:00Z",
+        "run": "https://github.com/SovereignWebsite/Site__Platform__Instagram/actions/runs/45208322471"
+      }
+    }
+  },
+  "youtube_due_at": "2026-11-24T17:38:00Z"
 }

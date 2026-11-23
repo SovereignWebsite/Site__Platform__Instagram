@@ -54,5 +54,5 @@
       }
     }
   },
-  "youtube_pending": "Buffer refused: YouTube allows 2 scheduled posts a day on this channel; send to YouTube on another day (the script skips Instagram, already sent)."
+  "youtube_due_at": "2026-11-24T12:08:00Z"
 }

@@ -17,7 +17,7 @@ for (const id of readdirSync('site/posts').sort().reverse()) {
   const slug = pages[id] || id.split('__')[1];
   const pub = p.published || null;
   const ch = pub ? (pub.channels || { instagram: pub }) : {};
-  const state = pub ? (p.youtube_pending ? 'sent to Instagram; YouTube pending' : 'sent') : (p.previous_sends || []).length ? 'deleted, to be reposted' : 'waiting';
+  const state = pub ? (!ch.youtube && (p.channels || []).includes('youtube') ? 'sent to Instagram; YouTube scheduled' + (p.youtube_due_at ? ' for ' + p.youtube_due_at : '') : 'sent') : (p.previous_sends || []).length ? 'deleted, to be reposted' : 'waiting';
   out.push({
     id, title: p.caption.split('\n')[0],
     caption: p.caption.split('\n\n').slice(0, 2).join(' ').slice(0, 280),

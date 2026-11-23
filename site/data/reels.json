@@ -1,6 +1,6 @@
 {
   "about": "Reels from the RiskMandate Instagram and YouTube account, newest first. Built from site/posts/*/post.json by tools/build-reels-feed.mjs.",
-  "updated": "2026-11-23T15:37Z",
+  "updated": "2026-11-23T15:44Z",
   "reels": [
     {
       "id": "2026-11-23__update-1045",
@@ -10,14 +10,14 @@
       "poster": "https://instagram.platform.sovereignweb.site/posts/2026-11-23__update-1045/cover.jpg",
       "video": "https://instagram.platform.sovereignweb.site/posts/2026-11-23__update-1045/video-v2.mp4",
       "duration_s": 72,
-      "state": "deleted, to be reposted",
-      "published_at": null,
+      "state": "sent to Instagram; YouTube scheduled for 2026-11-25T12:08:00Z",
+      "published_at": "2026-11-23T18:23:00Z",
       "channels": {
         "instagram": null,
         "youtube": null
       },
       "sent_to": {
-        "instagram": false,
+        "instagram": true,
         "youtube": false
       },
       "credits": "Presenter: Mocho (owl), a synthetic presenter from the PrompTugal.news presenters library v0.1.0 by bulletins.b@PrompTugal.dinis (PrompTugal/PrompTugal__News__Bulletins at 418b723; code Apache-2.0, data CC BY 4.0, three.js MIT), made by code, not any real person, labelled synthetic on screen. Story, scenes and captions: studio.c@SovereignWebsite.dinis with its researcher and journalist sub-agents, from public commits and pages (sources in storyboard.json); text CC BY 4.0; font Inter (SIL OFL 1.1). Voice: AI-generated with openai/gpt-audio, stock voice 'ballad', through OpenRouter; disclosed on screen and in the caption. No music. Look: RiskMandate's brand from riskmandate.ai. ",
@@ -31,7 +31,7 @@
       "poster": "https://instagram.platform.sovereignweb.site/posts/2026-11-23__update-0645/cover.jpg",
       "video": "https://instagram.platform.sovereignweb.site/posts/2026-11-23__update-0645/video-v2.mp4",
       "duration_s": 78,
-      "state": "sent to Instagram; YouTube pending",
+      "state": "sent to Instagram; YouTube scheduled for 2026-11-24T12:08:00Z",
       "published_at": "2026-11-23T16:53:00Z",
       "channels": {
         "instagram": null,
@@ -52,14 +52,14 @@
       "poster": "https://instagram.platform.sovereignweb.site/posts/2026-11-23__update-0200/cover.jpg",
       "video": "https://instagram.platform.sovereignweb.site/posts/2026-11-23__update-0200/video-v2.mp4",
       "duration_s": 76,
-      "state": "deleted, to be reposted",
-      "published_at": null,
+      "state": "sent to Instagram; YouTube scheduled for 2026-11-24T17:38:00Z",
+      "published_at": "2026-11-23T17:38:00Z",
       "channels": {
         "instagram": null,
         "youtube": null
       },
       "sent_to": {
-        "instagram": false,
+        "instagram": true,
         "youtube": false
       },
       "credits": "Presenter: Duarte (anchor), a synthetic presenter from the PrompTugal.news presenters library v0.1.0 by bulletins.b@PrompTugal.dinis (PrompTugal/PrompTugal__News__Bulletins at 418b723; code Apache-2.0, data CC BY 4.0, three.js MIT), made by code, not any real person, labelled synthetic on screen. Story, scenes and captions: studio.c@SovereignWebsite.dinis with its researcher and journalist sub-agents, from public commits and pages (sources in storyboard.json); text CC BY 4.0; font Inter (SIL OFL 1.1). Voice: AI-generated with openai/gpt-audio, stock voice 'echo', through OpenRouter; disclosed on screen and in the caption. No music. Look: RiskMandate's brand from riskmandate.ai. ",
@@ -98,7 +98,7 @@
       "published_at": "2026-11-23T15:25:14Z",
       "channels": {
         "instagram": null,
-        "youtube": null
+        "youtube": "https://www.youtube.com/shorts/9nlQYOPfMYE"
       },
       "sent_to": {
         "instagram": true,
