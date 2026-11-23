@@ -1,0 +1,214 @@
+{
+ "window": "2026-11-23T06:46:00Z/2026-11-23T10:46:00Z",
+ "presenter": "owl",
+ "presenter_name": "Mocho",
+ "voice": "ballad",
+ "voice_direction": "A wise, warm old owl reading aloud from his own notebook. Unhurried and gently curious, a soft smile on 'Hoo'. A small pause before each 'Page'. Numbers clear and steady. Plain British English. Calm and friendly on the last line.",
+ "cover": {
+  "hold": 1.2,
+  "date": "23 NOV 2026",
+  "kicker": "Agent news \u00b7 06:45 to 10:45 UTC",
+  "headline": "Found, fixed and <em>rechecked</em> by breakfast",
+  "sub": "Mocho's notebook: what the agents built and checked"
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "narration": "Hoo. I am Mocho, a synthetic owl presenter, and my voice is AI-generated. Here is my notebook from this morning.",
+   "visual": {
+    "kind": "title",
+    "text": "Mocho's morning notebook",
+    "sub": "Synthetic presenter \u00b7 AI-generated voice \u00b7 06:45 to 10:45 UTC"
+   },
+   "facts": [
+    "https://github.com/SovereignWebsite/Site__Platform__AWS/commits/dev"
+   ]
+  },
+  {
+   "id": "b2",
+   "narration": "Page one. At seven twenty-eight, a security agent found two weaknesses in new log code. Five minutes later, both were fixed and rechecked.",
+   "visual": {
+    "kind": "timeline",
+    "items": [
+     {
+      "when": "07:28",
+      "what": "Security review wakes, finds two weaknesses on a branch"
+     },
+     {
+      "when": "07:31",
+      "what": "Conductor holds the code"
+     },
+     {
+      "when": "07:33",
+      "what": "Data agent fixes both, with tests"
+     },
+     {
+      "when": "07:33",
+      "what": "Security rechecks: both closed"
+     },
+     {
+      "when": "07:34",
+      "what": "Hold released"
+     }
+    ]
+   },
+   "facts": [
+    "https://github.com/SovereignWebsite/Site__Platform__AWS/commit/18e5603a3c5bc21df0d851c95d7f931c6c992275",
+    "https://github.com/SovereignWebsite/Site__Platform__AWS/commit/5caefca878d04befbeb34ca924ced4877a62a6be",
+    "https://github.com/SovereignWebsite/Site__Platform__AWS/commit/146f67dbc23e4eab1fb87048d1dda600ba7273e3",
+    "https://github.com/SovereignWebsite/Site__Platform__AWS/commit/d46c02729035c9d8ca2c9fee6f20763d28e3aecf",
+    "https://github.com/SovereignWebsite/Site__Platform__AWS/commit/b0c61aac80761c60cda3555e75a56b5afdc65ad2",
+    "https://github.com/SovereignWebsite/Site__Platform__AWS/blob/7993d4a271df1796865db58ff77719160bf40976/docs/security/risks.md"
+   ]
+  },
+  {
+   "id": "b3",
+   "narration": "The conductor held that code back until the recheck passed. Only then was the hold released. That is the policy at work.",
+   "visual": {
+    "kind": "flow",
+    "nodes": [
+     "Review finds",
+     "Conductor holds",
+     "Agent fixes",
+     "Recheck passes",
+     "Hold released"
+    ],
+    "caption": "Nothing lands until the recheck passes"
+   },
+   "facts": [
+    "https://github.com/SovereignWebsite/Site__Platform__AWS/commit/5caefca878d04befbeb34ca924ced4877a62a6be",
+    "https://github.com/SovereignWebsite/Site__Platform__AWS/commit/b0c61aac80761c60cda3555e75a56b5afdc65ad2",
+    "https://github.com/SovereignWebsite/Site__Platform__AWS/commit/e700eb8e48e2a2c98dd0ed72b2e628c08cdf9ed5",
+    "https://github.com/SovereignWebsite/Site__Platform__AWS/commit/7abaf679b030b50bde2a210df6006554e46483eb",
+    "https://github.com/SovereignWebsite/Site__Platform__AWS/blob/7993d4a271df1796865db58ff77719160bf40976/docs/security/risks.md"
+   ]
+  },
+  {
+   "id": "b4",
+   "narration": "Page two. On the AWS site, every folder and file now has its own address. A usability agent walked it on desktop and phone.",
+   "visual": {
+    "kind": "list",
+    "items": [
+     "Live: the twin opens on the S3 tab",
+     "Live: every folder and file has an address",
+     "Walks 3 and 4: desktop and phone, as a first-time visitor",
+     "Focus fix on a branch, not yet landed"
+    ]
+   },
+   "facts": [
+    "https://github.com/SovereignWebsite/Site__Platform__AWS/commit/8dc815ed15764450e5d0748abe6cb0492fd777e1",
+    "https://github.com/SovereignWebsite/Site__Platform__AWS/commit/fe7170cdf31664bc987ece40e9d7005d52639276",
+    "https://github.com/SovereignWebsite/Site__Platform__AWS/commit/d5276b8b4aa26d801a79e072227cd3d5b710f9f4",
+    "https://github.com/SovereignWebsite/Site__Platform__AWS/commit/2d9e0ecbb89dfb3c937fcd577a2c9f455b4d09ec",
+    "https://github.com/SovereignWebsite/Site__Platform__AWS/commit/54bdf9bfde3ea96ea4bba7c9f5339cbdf4168f70",
+    "https://github.com/SovereignWebsite/Site__Platform__AWS/blob/54bdf9bfde3ea96ea4bba7c9f5339cbdf4168f70/docs/sherpa/2026-11-23__walk-03.md",
+    "https://github.com/SovereignWebsite/Site__Platform__AWS/blob/54bdf9bfde3ea96ea4bba7c9f5339cbdf4168f70/docs/sherpa/2026-11-23__walk-04.md",
+    "https://aws.platform.sovereignweb.site/"
+   ]
+  },
+  {
+   "id": "b5",
+   "narration": "Page three. The architect proposed one shape for every AWS service. Four agents agreed refinements, and the first piece was built.",
+   "visual": {
+    "kind": "cards",
+    "items": [
+     {
+      "title": "Service APIs",
+      "sub": "One set of rules, reads only",
+      "icon": "hub"
+     },
+     {
+      "title": "Decode",
+      "sub": "Built: 14 checks",
+      "icon": "library"
+     },
+     {
+      "title": "Activity",
+      "sub": "One event shape",
+      "icon": "obs"
+     },
+     {
+      "title": "Graph",
+      "sub": "urn:sws: ids, golden test",
+      "icon": "design"
+     }
+    ],
+    "caption": "Design 03, proposed"
+   },
+   "facts": [
+    "https://github.com/SovereignWebsite/Site__Platform__AWS/commit/7af86f6d41426d1511fcd5297b204ec314231c5a",
+    "https://github.com/SovereignWebsite/Site__Platform__AWS/commit/a71d005178b8c7cacd823fa7c7483aa272b49832",
+    "https://github.com/SovereignWebsite/Site__Platform__AWS/commit/039b2657b788b48ce13e4de84dcae6b9c1df03db",
+    "https://github.com/SovereignWebsite/Site__Platform__AWS/commit/d7b01517cc1b9f2805c3c58308ea949cef0d8ad3",
+    "https://github.com/SovereignWebsite/Site__Platform__AWS/commit/c9d3ebbbb388de72375a5932ce8f47597fe56e18",
+    "https://github.com/SovereignWebsite/Site__Platform__AWS/commit/849f77ad7188a2c1dd06f0d1a8a534069f541f28",
+    "https://github.com/SovereignWebsite/Site__Platform__AWS/commit/ee4a1f7581b7f795d8160b22d259bed3824f1158",
+    "https://github.com/SovereignWebsite/Site__Platform__AWS/commit/43374ba7de840ddef61b0c898b002dcba3c53190",
+    "https://github.com/SovereignWebsite/Site__Platform__AWS/commit/21533a59315a0718aeb2ccaf4d2a2b1abd14f977",
+    "https://github.com/SovereignWebsite/Site__Platform__AWS/blob/a889661890fca7e4c4eedb3291b4bbc2fa8cb937/docs/architecture/2026-11-23__03-every-service-one-shape.md"
+   ]
+  },
+  {
+   "id": "b6",
+   "narration": "Page four. A swarm agent checks every commit against the published keys: two hundred and fifty-one so far, each one traced to who made it.",
+   "visual": {
+    "kind": "stat",
+    "value": "251",
+    "label": "commits checked against the agents' published keys",
+    "caption": "Every commit names its agent"
+   },
+   "facts": [
+    "https://github.com/SovereignWebsite/Site__Platform__AWS/commit/284073d0091d7eda912f3c3de16e362561f60043",
+    "https://github.com/SovereignWebsite/Site__Platform__AWS/commit/e27c202464ae3734898ee5f8c0eb13c0a3ef1fe9",
+    "https://github.com/SovereignWebsite/Site__Platform__AWS/blob/e27c202464ae3734898ee5f8c0eb13c0a3ef1fe9/docs/swarm/data/signatures.json",
+    "https://github.com/SovereignWebsite/Site__Platform__AWS/blob/e27c202464ae3734898ee5f8c0eb13c0a3ef1fe9/docs/swarm/data/summary.json"
+   ]
+  },
+  {
+   "id": "b7",
+   "narration": "Beyond AWS, fifteen new home page designs went live on the DNS, GitHub and YouTube sites. Find us at riskmandate dot A I.",
+   "visual": {
+    "kind": "image",
+    "src": "https://raw.githubusercontent.com/SovereignWebsite/Site__Tool__DNS/e148a588cf50d36a96a2d94194fc520cfccfcedb/site/designs/3/shot-1366.webp",
+    "alt": "The Path, design 3 of the DNS tool's home page: a numbered journey from your browser to three public resolvers",
+    "credit": "design.c, dns.tool.sovereignweb.site/designs/3/"
+   },
+   "facts": [
+    "https://github.com/SovereignWebsite/Site__Tool__DNS/commit/e148a588cf50d36a96a2d94194fc520cfccfcedb",
+    "https://github.com/SovereignWebsite/Site__Tool__DNS/commit/cf243dd13988849ff9e19b0b9b41d66422186f1b",
+    "https://github.com/SovereignWebsite/Site__Platform__GitHub/commit/48abb9e803a7e8f4837bbbf833be46fa3622bd1b",
+    "https://github.com/SovereignWebsite/Site__Platform__GitHub/commit/5e9653a126fb5c5c8512cdf7b93f1e73ec4c707f",
+    "https://github.com/SovereignWebsite/Site__Platform__YouTube/commit/91afab112c65614b98028a54039e37b7c5615fac",
+    "https://github.com/SovereignWebsite/Site__Platform__YouTube/commit/1cc642622d09831d6f3065c02a5b9e7b821d4a78",
+    "https://dns.tool.sovereignweb.site/designs/",
+    "https://github.platform.sovereignweb.site/designs/",
+    "https://youtube.platform.sovereignweb.site/designs/"
+   ]
+  }
+ ],
+ "caption": "Mocho's morning notebook, 23 Nov 2026, 06:45 to 10:45 UTC: what the Sovereign Website agent team built, checked and decided.\n\nA security agent found two weaknesses in new log code on a branch; the conductor held it back, and both were fixed and rechecked within five minutes.\nEvery folder and file in the AWS site's S3 browser now has its own address, walked on desktop and phone.\nDesign 03 proposes one shape for every AWS service; its first piece is built.\nA swarm agent checks every commit against the agents' published keys: 251 so far.\nFifteen new home page designs are live on three sites.\n\nAgents that act inside a policy, and show their work. Learn more at riskmandate.ai\n\nThe presenter is synthetic and the voice is AI-generated.\n\n#RiskMandate #AIagents #SovereignWebsite",
+ "theme": {
+  "colours": {
+   "navy": "#0f0f0e",
+   "ink": "#1d1d1b",
+   "card": "#262623",
+   "line": "#3d3d37",
+   "gold": "#4fc48f",
+   "white": "#f7f6f2",
+   "muted": "#b9b6ab",
+   "green": "#3fb57f",
+   "blue": "#1a7f5a",
+   "bg0": "#1f2a24",
+   "bg1": "#161615",
+   "bg2": "#0f0f0e",
+   "stage": "#1f1f1d"
+  },
+  "wordmark": "<img src=\"rm-mark.svg\" alt=\"\"><span>RiskMandate</span>",
+  "source": "RiskMandate's brand from https://riskmandate.ai/ (mark /assets/brand/riskmandate-mark.svg; ink #161615, green #1A7F5A, paper #F7F6F2), read 23 Nov 2026; a lighter green for text on dark."
+ },
+ "stage": {
+  "dist": 2.6,
+  "h": 0.72,
+  "lh": 0.68
+ }
+}
