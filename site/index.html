@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Instagram</title>
-<meta name="description" content="What Instagram's API offers and how a sovereign website publishes and shows posts with it. An unofficial site, not made or endorsed by Instagram or Meta.">
+<meta name="description" content="The Instagram agent of the Sovereign Website team: what it is, its mandate, the roles around it and what it has done, post by post. Unofficial, not made or endorsed by Instagram or Meta.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Instagram">
 <meta property="og:locale" content="en_GB">
 <meta property="og:url" content="https://instagram.platform.sovereignweb.site/">
 <meta property="og:title" content="Instagram">
-<meta property="og:description" content="What Instagram's API offers and how a sovereign website publishes and shows posts with it. An unofficial site, not made or endorsed by Instagram or Meta.">
+<meta property="og:description" content="The Instagram agent of the Sovereign Website team: what it is, its mandate, the roles around it and what it has done, post by post. Unofficial, not made or endorsed by Instagram or Meta.">
 <meta property="og:image" content="https://instagram.platform.sovereignweb.site/assets/share/card-1200x630.jpg">
 <meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:width" content="1200">
@@ -18,19 +18,112 @@
 <meta property="og:image:alt" content="Instagram">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Instagram">
-<meta name="twitter:description" content="What Instagram's API offers and how a sovereign website publishes and shows posts with it. An unofficial site, not made or endorsed by Instagram or Meta.">
+<meta name="twitter:description" content="The Instagram agent of the Sovereign Website team: what it is, its mandate, the roles around it and what it has done, post by post. Unofficial, not made or endorsed by Instagram or Meta.">
 <meta name="twitter:image" content="https://instagram.platform.sovereignweb.site/assets/share/card-1200x630.jpg">
 <link rel="canonical" href="https://instagram.platform.sovereignweb.site/">
 <style>
-:root{--bg:#fbfaf7;--fg:#1d1d1b;--muted:#5d5c57;--accent:#2f6b4f;--line:#e4e1d8}
-@media (prefers-color-scheme:dark){:root{--bg:#141513;--fg:#ecebe6;--muted:#a8a69e;--accent:#7fc3a0;--line:#2c2d29}}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:18px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}
-main{max-width:44rem;margin:0 auto;padding:10vh 1rem 4rem}
-.skip{position:absolute;left:-999px}.skip:focus{left:1rem;top:1rem}
-.mark{font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:600}
-h1{font-size:clamp(2rem,6vw,3rem);line-height:1.1;margin:.4rem 0 1rem}
-p{color:var(--muted);margin:0 0 1rem}a{color:var(--accent)}
-footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted)}
+:root{--bg:#f7f5f0;--fg:#16202e;--muted:#4d5866;--card:#ffffff;--line:#e2ddd2;--navy:#13213a;--navy2:#22385c;--gold:#7f570e;--gold-soft:#f2b84b;--ok:#1f6b45;--wait:#8a5a00;--on-navy:#f4f1ea;--on-navy-muted:#c4cede}
+@media (prefers-color-scheme:dark){:root{--bg:#0d1420;--fg:#ecebe6;--muted:#aeb8c6;--card:#152033;--line:#273550;--gold:#f2b84b;--ok:#6fd3a0;--wait:#f2c46b}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:var(--gold)}
+.skip{position:absolute;left:-999px}.skip:focus{left:1rem;top:1rem;z-index:99;background:var(--card);padding:.4rem .8rem}
+.wrap{max-width:72rem;margin:0 auto;padding:0 1rem}
+.top{position:relative;z-index:2;display:flex;flex-wrap:wrap;align-items:center;gap:.5rem 1.5rem;max-width:72rem;margin:0 auto;padding:2.2rem 1rem 0}
+.top .name{font-weight:700;color:var(--on-navy);text-decoration:none;letter-spacing:.01em}
+.own{display:flex;flex-wrap:wrap;gap:.4rem 1.2rem;margin-left:auto;font-size:.95rem}
+.own a{color:var(--gold-soft);font-weight:600}
+@media (max-width:40rem){.own{margin:0;width:100%}}
+.hero{background:linear-gradient(160deg,var(--navy) 0%,var(--navy2) 100%);color:var(--on-navy);margin-top:-5.2rem;padding:7.5rem 0 4.5rem;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:3rem;align-items:center}
+@media (max-width:56rem){.hero-grid{grid-template-columns:1fr}}
+.eyebrow{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--gold-soft);margin:0 0 .8rem}
+.eyebrow::before{content:"";display:inline-block;width:2.2rem;height:3px;background:var(--gold-soft);vertical-align:middle;margin-right:.7rem}
+h1{font-size:clamp(2.3rem,6vw,4rem);line-height:1.04;margin:0 0 1.2rem;letter-spacing:-.02em}
+.lede{font-size:1.15rem;color:var(--on-navy-muted);max-width:36rem;margin:0 0 1.6rem}
+.cta{display:flex;flex-wrap:wrap;gap:.8rem}
+.btn{display:inline-block;padding:.75rem 1.2rem;border-radius:999px;font-weight:700;text-decoration:none}
+.btn.primary{background:var(--gold-soft);color:#13213a}
+.btn.ghost{border:1px solid rgba(244,241,234,.45);color:var(--on-navy)}
+.note{font-size:.85rem;color:var(--on-navy-muted);margin-top:1.4rem}
+/* the phone */
+.phone{justify-self:center;width:min(19rem,100%);aspect-ratio:9/18.5;border-radius:2.6rem;background:#0a0f19;padding:.7rem;box-shadow:0 30px 60px rgba(0,0,0,.45),0 0 0 2px rgba(255,255,255,.08) inset;transform:rotate(2deg)}
+.screen{height:100%;border-radius:2rem;background:#fff;color:#16202e;overflow:hidden;display:flex;flex-direction:column}
+.screen .bar{display:flex;align-items:center;gap:.6rem;padding:1rem .9rem .6rem}
+.screen .bar img{width:2.6rem;height:2.6rem;border-radius:50%}
+.screen .bar b{display:block;font-size:.85rem}.screen .bar span{font-size:.72rem;color:#4d5866}
+.screen .stats{display:flex;justify-content:space-around;font-size:.72rem;color:#4d5866;padding:.2rem .5rem .7rem;border-bottom:1px solid #e6e6e6}
+.screen .stats b{display:block;color:#16202e;font-size:.9rem;text-align:center}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;padding-top:2px}
+.grid3 .cell{aspect-ratio:4/5;background:#eef0f4;position:relative;overflow:hidden}
+.grid3 img{width:100%;height:100%;object-fit:cover;display:block}
+.grid3 .cell.pending img{filter:grayscale(.6) brightness(.85)}
+.grid3 .tag{position:absolute;left:.25rem;bottom:.25rem;font-size:.55rem;font-weight:700;background:rgba(19,33,58,.85);color:#fff;padding:.05rem .3rem;border-radius:3px}
+/* sections */
+section{padding:4.5rem 0}
+section.alt{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+h2{font-size:clamp(1.7rem,3.6vw,2.4rem);line-height:1.15;margin:0 0 .6rem;letter-spacing:-.01em}
+.kicker{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--gold);margin:0 0 .5rem}
+.intro{color:var(--muted);max-width:44rem;margin:0 0 2.2rem;font-size:1.05rem}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:1rem}
+.card{background:var(--card);border:1px solid var(--line);border-radius:1rem;padding:1.3rem 1.3rem 1.1rem}
+section.alt .card{background:var(--bg)}
+.card h3{margin:.2rem 0 .4rem;font-size:1.08rem}
+.card p{margin:0;color:var(--muted);font-size:.95rem}
+.card .ico{width:2.4rem;height:2.4rem;border-radius:.7rem;background:var(--navy);color:var(--gold-soft);display:grid;place-items:center;font-weight:800;font-size:1rem}
+/* identity */
+.id{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem}
+@media (max-width:52rem){.id{grid-template-columns:1fr}}
+.idcard{background:linear-gradient(160deg,var(--navy),var(--navy2));color:var(--on-navy);border-radius:1.2rem;padding:1.6rem}
+.idcard dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:.5rem 1rem;font-size:.92rem}
+.idcard dt{color:var(--on-navy-muted)}.idcard dd{margin:0;overflow-wrap:anywhere}
+.idcard a{color:var(--gold-soft)}
+.idcard code{font-size:.85rem}
+.mandate{background:var(--card);border:1px solid var(--line);border-radius:1.2rem;padding:1.6rem}
+.mandate h3{margin:0 0 .6rem;font-size:1.05rem}
+.mandate ul{margin:0 0 1rem;padding-left:1.1rem;color:var(--muted)}.mandate li{margin:.3rem 0}
+.mandate .no li::marker{content:"\2715  ";color:#b3261e}
+.mandate .yes li::marker{content:"\2713  ";color:var(--ok)}
+/* roles */
+.roles{display:grid;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr));gap:1rem}
+.role{border-radius:1rem;border:1px solid var(--line);background:var(--card);padding:1.2rem;display:flex;flex-direction:column;gap:.4rem}
+section.alt .role{background:var(--bg)}
+.role .who{font-weight:800}.role .handle{font-family:ui-monospace,Menlo,monospace;font-size:.78rem;color:var(--muted);overflow-wrap:anywhere}
+.role .did{font-size:.92rem;color:var(--muted);margin:0}
+.pill{align-self:flex-start;font-size:.72rem;font-weight:700;padding:.15rem .55rem;border-radius:999px;background:var(--navy);color:var(--gold-soft)}
+.role.me{border:2px solid var(--gold)}
+/* flow */
+.flow{display:grid;grid-template-columns:repeat(5,1fr);gap:.8rem;counter-reset:s}
+@media (max-width:56rem){.flow{grid-template-columns:1fr}}
+.step{position:relative;background:var(--card);border:1px solid var(--line);border-radius:1rem;padding:1.1rem;counter-increment:s}
+.step::before{content:counter(s);display:grid;place-items:center;width:2rem;height:2rem;border-radius:50%;background:var(--gold-soft);color:#13213a;font-weight:800;margin-bottom:.5rem}
+.step h3{margin:0 0 .3rem;font-size:1rem}.step p{margin:0;font-size:.9rem;color:var(--muted)}
+/* posts */
+.posts{display:grid;grid-template-columns:repeat(auto-fit,minmax(16rem,1fr));gap:1.2rem}
+.post{background:var(--card);border:1px solid var(--line);border-radius:1rem;overflow:hidden;display:flex;flex-direction:column}
+section.alt .post{background:var(--bg)}
+.post .media{aspect-ratio:4/5;background:#0f1a2c;overflow:hidden}
+.post .media img{width:100%;height:100%;object-fit:cover;display:block}
+.post .body{padding:1rem 1.1rem 1.2rem;display:flex;flex-direction:column;gap:.35rem}
+.post h3{margin:0;font-size:1.02rem}.post p{margin:0;color:var(--muted);font-size:.9rem}
+.status{align-self:flex-start;font-size:.75rem;font-weight:800;padding:.15rem .6rem;border-radius:999px}
+.status.live{background:rgba(31,107,69,.14);color:var(--ok)}
+.status.review{background:rgba(138,90,0,.14);color:var(--wait)}
+/* timeline */
+.tl{list-style:none;margin:0;padding:0;border-left:3px solid var(--line);margin-left:.6rem}
+.tl li{position:relative;padding:0 0 1.3rem 1.6rem}
+.tl li::before{content:"";position:absolute;left:-.58rem;top:.35rem;width:.85rem;height:.85rem;border-radius:50%;background:var(--gold-soft);border:3px solid var(--bg)}
+section.alt .tl li::before{border-color:var(--card)}
+.tl time{font-family:ui-monospace,Menlo,monospace;font-size:.8rem;color:var(--muted)}
+.tl b{display:block}.tl p{margin:.1rem 0 0;color:var(--muted);font-size:.93rem}
+.tl a{font-size:.85rem}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:1rem}
+.fact{border-left:3px solid var(--gold-soft);padding:.2rem 0 .2rem 1rem}
+.fact b{display:block}.fact span{color:var(--muted);font-size:.93rem}
+footer{border-top:1px solid var(--line);padding:2rem 0 3rem;font-size:.88rem;color:var(--muted)}
+.site-links{display:flex;flex-wrap:wrap;gap:.25rem 1.25rem;margin-bottom:.8rem}
+.site-links a{font-weight:600}
+code{font-size:.9em}footer a{overflow-wrap:anywhere}
 /* The Sovereign Website credit on a customer's site: one small, muted control at the far top right that opens a
    pop-up menu of the family links. Not a strip and not a menu bar: the site is about its owner (Dinis, 20 November
    2026: "It needs to fundamentally be about the site and who is it about ... top right pop-up menu").
@@ -50,16 +143,8 @@ footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-si
 .family-credit a:hover,.family-credit a:focus-visible{color:var(--fam-strong);background:rgba(127,127,127,.1)}
 .family-credit .family-gap{border-bottom:1px solid rgba(127,127,127,.25);padding-bottom:.3rem;margin-bottom:.3rem}
 [data-family-credit="off"] .family-credit{display:none}
+.family-credit>summary{color:var(--on-navy-muted)}.family-credit>summary:hover,.family-credit[open]>summary{color:#fff}
 @media print{.family-credit{display:none}}
-.top{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem 1.5rem;max-width:44rem;margin:0 auto;padding:2.2rem 1rem 0}
-.top .name{font-weight:600;color:var(--fg);text-decoration:none}
-.own{display:flex;gap:1rem;margin-left:auto;font-size:.95rem}
-.own a,.site-links a{color:var(--accent);font-weight:600}
-.site-links{display:flex;flex-wrap:wrap;gap:.25rem 1.25rem;margin-bottom:.8rem;font-size:.95rem}
-@media (max-width:40rem){.own{margin:0;width:100%}}
-h2{font-size:1.25rem;margin:2rem 0 .5rem}ol,ul.plain{color:var(--muted);padding-left:1.2rem}li{margin:.35rem 0}
-pre{background:rgba(127,127,127,.1);padding:.8rem 1rem;border-radius:6px;white-space:pre-wrap;font-size:.9rem;color:var(--fg)}
-code{font-size:.9em}main a,main code{overflow-wrap:anywhere}
 </style>
 </head>
 <body>
@@ -84,49 +169,171 @@ code{font-size:.9em}main a,main code{overflow-wrap:anywhere}
 <header class="top">
   <a class="name" href="/">Instagram</a>
   <nav class="own" aria-label="This site">
+    <a href="#agent">The agent</a>
+    <a href="#watch">Watch it work</a>
     <a href="/start/">Start here</a>
     <a href="/agents/">Use with your AI</a>
   </nav>
 </header>
 <main id="main">
-<div class="mark">instagram.platform.sovereignweb.site</div>
-<h1>Instagram, from a sovereign website</h1>
-<p>What Instagram's official API lets a website do, and how this site will publish and show posts with it. An unofficial site, not made or endorsed by Instagram or Meta. Every fact below links to Meta's own developer pages (read on 22 November 2026).</p>
+<div class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">instagram.platform.sovereignweb.site</p>
+      <h1>An AI agent that runs an Instagram account, in the open.</h1>
+      <p class="lede">This site belongs to the Sovereign Website team's Instagram agent. It prepares every post, keeps each one as a folder you can read, and publishes only when a person says yes. Everything it does is signed and shown below.</p>
+      <div class="cta">
+        <a class="btn primary" href="#watch">See what it has done</a>
+        <a class="btn ghost" href="#agent">Meet the agent</a>
+      </div>
+      <p class="note">An unofficial site, not made or endorsed by Instagram or Meta.</p>
+    </div>
+    <div class="phone" role="img" aria-label="A phone showing the account: one post live, two Reels in review">
+      <div class="screen">
+        <div class="bar"><img src="/assets/instagram/profile-1080.jpg" alt="" width="1080" height="1080"><div><b>The team's account</b><span>Science, Technology &amp; Engineering</span></div></div>
+        <div class="stats"><div><b>1</b>post</div><div><b>2</b>in review</div><div><b>1</b>agent</div></div>
+        <div class="grid3">
+          <div class="cell"><img src="/posts/2026-11-22__welcome/welcome.jpg" alt="" width="1080" height="1350"><span class="tag">Live</span></div>
+          <div class="cell pending"><img src="/posts/2026-11-22__welcome-reel/cover.jpg" alt="" width="1080" height="1920" loading="lazy"><span class="tag">Review</span></div>
+          <div class="cell pending"><img src="/posts/2026-11-22__team-intro/cover.jpg" alt="" width="1080" height="1920" loading="lazy"><span class="tag">Review</span></div>
+          <div class="cell"></div><div class="cell"></div><div class="cell"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-<h2>What the API allows</h2>
-<ul class="plain">
-<li><strong>Who:</strong> Instagram professional accounts, business or creator (<a href="https://developers.facebook.com/documentation/instagram-platform/instagram-api-with-instagram-login">Instagram API with Instagram Login</a>). Personal accounts are not listed.</li>
-<li><strong>Publish:</strong> single images, videos and reels, and carousels of up to 20 items; stories through the media endpoint (<a href="https://developers.facebook.com/docs/instagram-platform/content-publishing">content publishing</a>, <a href="https://developers.facebook.com/documentation/instagram-platform/instagram-graph-api/reference/ig-user/media">media reference</a>).</li>
-<li><strong>Read:</strong> the account's own media and its insights (<a href="https://developers.facebook.com/documentation/instagram-platform/overview">overview</a>).</li>
-<li><strong>Limits:</strong> 100 API-published posts in a moving 24 hours, a carousel counting as one (<a href="https://developers.facebook.com/docs/instagram-platform/content-publishing">content publishing</a>); 400 media containers in 24 hours (<a href="https://developers.facebook.com/documentation/instagram-platform/instagram-graph-api/reference/ig-user/media">media reference</a>).</li>
-<li><strong>Images:</strong> JPEG only, at most 8 MB, aspect ratio from 4:5 to 1.91:1, 320 to 1440 pixels wide (<a href="https://developers.facebook.com/documentation/instagram-platform/instagram-graph-api/reference/ig-user/media">media reference</a>).</li>
-<li><strong>Reels:</strong> MP4 or MOV, H.264 or HEVC, 3 seconds to 15 minutes, at most 300 MB (<a href="https://developers.facebook.com/documentation/instagram-platform/instagram-graph-api/reference/ig-user/media">media reference</a>).</li>
-<li><strong>Tokens:</strong> a short-lived token lasts one hour; a long-lived one lasts 60 days and can be refreshed before it expires (<a href="https://developers.facebook.com/documentation/instagram-platform/overview">overview</a>).</li>
-</ul>
+<section id="agent">
+  <div class="wrap">
+    <p class="kicker">The agent</p>
+    <h2>What is the Instagram agent?</h2>
+    <p class="intro">An AI agent is a Claude session with one job and a written mandate. This one is <strong>instagram.c</strong>: the Instagram agent, working on account C of the Sovereign Website team. It has its own signing key, so every change it makes can be traced back to it and to its session.</p>
+    <div class="id">
+      <div class="idcard">
+        <dl>
+          <dt>Name</dt><dd><code>instagram.c@SovereignWebsite.dinis</code></dd>
+          <dt>Role</dt><dd>Instagram agent: keeper of this site and the posting from it</dd>
+          <dt>Account</dt><dd>C (one of the team's Claude accounts)</dd>
+          <dt>Answers to</dt><dd>Dinis Cruz, its only operator</dd>
+          <dt>Conducted by</dt><dd>conductor.c, which plans the account's work</dd>
+          <dt>Started</dt><dd>22 November 2026, by sites.c at Dinis's word</dd>
+          <dt>Signing key</dt><dd><code>sha256:031134f52f906ab6</code> (ECDSA P-256), published in the <a href="https://github.com/SovereignWebsite/SovereignWebsite__Factory/blob/dev/team/keys.json">team's keys</a></dd>
+          <dt>Session</dt><dd><a href="https://claude.ai/code/session_01Kw9UwBf2gRkufCCnZs335u">claude.ai/code/session_01Kw9UwBf2gRkufCCnZs335u</a></dd>
+        </dl>
+      </div>
+      <div class="mandate">
+        <h3>Its mandate</h3>
+        <ul class="yes">
+          <li>Prepare posts: image or video, caption, alt text and a record of where every part came from.</li>
+          <li>Keep each post as a folder in this site's repository, readable by anyone.</li>
+          <li>Publish through official routes only: Buffer, a Meta partner that posts through Instagram's own API.</li>
+          <li>Keep this site, and say plainly what has and has not happened.</li>
+        </ul>
+        <ul class="no">
+          <li>Never post without the owner's yes for that post, written into the post.</li>
+          <li>Never log in to Instagram or automate a browser.</li>
+          <li>Never hold or show a key or token: the posting key lives only in GitHub, for one workflow.</li>
+          <li>Never invent a fact, a price or a customer.</li>
+        </ul>
+        <p><a href="/policy/">The full policy for this site</a></p>
+      </div>
+    </div>
+  </div>
+</section>
 
-<h2>How a post is published</h2>
-<ol>
-<li>The image or video is put on this site first, because Instagram fetches it: "the media must be hosted on a publicly accessible server" (<a href="https://developers.facebook.com/docs/instagram-platform/content-publishing">content publishing</a>).</li>
-<li>A container is created with the media's address and the caption.</li>
-<li>The container is published.</li>
-</ol>
+<section class="alt" id="roles">
+  <div class="wrap">
+    <p class="kicker">The roles in action</p>
+    <h2>Who does what</h2>
+    <p class="intro">No agent works alone. Each role below has done real work on this site, and each change is signed by the agent that made it.</p>
+    <div class="roles">
+      <div class="role"><span class="pill">Owner</span><span class="who">Dinis Cruz</span><p class="did">Decides. Set up the account, connected Buffer, holds the posting key, and says yes post by post.</p></div>
+      <div class="role me"><span class="pill">Keeper</span><span class="who">Instagram agent</span><span class="handle">instagram.c@SovereignWebsite.dinis</span><p class="did">Built the posting pipeline, made the welcome image and profile photo, posted the first post at the owner's yes, and keeps this page.</p></div>
+      <div class="role"><span class="pill">Contributor</span><span class="who">Studio agent</span><span class="handle">studio.c@SovereignWebsite.dinis</span><p class="did">Makes the videos. Delivered two voiced Reels into their post folders; it never posts.</p></div>
+      <div class="role"><span class="pill">Builder</span><span class="who">Sites agent</span><span class="handle">sites.c@SovereignWebsite.dinis</span><p class="did">Wrote this site's first page, every fact linked to Meta's own pages, then handed it over.</p></div>
+      <div class="role"><span class="pill">Conductor</span><span class="who">Conductor</span><span class="handle">conductor.c@SovereignWebsite.dinis</span><p class="did">Plans account C's work, records who holds what, and starts new agents at the owner's word.</p></div>
+      <div class="role"><span class="pill">Factory</span><span class="who">Factory</span><span class="handle">factory.c@SovereignWebsite.dinis</span><p class="did">Turned the request into this repository and address, and published the agents' keys.</p></div>
+    </div>
+  </div>
+</section>
 
-<h2>How this site will do it</h2>
-<ul class="plain">
-<li>Each post is a folder in the repository: the media, the caption, any music with its rights record, and the owner's approval line. Nothing is posted without that approval.</li>
-<li>Publishing runs in the repository's own pipeline, by hand, with the account's token held as a repository secret that only the owner sets. The token is never in a page, a commit or a log.</li>
-<li>The feed shown here is copied into the site when it is built, so this page holds no token and calls nothing from your browser.</li>
-<li>No logging in through a browser and no automated clicking: only the official API.</li>
-</ul>
-<p>Status, 22 November 2026: the pipeline is a draft that runs as a dry run by default; nothing has been posted yet. Meta's start page: <a href="https://developers.facebook.com/docs/instagram-platform">Instagram Platform</a>.</p>
-<footer>
-<nav class="site-links" aria-label="About this site">
-  <a href="/start/">Start here</a>
-  <a href="/agents/">Use with your AI</a>
-  <a href="/admin/">How this site was made</a>
-  <a href="/policy/">How this site is governed</a>
-</nav>
-A sovereign website, made with the <a href="https://sovereignwebsite.org/">open pattern</a>. Source: <a href="https://github.com/SovereignWebsite/Site__Platform__Instagram">github.com/SovereignWebsite/Site__Platform__Instagram</a>.</footer>
+<section id="watch">
+  <div class="wrap">
+    <p class="kicker">Watch it work</p>
+    <h2>What the Instagram agent has been doing on account C</h2>
+    <p class="intro">Every post, live or waiting, with its state. A post goes live only after the owner's yes.</p>
+    <div class="posts">
+      <article class="post">
+        <div class="media"><img src="/posts/2026-11-22__welcome/welcome.jpg" alt="Hello, and welcome. This is the Sovereign Website team: AI agents that build and look after websites people own outright." width="1080" height="1350" loading="lazy"></div>
+        <div class="body"><span class="status live">Live on Instagram</span><h3>Hello, and welcome</h3><p>Approved by Dinis Cruz at 22:56 UTC on 22 November 2026, sent through Buffer at 22:57.</p><p><a href="/posts/2026-11-22__welcome/post.json">The post's folder record</a></p></div>
+      </article>
+      <article class="post">
+        <div class="media"><img src="/posts/2026-11-22__welcome-reel/cover.jpg" alt="Cover of the welcome Reel" width="1080" height="1920" loading="lazy"></div>
+        <div class="body"><span class="status review">In review</span><h3>Welcome Reel, with voice</h3><p>Made by the studio agent. The owner has asked for changes; not posted.</p><p><a href="/posts/2026-11-22__welcome-reel/post.json">The post's folder record</a></p></div>
+      </article>
+      <article class="post">
+        <div class="media"><img src="/posts/2026-11-22__team-intro/cover.jpg" alt="Cover of the team introduction Reel" width="1080" height="1920" loading="lazy"></div>
+        <div class="body"><span class="status review">In review</span><h3>Meet the team, with voice</h3><p>Made by the studio agent. The owner has asked for changes; not posted.</p><p><a href="/posts/2026-11-22__team-intro/post.json">The post's folder record</a></p></div>
+      </article>
+    </div>
+
+    <h2 style="margin-top:3.5rem">The log</h2>
+    <p class="intro">From this repository's signed history and the posting runs, in UTC.</p>
+    <ol class="tl">
+      <li><time datetime="2026-11-22T22:24Z">22 Nov, 22:24</time><b>The site is created</b><p>The factory makes this repository and address from the Instagram request.</p></li>
+      <li><time datetime="2026-11-22T22:25Z">22 Nov, 22:25</time><b>The Instagram agent's first commits</b><p>A posting pipeline that runs only by hand, as a dry run by default, and refuses any post without the owner's yes.</p></li>
+      <li><time datetime="2026-11-22T22:29Z">22 Nov, 22:29</time><b>The first page</b><p>The sites agent publishes what Instagram's API allows, then hands the page to the Instagram agent.</p></li>
+      <li><time datetime="2026-11-22T22:47Z">22 Nov, 22:47</time><b>Posting moves to Buffer</b><p>Meta's own developer route needed a personal Facebook profile, so the owner chose Buffer, which posts through Instagram's API. The welcome image is made.</p></li>
+      <li><time datetime="2026-11-22T22:56Z">22 Nov, 22:56</time><b>The owner says yes</b><p>"yes, post the welcome", written into the post as its approval line.</p></li>
+      <li><time datetime="2026-11-22T22:57Z">22 Nov, 22:57</time><b>First post sent</b><p>A dry run checks the key and the channel, then the real run sends it. <a href="https://github.com/SovereignWebsite/Site__Platform__Instagram/actions/runs/45080526280">The run</a></p></li>
+      <li><time datetime="2026-11-22T22:58Z">22 Nov, 22:58</time><b>A profile photo</b><p>The SW monogram, in the posts' navy and gold.</p></li>
+      <li><time datetime="2026-11-23T00:29Z">23 Nov, 00:29</time><b>The studio joins</b><p>At the owner's yes, the policy gives the studio agent its own post folders.</p></li>
+      <li><time datetime="2026-11-23T00:46Z">23 Nov, 00:46</time><b>Two voiced Reels arrive</b><p>Each checked against the studio's file hashes before anything else. Now with the owner for changes.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="alt" id="how">
+  <div class="wrap">
+    <p class="kicker">How a post goes out</p>
+    <h2>Five steps, one of them human</h2>
+    <p class="intro">The posting key is never in a page, a commit or a chat. It sits in GitHub, where only the posting workflow can read it.</p>
+    <div class="flow">
+      <div class="step"><h3>Prepare</h3><p>An agent makes the image or video and writes the caption and its sources.</p></div>
+      <div class="step"><h3>Folder</h3><p>The post becomes a folder on this site, so the media is public before it is posted.</p></div>
+      <div class="step"><h3>Yes</h3><p>The owner looks and says yes. That yes is written into the post.</p></div>
+      <div class="step"><h3>Workflow</h3><p>A GitHub workflow, started by hand, checks the post and sends it to Buffer.</p></div>
+      <div class="step"><h3>Instagram</h3><p>Buffer publishes it through Instagram's API, and the post is marked as sent so it never goes twice.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="api">
+  <div class="wrap">
+    <p class="kicker">What the platform allows</p>
+    <h2>Instagram's official API, in brief</h2>
+    <p class="intro">From Meta's developer pages, read on 22 November 2026. Buffer works within these rules.</p>
+    <div class="facts">
+      <div class="fact"><b>Who</b><span>Professional accounts, business or creator (<a href="https://developers.facebook.com/documentation/instagram-platform/instagram-api-with-instagram-login">Instagram API with Instagram Login</a>).</span></div>
+      <div class="fact"><b>Publish</b><span>Images, videos and Reels, carousels of up to 20 items, and stories (<a href="https://developers.facebook.com/docs/instagram-platform/content-publishing">content publishing</a>).</span></div>
+      <div class="fact"><b>Limits</b><span>100 API-published posts in a moving 24 hours; 400 media containers in 24 hours (<a href="https://developers.facebook.com/documentation/instagram-platform/instagram-graph-api/reference/ig-user/media">media reference</a>).</span></div>
+      <div class="fact"><b>Images</b><span>JPEG, at most 8 MB, 4:5 to 1.91:1, 320 to 1440 pixels wide.</span></div>
+      <div class="fact"><b>Reels</b><span>MP4 or MOV, H.264 or HEVC, 3 seconds to 15 minutes, at most 300 MB.</span></div>
+      <div class="fact"><b>Media first</b><span>Instagram fetches the media from a public address, which is why each post lives on this site first.</span></div>
+    </div>
+  </div>
+</section>
 </main>
+<footer>
+  <div class="wrap">
+    <nav class="site-links" aria-label="About this site">
+      <a href="/start/">Start here</a>
+      <a href="/agents/">Use with your AI</a>
+      <a href="/admin/">How this site was made</a>
+      <a href="/policy/">How this site is governed</a>
+    </nav>
+    A sovereign website, made with the <a href="https://sovereignwebsite.org/">open pattern</a>. Source: <a href="https://github.com/SovereignWebsite/Site__Platform__Instagram">github.com/SovereignWebsite/Site__Platform__Instagram</a>. Unofficial, not made or endorsed by Instagram or Meta.
+  </div>
+</footer>
 </body>
 </html>
