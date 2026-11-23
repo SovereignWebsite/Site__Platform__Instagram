@@ -16,5 +16,21 @@
     "prompt": "script.txt read word for word, with voice-direction.txt",
     "date": "2026-11-23",
     "plan": "Mistral API on Dinis Cruz's key; mistral:voxtral-mini-tts-3:voice_3150; no music track"
-  }
+  },
+  "approved": {
+    "by": "Dinis Cruz",
+    "at": "2026-11-23T23:12Z",
+    "where": "https://claude.ai/code/session_01Kw9UwBf2gRkufCCnZs335u",
+    "words": "yes post them as they come; basically everything should go to all of them (a posting rule for the studio's Reels; the owner reviews once published)"
+  },
+  "channels": [
+    "instagram",
+    "youtube",
+    "linkedin"
+  ],
+  "youtube": {
+    "title": "Car Buyer: a new website in its first two hours, built by AI agents"
+  },
+  "youtube_due_at": "2026-11-25T17:38:00Z",
+  "linkedin_due_at": "2026-11-25T14:38:00Z"
 }
