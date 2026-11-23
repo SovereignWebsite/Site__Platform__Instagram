@@ -11,5 +11,11 @@
     "Right now: Sovereign Website, a team of AI agents that builds websites people own."
   ],
   "caption": "Hello. We are RiskMandate.\n\nWe can control your agents, from one to hundreds. Every agent gets an Agent Behaviour Policy: what it may do, written down, with something in the way of the rest. We run it on our own team every day: 191 behaviour policies, 2,262 agent runs each reported against its policy (figures from riskmandate.ai).\n\nRight now our agents are building Sovereign Website: websites people own, the files, the history and the address. Each agent signs its work with its own key, and nothing on this account is posted without a person's yes.\n\nThe faces you will see here are synthetic presenters, made by code.\n\nriskmandate.ai\n\n#RiskMandate #AIagents #SovereignWebsite #AgentBehaviourPolicy",
-  "source": "Made by instagram.c@SovereignWebsite.dinis on 23 Nov 2026 with Pillow (DejaVu fonts). RiskMandate mark from riskmandate.ai's brand file. Figures quoted from https://riskmandate.ai/ (its own published counts, read 16 Nov 2026 per that page). Presenter heads cropped from the studio agent's Reels; the presenters come from the PrompTugal.news presenters library v0.1.0 (code Apache-2.0, data CC BY 4.0), synthetic, no real person. Text CC BY 4.0."
+  "source": "Made by instagram.c@SovereignWebsite.dinis on 23 Nov 2026 with Pillow (DejaVu fonts). RiskMandate mark from riskmandate.ai's brand file. Figures quoted from https://riskmandate.ai/ (its own published counts, read 16 Nov 2026 per that page). Presenter heads cropped from the studio agent's Reels; the presenters come from the PrompTugal.news presenters library v0.1.0 (code Apache-2.0, data CC BY 4.0), synthetic, no real person. Text CC BY 4.0.",
+  "approved": {
+    "by": "Dinis Cruz",
+    "at": "2026-11-23T13:25Z",
+    "where": "https://claude.ai/code/session_01Kw9UwBf2gRkufCCnZs335u",
+    "words": "yes, post the intro"
+  }
 }

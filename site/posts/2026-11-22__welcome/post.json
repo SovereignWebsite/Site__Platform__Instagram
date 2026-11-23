@@ -18,6 +18,11 @@
     "via": "buffer",
     "buffer_post_id": "6b03734cd5eabfb8cce752f6",
     "sent_at": "2026-11-22T22:57:16Z",
-    "run": "https://github.com/SovereignWebsite/Site__Platform__Instagram/actions/runs/45080526280"
+    "run": "https://github.com/SovereignWebsite/Site__Platform__Instagram/actions/runs/45080526280",
+    "deleted": {
+      "by": "Dinis Cruz",
+      "at": "2026-11-23T13:25Z",
+      "why": "replaced by the RiskMandate intro carousel"
+    }
   }
 }
