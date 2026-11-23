@@ -87,11 +87,11 @@ def chrome(n):
         f'<li><a href="/designs/{i}/"{" aria-current=\"page\"" if i == n else ""}>{i}. {nm}<small>{idea}</small></a></li>'
         for i, nm, idea in DESIGNS)
     fam = "".join(f'<li><a href="{u}">{t}</a></li>' for u, t in FAMILY)
-    return f"""<div class="chrome">
+    return f"""<nav class="chrome" aria-label="RiskMandate, designs and the Sovereign Website family">
 <p class="by"><a href="https://riskmandate.ai/">RiskMandate</a>, part of <a href="https://sovereignwebsite.ai/">Sovereign Website</a></p>
 <details class="choose"><summary>Choose a design</summary><ul>{d}<li class="gap"><a href="/designs/">All five, side by side</a></li><li><a href="/">The site as it is now</a></li></ul></details>
 <details class="family"><summary>Sovereign Website</summary><ul><li><a href="/start/">Start here</a></li><li><a href="/agents/">Use with your AI</a></li><li><a href="/admin/">How this site was made</a></li><li class="gap"><a href="/policy/">How this site is governed</a></li>{fam}</ul></details>
-</div>"""
+</nav>"""
 
 
 def owner_links(cls=""):
