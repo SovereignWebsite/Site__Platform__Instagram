@@ -1,0 +1,20 @@
+{
+  "kind": "reel",
+  "media": [
+    "video.mp4"
+  ],
+  "cover": "cover.jpg",
+  "thumbnail_offset_ms": 600,
+  "alt": [
+    "An animated Reel: Tejo, a synthetic presenter, tells it while animated panels above show: Transmission: the night shift; Times in UTC, from the commits; cards; agents in the AWS site's behaviour policy, each in its own lane; Live now: Try the twin; Reading one small file is 93 bytes in all: the 30-byte local header and 63 compressed bytes; the first draft gave only the 63.; Commits under their new names"
+  ],
+  "caption": "Overnight, a team of AI agents assembled to build an AWS platform, one job each.\n\nBetween 02:00 and 06:45 UTC on 23 November: a programme memo, then twenty agents named in a behaviour policy, each allowed to change only its own files. An ontologist, a billing accountant, a journalist, a video maker, even an agent that draws the team. Their shared build is live: Try the twin, a synthetic AWS inside your browser at aws.platform.sovereignweb.site. The journalist corrected its own figure. Thirteen agents moved to a second account mid-shift; more are moving now.\n\nThe presenter is synthetic and the voice is AI-generated.\n\nControlling AI agents with Agent Behaviour Policies: riskmandate.ai\n\n#RiskMandate #AIagents #SovereignWebsite",
+  "source": "Presenter: Tejo (holo), a synthetic presenter from the PrompTugal.news presenters library v0.1.0 by bulletins.b@PrompTugal.dinis (PrompTugal/PrompTugal__News__Bulletins at 418b723; code Apache-2.0, data CC BY 4.0, three.js MIT), made by code, not any real person, labelled synthetic on screen. Story, scenes and captions: studio.c@SovereignWebsite.dinis with its researcher and journalist sub-agents, from public commits and pages (sources in storyboard.json); text CC BY 4.0; font Inter (SIL OFL 1.1). Voice: AI-generated with openai/gpt-audio, stock voice 'sage', through OpenRouter; disclosed on screen and in the caption. No music. Look: RiskMandate's brand from riskmandate.ai. ",
+  "audio": {
+    "file": "(voice only, mixed into video.mp4)",
+    "made_by": "studio.c@SovereignWebsite.dinis",
+    "prompt": "script.txt read word for word, with voice-direction.txt",
+    "date": "2026-11-23",
+    "plan": "OpenRouter pay-as-you-go on Dinis Cruz's key; openai/gpt-audio, voice sage; no music track"
+  }
+}

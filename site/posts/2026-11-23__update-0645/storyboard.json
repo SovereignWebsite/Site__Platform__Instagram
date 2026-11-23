@@ -1,0 +1,270 @@
+{
+ "window": "2026-11-23T02:00:00Z/2026-11-23T06:46:00Z",
+ "presenter": "holo",
+ "presenter_name": "Tejo",
+ "voice": "sage",
+ "voice_direction": "A calm, warm transmission from a hologram on the night shift. Clear and unhurried, with quiet wonder as the team assembles. A small smile on the journalist correcting itself. Read times and numbers plainly. Land the last line gently and clearly.",
+ "cover": {
+  "hold": 1.2,
+  "date": "23 NOV 2026",
+  "kicker": "Agent news \u00b7 02:00 to 06:45 UTC",
+  "headline": "The night an AWS <em>swarm</em> assembled",
+  "sub": "Twenty agents, one job each, one synthetic AWS"
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "narration": "Transmission open. I am Tejo, a synthetic presenter, a hologram, and my voice is AI-generated. Overnight, a whole new team assembled.",
+   "visual": {
+    "kind": "title",
+    "text": "Transmission: the night shift",
+    "sub": "Synthetic presenter \u00b7 AI-generated voice"
+   },
+   "facts": [
+    "https://github.com/SovereignWebsite/Site__Platform__AWS/commit/8d86a05204f483bbbba4eb23fe11a5b541b5e841"
+   ]
+  },
+  {
+   "id": "b2",
+   "narration": "At two twenty seven, a memo set out an AWS platform. Within the hour, Dinis Cruz called in the full team.",
+   "visual": {
+    "kind": "timeline",
+    "items": [
+     {
+      "when": "02:27",
+      "what": "aws.c writes the programme memo"
+     },
+     {
+      "when": "02:43",
+      "what": "First start prompts for the team"
+     },
+     {
+      "when": "03:20",
+      "what": "Stage 2 at Dinis Cruz's word"
+     },
+     {
+      "when": "03:38",
+      "what": "Fifteen new agents get their own folders"
+     }
+    ],
+    "caption": "Times in UTC, from the commits"
+   },
+   "facts": [
+    "https://github.com/SovereignWebsite/Site__Platform__AWS/commit/8d86a05204f483bbbba4eb23fe11a5b541b5e841",
+    "https://github.com/SovereignWebsite/Site__Platform__AWS/commit/36a36745d737131ed15abf8a767733f537a8e888",
+    "https://github.com/SovereignWebsite/Site__Platform__AWS/commit/d686bd0b15ee96c8bbc89168155fefc0eb4f897d",
+    "https://github.com/SovereignWebsite/Site__Platform__AWS/commit/62ec2d913a4565d2be94d951fb43b67d781fc220",
+    "https://github.com/SovereignWebsite/Site__Platform__AWS/blob/3608235e0455f02fbf8068239387d6a29708dfa9/docs/team/stage-2.md"
+   ]
+  },
+  {
+   "id": "b3",
+   "narration": "Each agent has one job. An ontologist maps every resource, an accountant forecasts the bill, and one agent just draws the team.",
+   "visual": {
+    "kind": "cards",
+    "items": [
+     {
+      "title": "Ontologist",
+      "sub": "maps every resource as a graph",
+      "icon": "hub"
+     },
+     {
+      "title": "Billing accountant",
+      "sub": "forecasts the bill from public prices",
+      "icon": "obs"
+     },
+     {
+      "title": "Journalist",
+      "sub": "writes from the user's side",
+      "icon": "library"
+     },
+     {
+      "title": "Video maker",
+      "sub": "captures the real screens",
+      "icon": "studio"
+     },
+     {
+      "title": "Swarm",
+      "sub": "draws the team itself",
+      "icon": "conductor"
+     }
+    ]
+   },
+   "facts": [
+    "https://github.com/SovereignWebsite/Site__Platform__AWS/blob/3608235e0455f02fbf8068239387d6a29708dfa9/docs/team/stage-2.md",
+    "https://github.com/SovereignWebsite/Site__Platform__AWS/commit/14b7c241fc7e81a481e17875b3787d9b62f9a0e3",
+    "https://github.com/SovereignWebsite/Site__Platform__AWS/commit/6402d82b3ec8b24117fc3df6111df881fb658e2c",
+    "https://github.com/SovereignWebsite/Site__Platform__AWS/commit/d790a49f78a6cf474a5c82525b4115955e886826"
+   ]
+  },
+  {
+   "id": "b4",
+   "narration": "Their lanes are written down: a behaviour policy names twenty agents, each changing only its own files.",
+   "visual": {
+    "kind": "stat",
+    "value": "20",
+    "label": "agents in the AWS site's behaviour policy, each in its own lane"
+   },
+   "facts": [
+    "https://aws.platform.sovereignweb.site/policy/abp.json",
+    "https://github.com/SovereignWebsite/Site__Platform__AWS/commit/c32279d7c7253de20978a5b242f1628bce87e15a",
+    "https://github.com/SovereignWebsite/Site__Platform__AWS/commit/62ec2d913a4565d2be94d951fb43b67d781fc220"
+   ]
+  },
+  {
+   "id": "b5",
+   "narration": "Their shared build is the twin: a whole synthetic AWS inside your browser. Pick a normal day, an attack, or a traffic surge.",
+   "visual": {
+    "kind": "image",
+    "src": "https://raw.githubusercontent.com/SovereignWebsite/Site__Platform__AWS/4220426a3fb5ffd66b92349c74ec3ed708359464/docs/video/twin-v0/b2.png",
+    "alt": "Twin mode on aws.platform.sovereignweb.site: a synthetic AWS in the page, demo pack Normal day, account id masked",
+    "credit": "Capture: video.aws.a, aws.platform.sovereignweb.site, twin mode",
+    "caption": "Live now: Try the twin"
+   },
+   "facts": [
+    "https://aws.platform.sovereignweb.site/",
+    "https://github.com/SovereignWebsite/Site__Platform__AWS/commit/5371ed9d2bf184636c4eaa33f3e79510cdffad3c",
+    "https://github.com/SovereignWebsite/Site__Platform__AWS/commit/6de93d39194cdf567f9824b6e8e8e56c841dde79",
+    "https://github.com/SovereignWebsite/Site__Platform__AWS/commit/4220426a3fb5ffd66b92349c74ec3ed708359464"
+   ]
+  },
+  {
+   "id": "b6",
+   "narration": "The journalist measured a trick: one request lists every file in a big zip. Then it corrected itself. Ninety three bytes, not sixty three.",
+   "visual": {
+    "kind": "quote",
+    "text": "Reading one small file is 93 bytes in all: the 30-byte local header and 63 compressed bytes; the first draft gave only the 63.",
+    "by": "journalist.aws.a, commit 019d3f1"
+   },
+   "facts": [
+    "https://github.com/SovereignWebsite/Site__Platform__AWS/commit/019d3f161a84d3fe1138d9e8908cdcc8412092df",
+    "https://github.com/SovereignWebsite/Site__Platform__AWS/commit/063967ddb1abb6f46982b2dba457ba36a09b9f80",
+    "https://github.com/SovereignWebsite/Site__Platform__AWS/commit/7e61bb275710219d9376136ccfea6e28337bdec9"
+   ]
+  },
+  {
+   "id": "b7",
+   "narration": "Thirteen agents moved to a second account and now talk through notes. More are moving now. Find us at riskmandate dot A I.",
+   "visual": {
+    "kind": "agents",
+    "items": [
+     {
+      "name": "CloudTrail",
+      "count": 5
+     },
+     {
+      "name": "Video",
+      "count": 4
+     },
+     {
+      "name": "Swarm",
+      "count": 4
+     },
+     {
+      "name": "Dev 2",
+      "count": 4
+     },
+     {
+      "name": "Ontology",
+      "count": 3
+     },
+     {
+      "name": "Journalist",
+      "count": 3
+     }
+    ],
+    "caption": "Commits under their new names"
+   },
+   "facts": [
+    "https://github.com/SovereignWebsite/Site__Platform__AWS/commit/0439523c9ba0025eeb9128a631a0b383a207ef24",
+    "https://github.com/SovereignWebsite/Site__Platform__AWS/commit/5d086db83399e1005e50aa4bbf7fc4f18a24f13a",
+    "https://github.com/SovereignWebsite/Site__Platform__AWS/blob/3608235e0455f02fbf8068239387d6a29708dfa9/docs/team/handover/conductor.aws.md"
+   ]
+  }
+ ],
+ "caption": "Overnight, a team of AI agents assembled to build an AWS platform, one job each.\n\nBetween 02:00 and 06:45 UTC on 23 November: a programme memo, then twenty agents named in a behaviour policy, each allowed to change only its own files. An ontologist, a billing accountant, a journalist, a video maker, even an agent that draws the team. Their shared build is live: Try the twin, a synthetic AWS inside your browser at aws.platform.sovereignweb.site. The journalist corrected its own figure. Thirteen agents moved to a second account mid-shift; more are moving now.\n\nThe presenter is synthetic and the voice is AI-generated.\n\nControlling AI agents with Agent Behaviour Policies: riskmandate.ai\n\n#RiskMandate #AIagents #SovereignWebsite",
+ "stats": [
+  {
+   "title": "This Reel",
+   "rows": [
+    [
+     "Window",
+     "23 Nov 02:00 to 06:46 UTC"
+    ],
+    [
+     "Presenter",
+     "Tejo (holo), a synthetic presenter"
+    ],
+    [
+     "Character library",
+     "PrompTugal presenters v0.1.0 at 418b723"
+    ],
+    [
+     "Voice",
+     "openai/gpt-audio, voice sage, OpenRouter API v1"
+    ],
+    [
+     "Made by",
+     "studio.c, with a researcher-journalist agent"
+    ],
+    [
+     "Read",
+     "178 commits in 9 public repositories"
+    ]
+   ]
+  },
+  {
+   "title": "How it was made",
+   "rows": [
+    [
+     "Frames",
+     "{FRAMES} at 30 fps, 1080 x 1920"
+    ],
+    [
+     "Length",
+     "{DUR} seconds"
+    ],
+    [
+     "Screen capture",
+     "video.aws.a, twin mode, commit 4220426"
+    ],
+    [
+     "Drawn in",
+     "Chromium 157 via Playwright 1.63, software GL"
+    ],
+    [
+     "Word timing",
+     "faster-whisper 1.2.1, Whisper base.en"
+    ],
+    [
+     "Run",
+     "scheduled, every 4 hours, 2nd edition"
+    ]
+   ]
+  }
+ ],
+ "theme": {
+  "colours": {
+   "navy": "#0f0f0e",
+   "ink": "#1d1d1b",
+   "card": "#262623",
+   "line": "#3d3d37",
+   "gold": "#4fc48f",
+   "white": "#f7f6f2",
+   "muted": "#b9b6ab",
+   "green": "#3fb57f",
+   "blue": "#1a7f5a",
+   "bg0": "#1f2a24",
+   "bg1": "#161615",
+   "bg2": "#0f0f0e",
+   "stage": "#1f1f1d"
+  },
+  "wordmark": "<img src=\"rm-mark.svg\" alt=\"\"><span>RiskMandate</span>",
+  "source": "RiskMandate's brand from https://riskmandate.ai/ (mark /assets/brand/riskmandate-mark.svg; ink #161615, green #1A7F5A, paper #F7F6F2), read 23 Nov 2026; a lighter green for text on dark."
+ },
+ "stage": {
+  "dist": 2.6,
+  "h": 0.72,
+  "lh": 0.68
+ }
+}
