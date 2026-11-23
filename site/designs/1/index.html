@@ -46,12 +46,15 @@ code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:
 .chrome small{display:block;font-size:.85rem;color:var(--muted);font-weight:400}
 main *{min-width:0}
 dd,.agent,.roles h3{overflow-wrap:anywhere}
+.rm{width:2rem;height:2rem;border-radius:.5rem;margin-right:.55rem;flex:none}
+.chrome .by{margin:0 auto 0 0;font-size:.9rem;color:var(--muted)}
+.chrome .by a{color:var(--fg)}
 .vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 @media print{.chrome,.skip{display:none}}
 @media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
 
-:root{--bg:#f4efe6;--fg:#1d1a16;--muted:#5a5249;--link:#a3271b;--focus:#a3271b;--ctl:#8a8076;--hover:#e8e0d2;--sheet:#25211d;--on-sheet:#f4efe6;--pencil:#a3271b;--line:#d9cfbf;--card:#fffdf8}
-@media (prefers-color-scheme:dark){:root{--bg:#171512;--fg:#efe9df;--muted:#bdb3a6;--link:#ff8a78;--focus:#ff8a78;--ctl:#8f857a;--hover:#2a2622;--sheet:#0b0a09;--on-sheet:#efe9df;--pencil:#ff8a78;--line:#3a352f;--card:#211e1a}}
+:root{--bg:#F7F6F2;--fg:#161615;--muted:#55534d;--link:#1A7F5A;--focus:#1A7F5A;--ctl:#7b7972;--hover:#ebe9e2;--sheet:#161615;--on-sheet:#F7F6F2;--pencil:#1A7F5A;--line:#dcd9cf;--card:#ffffff}
+@media (prefers-color-scheme:dark){:root{--bg:#161615;--fg:#F7F6F2;--muted:#bdbab2;--link:#3fbf8c;--focus:#3fbf8c;--ctl:#85837c;--hover:#24241f;--sheet:#0c0c0b;--on-sheet:#F7F6F2;--pencil:#3fbf8c;--line:#34332e;--card:#1f1f1d}}
 .wrap{max-width:68rem;margin:0 auto;padding:0 1rem}
 .mast{display:flex;flex-wrap:wrap;gap:.75rem;align-items:center;justify-content:space-between;padding:.75rem 0}
 .brand{font:700 1.25rem/1.1 Georgia,"Iowan Old Style","Times New Roman",serif;color:var(--fg);text-decoration:none;min-height:44px;display:inline-flex;align-items:center}
@@ -66,13 +69,13 @@ h3{font-size:1.1rem;margin:0 0 .25rem}
 .lede{font-size:1.15rem;max-width:42rem}
 .small{color:var(--muted);font-size:.95rem}
 .sheet{background:var(--sheet);color:var(--on-sheet);padding:clamp(1rem,4vw,2rem);margin:1.5rem 0;border-radius:.3rem;position:relative}
-.sheet .edge{display:flex;justify-content:space-between;font:700 .85rem/1 ui-monospace,Menlo,Consolas,monospace;letter-spacing:.1em;color:#e8c27a;margin-bottom:.75rem;flex-wrap:wrap;gap:.5rem}
+.sheet .edge{display:flex;justify-content:space-between;font:700 .85rem/1 ui-monospace,Menlo,Consolas,monospace;letter-spacing:.1em;color:#3fbf8c;margin-bottom:.75rem;flex-wrap:wrap;gap:.5rem}
 .frames{list-style:none;margin:0;padding:0;display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(min(100%,14rem),1fr))}
 .frames li{position:relative;background:#000;padding:.5rem .5rem 2.2rem}
 .frames img{aspect-ratio:4/5;object-fit:cover;width:100%}
-.frames .num{position:absolute;left:.6rem;bottom:.55rem;font:700 .85rem ui-monospace,Menlo,Consolas,monospace;color:#e8c27a}
-.frames .mark{position:absolute;right:.5rem;bottom:.4rem;font:700 .95rem Georgia,serif;color:#fff;background:#a3271b;padding:.1rem .55rem;border-radius:999px;transform:rotate(-4deg)}
-.frames li.live::after{content:"";position:absolute;inset:.1rem;border:3px solid #ff6b57;border-radius:46% 54% 50% 50%/52% 48% 52% 48%;pointer-events:none;transform:rotate(-1.5deg)}
+.frames .num{position:absolute;left:.6rem;bottom:.55rem;font:700 .85rem ui-monospace,Menlo,Consolas,monospace;color:#3fbf8c}
+.frames .mark{position:absolute;right:.5rem;bottom:.4rem;font:700 .95rem Georgia,serif;color:#fff;background:#1A7F5A;padding:.1rem .55rem;border-radius:999px;transform:rotate(-4deg)}
+.frames li.live::after{content:"";position:absolute;inset:.1rem;border:3px solid #3fbf8c;border-radius:46% 54% 50% 50%/52% 48% 52% 48%;pointer-events:none;transform:rotate(-1.5deg)}
 .frames .empty{display:grid;place-items:center;aspect-ratio:4/5;color:#cfc6b8;font-size:.95rem;text-align:center;border:1px dashed #6d655b}
 .cta{display:flex;flex-wrap:wrap;gap:.75rem;margin:1.25rem 0}
 .btn{display:inline-flex;align-items:center;min-height:44px;padding:.6rem 1.1rem;border-radius:.3rem;font-weight:600;text-decoration:none}
@@ -126,10 +129,11 @@ footer nav a{min-height:44px;display:inline-flex;align-items:center}
 <a class="skip" href="#main">Skip to content</a>
 <div class="wrap">
 <div class="chrome">
+<p class="by"><a href="https://riskmandate.ai/">RiskMandate</a>, part of <a href="https://sovereignwebsite.ai/">Sovereign Website</a></p>
 <details class="choose"><summary>Choose a design</summary><ul><li><a href="/designs/1/" aria-current="page">1. Contact Sheet<small>The account as a photographer's contact sheet: every post a frame, marked up by hand.</small></a></li><li><a href="/designs/2/">2. Approval Board<small>The five steps as a board, with each post sitting in its column and the human yes at the centre.</small></a></li><li><a href="/designs/3/">3. Logbook<small>The signed history is the page: a ledger of every change, with the crew list at the front.</small></a></li><li><a href="/designs/4/">4. On Air<small>A broadcast gallery: the live post on the programme monitor, the two Reels on preview.</small></a></li><li><a href="/designs/5/">5. Brief<small>Everything on one plain page, for reading fast or printing.</small></a></li><li class="gap"><a href="/designs/">All five, side by side</a></li><li><a href="/">The site as it is now</a></li></ul></details>
 <details class="family"><summary>Sovereign Website</summary><ul><li><a href="/start/">Start here</a></li><li><a href="/agents/">Use with your AI</a></li><li><a href="/admin/">How this site was made</a></li><li class="gap"><a href="/policy/">How this site is governed</a></li><li><a href="https://sovereignwebsite.ai/">Sovereign Website</a></li><li><a href="https://sovereignwebsite.org/">Principles</a></li><li><a href="https://sovereignwebsite.site/">Hosted</a></li><li><a href="https://hub.sovereignweb.site/">Hub</a></li><li><a href="https://agents.sovereignweb.site/">Agents</a></li><li><a href="https://vault.sovereignwebsite.site/">Vault</a></li><li><a href="https://agenticcells.ai/">AgentiCCells</a></li><li><a href="https://riskmandate.ai/">RiskMandate</a></li><li><a href="https://newsroom.sgit.ai/">Newsroom</a></li></ul></details>
 </div>
-<header class="mast"><a class="brand" href="/">Instagram</a><nav class="own" aria-label="This site"><a href="#agent">The agent</a><a href="#watch">Watch it work</a><a href="/start/">Start here</a><a href="/agents/">Use with your AI</a><a href="/admin/">How it was made</a></nav></header>
+<header class="mast"><a class="brand" href="/"><img class="rm" src="/designs/assets/riskmandate-mark.svg" alt="" width="64" height="64">Instagram</a><nav class="own" aria-label="This site"><a href="#agent">The agent</a><a href="#watch">Watch it work</a><a href="/start/">Start here</a><a href="/agents/">Use with your AI</a><a href="/admin/">How it was made</a></nav></header>
 </div>
 <main id="main">
 <div class="wrap hero">
@@ -183,7 +187,7 @@ footer nav a{min-height:44px;display:inline-flex;align-items:center}
 </main>
 <div class="wrap"><footer class="">
 <nav aria-label="Seed pages"><a href="/start/">Start here</a> <a href="/agents/">Use with your AI</a> <a href="/admin/">How this site was made</a> <a href="/policy/">How this site is governed</a> <a href="/llms.txt">llms.txt</a></nav>
-<p>A sovereign website: no cookies, no tracking, static files only. Source: <a href="https://github.com/SovereignWebsite/Site__Platform__Instagram">github.com/SovereignWebsite/Site__Platform__Instagram</a>. An unofficial site, not made or endorsed by Instagram or Meta.</p>
+<p>A sovereign website: no cookies, no tracking, static files only. The RiskMandate mark is from <a href="https://riskmandate.ai/">riskmandate.ai</a> (CC BY 4.0). Source: <a href="https://github.com/SovereignWebsite/Site__Platform__Instagram">github.com/SovereignWebsite/Site__Platform__Instagram</a>. An unofficial site, not made or endorsed by Instagram or Meta.</p>
 </footer>
 </div>
 </body>

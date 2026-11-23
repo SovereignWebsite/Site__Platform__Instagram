@@ -38,6 +38,9 @@ code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:
 .chrome small{display:block;font-size:.85rem;color:var(--muted);font-weight:400}
 main *{min-width:0}
 dd,.agent,.roles h3{overflow-wrap:anywhere}
+.rm{width:2rem;height:2rem;border-radius:.5rem;margin-right:.55rem;flex:none}
+.chrome .by{margin:0 auto 0 0;font-size:.9rem;color:var(--muted)}
+.chrome .by a{color:var(--fg)}
 .vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 @media print{.chrome,.skip{display:none}}
 @media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
@@ -85,6 +88,7 @@ def chrome(n):
         for i, nm, idea in DESIGNS)
     fam = "".join(f'<li><a href="{u}">{t}</a></li>' for u, t in FAMILY)
     return f"""<div class="chrome">
+<p class="by"><a href="https://riskmandate.ai/">RiskMandate</a>, part of <a href="https://sovereignwebsite.ai/">Sovereign Website</a></p>
 <details class="choose"><summary>Choose a design</summary><ul>{d}<li class="gap"><a href="/designs/">All five, side by side</a></li><li><a href="/">The site as it is now</a></li></ul></details>
 <details class="family"><summary>Sovereign Website</summary><ul><li><a href="/start/">Start here</a></li><li><a href="/agents/">Use with your AI</a></li><li><a href="/admin/">How this site was made</a></li><li class="gap"><a href="/policy/">How this site is governed</a></li>{fam}</ul></details>
 </div>"""
@@ -97,7 +101,7 @@ def owner_links(cls=""):
 def footer(cls=""):
     return f"""<footer class="{cls}">
 <nav aria-label="Seed pages"><a href="/start/">Start here</a> <a href="/agents/">Use with your AI</a> <a href="/admin/">How this site was made</a> <a href="/policy/">How this site is governed</a> <a href="/llms.txt">llms.txt</a></nav>
-<p>A sovereign website: no cookies, no tracking, static files only. Source: <a href="{REPO}">github.com/SovereignWebsite/Site__Platform__Instagram</a>. {UNOFFICIAL}</p>
+<p>A sovereign website: no cookies, no tracking, static files only. The RiskMandate mark is from <a href="https://riskmandate.ai/">riskmandate.ai</a> (CC BY 4.0). Source: <a href="{REPO}">github.com/SovereignWebsite/Site__Platform__Instagram</a>. {UNOFFICIAL}</p>
 </footer>
 </body>
 </html>
@@ -147,8 +151,8 @@ def post_fig(p, lazy=True, cls="post"):
 
 # ---------------------------------------------------------------- 1. Contact Sheet
 CSS1 = """
-:root{--bg:#f4efe6;--fg:#1d1a16;--muted:#5a5249;--link:#a3271b;--focus:#a3271b;--ctl:#8a8076;--hover:#e8e0d2;--sheet:#25211d;--on-sheet:#f4efe6;--pencil:#a3271b;--line:#d9cfbf;--card:#fffdf8}
-@media (prefers-color-scheme:dark){:root{--bg:#171512;--fg:#efe9df;--muted:#bdb3a6;--link:#ff8a78;--focus:#ff8a78;--ctl:#8f857a;--hover:#2a2622;--sheet:#0b0a09;--on-sheet:#efe9df;--pencil:#ff8a78;--line:#3a352f;--card:#211e1a}}
+:root{--bg:#F7F6F2;--fg:#161615;--muted:#55534d;--link:#1A7F5A;--focus:#1A7F5A;--ctl:#7b7972;--hover:#ebe9e2;--sheet:#161615;--on-sheet:#F7F6F2;--pencil:#1A7F5A;--line:#dcd9cf;--card:#ffffff}
+@media (prefers-color-scheme:dark){:root{--bg:#161615;--fg:#F7F6F2;--muted:#bdbab2;--link:#3fbf8c;--focus:#3fbf8c;--ctl:#85837c;--hover:#24241f;--sheet:#0c0c0b;--on-sheet:#F7F6F2;--pencil:#3fbf8c;--line:#34332e;--card:#1f1f1d}}
 .wrap{max-width:68rem;margin:0 auto;padding:0 1rem}
 .mast{display:flex;flex-wrap:wrap;gap:.75rem;align-items:center;justify-content:space-between;padding:.75rem 0}
 .brand{font:700 1.25rem/1.1 Georgia,"Iowan Old Style","Times New Roman",serif;color:var(--fg);text-decoration:none;min-height:44px;display:inline-flex;align-items:center}
@@ -163,13 +167,13 @@ h3{font-size:1.1rem;margin:0 0 .25rem}
 .lede{font-size:1.15rem;max-width:42rem}
 .small{color:var(--muted);font-size:.95rem}
 .sheet{background:var(--sheet);color:var(--on-sheet);padding:clamp(1rem,4vw,2rem);margin:1.5rem 0;border-radius:.3rem;position:relative}
-.sheet .edge{display:flex;justify-content:space-between;font:700 .85rem/1 ui-monospace,Menlo,Consolas,monospace;letter-spacing:.1em;color:#e8c27a;margin-bottom:.75rem;flex-wrap:wrap;gap:.5rem}
+.sheet .edge{display:flex;justify-content:space-between;font:700 .85rem/1 ui-monospace,Menlo,Consolas,monospace;letter-spacing:.1em;color:#3fbf8c;margin-bottom:.75rem;flex-wrap:wrap;gap:.5rem}
 .frames{list-style:none;margin:0;padding:0;display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(min(100%,14rem),1fr))}
 .frames li{position:relative;background:#000;padding:.5rem .5rem 2.2rem}
 .frames img{aspect-ratio:4/5;object-fit:cover;width:100%}
-.frames .num{position:absolute;left:.6rem;bottom:.55rem;font:700 .85rem ui-monospace,Menlo,Consolas,monospace;color:#e8c27a}
-.frames .mark{position:absolute;right:.5rem;bottom:.4rem;font:700 .95rem Georgia,serif;color:#fff;background:#a3271b;padding:.1rem .55rem;border-radius:999px;transform:rotate(-4deg)}
-.frames li.live::after{content:"";position:absolute;inset:.1rem;border:3px solid #ff6b57;border-radius:46% 54% 50% 50%/52% 48% 52% 48%;pointer-events:none;transform:rotate(-1.5deg)}
+.frames .num{position:absolute;left:.6rem;bottom:.55rem;font:700 .85rem ui-monospace,Menlo,Consolas,monospace;color:#3fbf8c}
+.frames .mark{position:absolute;right:.5rem;bottom:.4rem;font:700 .95rem Georgia,serif;color:#fff;background:#1A7F5A;padding:.1rem .55rem;border-radius:999px;transform:rotate(-4deg)}
+.frames li.live::after{content:"";position:absolute;inset:.1rem;border:3px solid #3fbf8c;border-radius:46% 54% 50% 50%/52% 48% 52% 48%;pointer-events:none;transform:rotate(-1.5deg)}
 .frames .empty{display:grid;place-items:center;aspect-ratio:4/5;color:#cfc6b8;font-size:.95rem;text-align:center;border:1px dashed #6d655b}
 .cta{display:flex;flex-wrap:wrap;gap:.75rem;margin:1.25rem 0}
 .btn{display:inline-flex;align-items:center;min-height:44px;padding:.6rem 1.1rem;border-radius:.3rem;font-weight:600;text-decoration:none}
@@ -230,7 +234,7 @@ def d1():
     stats = "".join(f"<div><b>{a}</b>{b}</div>" for a, b in STATS)
     return head(n, "Contact Sheet", DESIGNS[0][2], CSS1) + f"""<div class="wrap">
 {chrome(n)}
-<header class="mast"><a class="brand" href="/">Instagram</a>{owner_links("own")}</header>
+<header class="mast"><a class="brand" href="/"><img class="rm" src="/designs/assets/riskmandate-mark.svg" alt="" width="64" height="64">Instagram</a>{owner_links("own")}</header>
 </div>
 <main id="main">
 <div class="wrap hero">
@@ -287,8 +291,8 @@ def d1():
 
 # ---------------------------------------------------------------- 2. Approval Board (dark first)
 CSS2 = """
-:root{--bg:#0f1a2b;--fg:#eef1f6;--muted:#b3bfd0;--link:#ffcf6e;--focus:#ffcf6e;--ctl:#7d8ca3;--hover:#1c2a42;--col:#16243a;--card:#1f3150;--line:#2c4064;--gold:#ffcf6e;--on-gold:#1a1300;--ok:#7fdcae;--wait:#ffcf6e}
-@media (prefers-color-scheme:light){:root{--bg:#eef2f8;--fg:#0f1a2b;--muted:#46536a;--link:#7a4e00;--focus:#7a4e00;--ctl:#6a7890;--hover:#dfe6f1;--col:#ffffff;--card:#f6f8fc;--line:#c9d3e3;--gold:#7a4e00;--on-gold:#ffffff;--ok:#1d6b45;--wait:#7a4e00}}
+:root{--bg:#161615;--fg:#F7F6F2;--muted:#bdbab2;--link:#3fbf8c;--focus:#3fbf8c;--ctl:#85837c;--hover:#24241f;--col:#1f1f1d;--card:#2a2a27;--line:#3a3934;--gold:#3fbf8c;--on-gold:#0c0c0b;--ok:#3fbf8c;--wait:#ffcf6e}
+@media (prefers-color-scheme:light){:root{--bg:#F7F6F2;--fg:#161615;--muted:#55534d;--link:#1A7F5A;--focus:#1A7F5A;--ctl:#7b7972;--hover:#ebe9e2;--col:#ffffff;--card:#fbfaf7;--line:#dcd9cf;--gold:#1A7F5A;--on-gold:#ffffff;--ok:#1A7F5A;--wait:#7a4e00}}
 .wrap{max-width:84rem;margin:0 auto;padding:0 1rem}
 .mast{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.5rem 1rem;padding:.75rem 0;border-bottom:1px solid var(--line)}
 .brand{font-weight:800;font-size:1.2rem;color:var(--fg);text-decoration:none;display:inline-flex;align-items:center;gap:.6rem;min-height:44px}
@@ -382,7 +386,7 @@ def d2():
     facts = "".join(f'<div><b>{a}</b><span class="small">{b}</span></div>' for a, b in STATS)
     return head(n, "Approval Board", DESIGNS[1][2], CSS2) + f"""<div class="wrap">
 {chrome(n)}
-<header class="mast"><a class="brand" href="/"><img src="/assets/instagram/profile-1080.jpg" alt="" width="1080" height="1080">Instagram</a>{owner_links("own")}</header>
+<header class="mast"><a class="brand" href="/"><img src="/assets/instagram/profile-riskmandate-1080.jpg" alt="" width="1080" height="1080">Instagram</a>{owner_links("own")}</header>
 </div>
 <main id="main">
 <div class="wrap">
@@ -422,8 +426,8 @@ def d2():
 
 # ---------------------------------------------------------------- 3. Logbook
 CSS3 = """
-:root{--bg:#f3ecdc;--fg:#231d14;--muted:#5b5141;--link:#1f4f7a;--focus:#1f4f7a;--ctl:#857a66;--hover:#e7dcc5;--rule:#c9b993;--ink:#1f4f7a;--paper:#fbf6ea;--seal:#8c2a1c}
-@media (prefers-color-scheme:dark){:root{--bg:#1a1712;--fg:#efe7d6;--muted:#c2b7a2;--link:#9cc8f0;--focus:#9cc8f0;--ctl:#8d826e;--hover:#2a251d;--rule:#4a4234;--ink:#9cc8f0;--paper:#221e17;--seal:#f09a8a}}
+:root{--bg:#F7F6F2;--fg:#161615;--muted:#55534d;--link:#1A7F5A;--focus:#1A7F5A;--ctl:#7b7972;--hover:#ebe9e2;--rule:#cfcbbd;--ink:#1A7F5A;--paper:#ffffff;--seal:#161615}
+@media (prefers-color-scheme:dark){:root{--bg:#161615;--fg:#F7F6F2;--muted:#bdbab2;--link:#3fbf8c;--focus:#3fbf8c;--ctl:#85837c;--hover:#24241f;--rule:#3a3934;--ink:#3fbf8c;--paper:#1f1f1d;--seal:#F7F6F2}}
 body{font-size:1.0625rem}
 .wrap{max-width:62rem;margin:0 auto;padding:0 1rem}
 .mast{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.5rem;padding:.75rem 0;border-bottom:3px double var(--rule)}
@@ -493,7 +497,7 @@ def d3():
     stats = ", ".join(f"{a} {b}" for a, b in STATS)
     return head(n, "Logbook", DESIGNS[2][2], CSS3) + f"""<div class="wrap">
 {chrome(n)}
-<header class="mast"><a class="brand" href="/">Instagram</a>{owner_links("own")}</header>
+<header class="mast"><a class="brand" href="/"><img class="rm" src="/designs/assets/riskmandate-mark.svg" alt="" width="64" height="64">Instagram</a>{owner_links("own")}</header>
 </div>
 <main id="main">
 <div class="wrap">
@@ -543,8 +547,8 @@ def d3():
 
 # ---------------------------------------------------------------- 4. On Air (dark first, way out there)
 CSS4 = """
-:root{--bg:#07090d;--fg:#f2f4f8;--muted:#b4bccb;--link:#7fe0ff;--focus:#7fe0ff;--ctl:#7a8597;--hover:#151b26;--panel:#10151f;--bezel:#1b2230;--line:#2a3344;--tally:#ff4d4d;--prev:#3ee08f;--amber:#ffc24d}
-@media (prefers-color-scheme:light){:root{--bg:#e9ecf1;--fg:#0a0d12;--muted:#46505f;--link:#00557a;--focus:#00557a;--ctl:#6a7486;--hover:#d9dee7;--panel:#ffffff;--bezel:#cfd5df;--line:#bcc4d1;--tally:#b3141b;--prev:#0f6b3d;--amber:#7a4e00}}
+:root{--bg:#161615;--fg:#F7F6F2;--muted:#bdbab2;--link:#3fbf8c;--focus:#3fbf8c;--ctl:#85837c;--hover:#24241f;--panel:#1f1f1d;--bezel:#2a2a27;--line:#3a3934;--tally:#ff4d4d;--prev:#3fbf8c;--amber:#ffc24d}
+@media (prefers-color-scheme:light){:root{--bg:#F7F6F2;--fg:#161615;--muted:#55534d;--link:#1A7F5A;--focus:#1A7F5A;--ctl:#7b7972;--hover:#ebe9e2;--panel:#ffffff;--bezel:#F7F6F2;--line:#d3d0c5;--tally:#b3141b;--prev:#1A7F5A;--amber:#7a4e00}}
 .wrap{max-width:86rem;margin:0 auto;padding:0 1rem}
 .mast{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.5rem 1rem;padding:.6rem 0}
 .brand{font:800 1.1rem/1 ui-monospace,Menlo,Consolas,monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--fg);text-decoration:none;min-height:44px;display:inline-flex;align-items:center;gap:.6rem}
@@ -632,7 +636,7 @@ def d4():
     rundown = "".join(f"<li><h3>{h}</h3><p>{p}</p></li>" for h, p in STEPS)
     return head(n, "On Air", DESIGNS[3][2], CSS4) + f"""<div class="wrap">
 {chrome(n)}
-<header class="mast"><a class="brand" href="/"><span class="dot" aria-hidden="true"></span>Instagram</a>{owner_links("own")}</header>
+<header class="mast"><a class="brand" href="/"><span class="dot" aria-hidden="true"></span><img class="rm" src="/designs/assets/riskmandate-mark.svg" alt="" width="64" height="64">Instagram</a>{owner_links("own")}</header>
 </div>
 <main id="main">
 <div class="wrap">
@@ -685,8 +689,8 @@ def d4():
 
 # ---------------------------------------------------------------- 5. Brief
 CSS5 = """
-:root{--bg:#ffffff;--fg:#111111;--muted:#4a4a4a;--link:#0b4f8a;--focus:#0b4f8a;--ctl:#767676;--hover:#f0f0f0;--line:#d6d6d6}
-@media (prefers-color-scheme:dark){:root{--bg:#121212;--fg:#f1f1f1;--muted:#bdbdbd;--link:#8cc4ff;--focus:#8cc4ff;--ctl:#8a8a8a;--hover:#222;--line:#333}}
+:root{--bg:#ffffff;--fg:#161615;--muted:#55534d;--link:#1A7F5A;--focus:#1A7F5A;--ctl:#7b7972;--hover:#f2f1ec;--line:#dcd9cf}
+@media (prefers-color-scheme:dark){:root{--bg:#161615;--fg:#F7F6F2;--muted:#bdbab2;--link:#3fbf8c;--focus:#3fbf8c;--ctl:#85837c;--hover:#24241f;--line:#3a3934}}
 .wrap{max-width:42rem;margin:0 auto;padding:0 1rem}
 .mast{padding:.5rem 0 0}
 .brand{font:700 1.1rem Georgia,"Times New Roman",serif;color:var(--fg);text-decoration:none;min-height:44px;display:inline-flex;align-items:center}
@@ -733,7 +737,7 @@ def d5():
     stats = ", ".join(f"{a} {b}" for a, b in STATS)
     return head(n, "Brief", DESIGNS[4][2], CSS5) + f"""<div class="wrap">
 {chrome(n)}
-<header class="mast"><a class="brand" href="/">Instagram</a>{owner_links("own")}</header>
+<header class="mast"><a class="brand" href="/"><img class="rm" src="/designs/assets/riskmandate-mark.svg" alt="" width="64" height="64">Instagram</a>{owner_links("own")}</header>
 <main id="main">
 <h1>{H1}</h1>
 <p>{LEDE}</p>
@@ -765,8 +769,8 @@ def d5():
 
 # ---------------------------------------------------------------- index: all five side by side
 CSSI = """
-:root{--bg:#f6f4ef;--fg:#16202e;--muted:#4d5866;--link:#7f570e;--focus:#7f570e;--ctl:#7b8592;--hover:#ebe7de;--card:#fff;--line:#ddd7cb}
-@media (prefers-color-scheme:dark){:root{--bg:#0d1420;--fg:#ecebe6;--muted:#aeb8c6;--link:#f2b84b;--focus:#f2b84b;--ctl:#7d8ca3;--hover:#1a2638;--card:#152033;--line:#273550}}
+:root{--bg:#F7F6F2;--fg:#161615;--muted:#55534d;--link:#1A7F5A;--focus:#1A7F5A;--ctl:#7b7972;--hover:#ebe9e2;--card:#ffffff;--line:#dcd9cf}
+@media (prefers-color-scheme:dark){:root{--bg:#161615;--fg:#F7F6F2;--muted:#bdbab2;--link:#3fbf8c;--focus:#3fbf8c;--ctl:#85837c;--hover:#24241f;--card:#1f1f1d;--line:#3a3934}}
 .wrap{max-width:76rem;margin:0 auto;padding:0 1rem}
 .mast{padding:.5rem 0}
 .brand{font-weight:800;font-size:1.15rem;color:var(--fg);text-decoration:none;min-height:44px;display:inline-flex;align-items:center}
@@ -794,7 +798,7 @@ def index(recommend):
     h = h.replace("/designs/0/", "/designs/").replace('content=""', 'content="Five designs, Instagram"')
     return h + f"""<div class="wrap">
 {chrome(0)}
-<header class="mast"><a class="brand" href="/">Instagram</a></header>
+<header class="mast"><a class="brand" href="/"><img class="rm" src="/designs/assets/riskmandate-mark.svg" alt="" width="64" height="64">Instagram</a></header>
 <main id="main">
 <h1>Five designs of this site</h1>
 <p class="lede">The same facts, in five ideas from the Instagram agent's own world. The owner picks one; the keeper makes it the site. Until then, the site stays as it is.</p>
