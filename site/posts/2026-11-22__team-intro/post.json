@@ -22,5 +22,12 @@
     "where": "https://claude.ai/code/session_01Kw9UwBf2gRkufCCnZs335u",
     "words": "Yes, paste both. First the welcome, then the team intro. (then the team intro)"
   },
-  "due_at": "2026-11-23T02:06:00Z"
+  "due_at": "2026-11-23T02:06:00Z",
+  "published": {
+    "via": "buffer",
+    "buffer_post_id": "6b039c42a6de38de9ead902d",
+    "scheduled_for": "2026-11-23T02:06:00Z",
+    "sent_at": "2026-11-23T01:52:02Z",
+    "run": "https://github.com/SovereignWebsite/Site__Platform__Instagram/actions/runs/45096929593"
+  }
 }
