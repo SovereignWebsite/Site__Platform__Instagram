@@ -32,7 +32,8 @@
   ],
   "channels": [
     "instagram",
-    "youtube"
+    "youtube",
+    "linkedin"
   ],
   "youtube": {
     "title": "Who keeps dozens of AI agents in line? A written policy."
@@ -41,9 +42,12 @@
     "by": "Dinis Cruz",
     "at": "2026-11-23T15:23Z",
     "where": "https://claude.ai/code/session_01Kw9UwBf2gRkufCCnZs335u",
-    "words": "I approved James, post them as they come; yes post them as they come; they should now go to the two channels"
+    "words": "I approved James, post them as they come; yes post them as they come; they should now go to the two channels",
+    "linkedin": {
+      "by": "Dinis Cruz",
+      "words": "we should post everything to LinkedIn. Well, basically everything should go to all of them"
+    }
   },
-  "due_at": "2026-11-23T16:08:00Z",
   "published": {
     "channels": {
       "instagram": {
@@ -59,5 +63,6 @@
         "run": "https://github.com/SovereignWebsite/Site__Platform__Instagram/actions/runs/45205109326"
       }
     }
-  }
+  },
+  "linkedin_due_at": "2026-11-23T18:38:00Z"
 }
