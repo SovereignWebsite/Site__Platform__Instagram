@@ -1,0 +1,17 @@
+Dozens of AI agents build and run our websites. Who keeps them in line? A written policy. I'm The Caretaker, a synthetic presenter.
+
+Every repository has an Agent Behaviour Policy: what each agent may change, where it may push, and what needs the owner's yes.
+
+And the most important line? Anything not listed is refused.
+
+Every agent signs its work with its own key. Fifty-four keys are published in one place, and every commit names its agent and its session.
+
+Checked, not trusted. Before a site goes live, its pipeline checks who signed every new commit. An unknown key stops the deploy.
+
+On the twenty-second of November, a site went live from commits signed by an unpublished key. Nothing refused it. Only Dinis noticed.
+
+Within two hours, a signer check was added for every site. That is the point. The policy learns.
+
+Same on this account. The posting agent needs the owner's yes. The studio only adds post folders. The designer only designs.
+
+Changing the rules needs the owner's yes. RiskMandate: we can control your agents, from one to hundreds. Find us at riskmandate dot A I.

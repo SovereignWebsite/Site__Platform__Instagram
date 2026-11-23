@@ -1,0 +1,211 @@
+{
+ "window": "evergreen",
+ "presenter": "caretaker",
+ "presenter_name": "The Caretaker",
+ "voice": "verse",
+ "voice_direction": "A kindly caretaker, warm and quietly proud, with a dry little smile. A brisk, confident pace, like a short news explainer: short pauses only between beats. Lightly stress 'refused', 'checked, not trusted' and 'the policy learns'. Never salesy.",
+ "theme": {
+  "colours": {
+   "navy": "#0f0f0e",
+   "ink": "#1d1d1b",
+   "card": "#262623",
+   "line": "#3d3d37",
+   "gold": "#4fc48f",
+   "white": "#f7f6f2",
+   "muted": "#b9b6ab",
+   "green": "#3fb57f",
+   "blue": "#1a7f5a",
+   "bg0": "#1f2a24",
+   "bg1": "#161615",
+   "bg2": "#0f0f0e",
+   "stage": "#1f1f1d"
+  },
+  "wordmark": "<img src=\"rm-mark.svg\" alt=\"\"><span>RiskMandate</span>",
+  "source": "RiskMandate's brand from https://riskmandate.ai/ (mark /assets/brand/riskmandate-mark.svg; ink #161615, green #1A7F5A, paper #F7F6F2), read 23 Nov 2026; a lighter green for text on dark."
+ },
+ "stage": {
+  "dist": 2.6,
+  "h": 0.72,
+  "lh": 0.68
+ },
+ "cover": {
+  "hold": 1.2,
+  "date": "23 NOV 2026",
+  "kicker": "How it works",
+  "headline": "Who keeps AI agents <em>in line?</em>",
+  "sub": "The Caretaker on Agent Behaviour Policies"
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "narration": "Dozens of AI agents build and run our websites. Who keeps them in line? A written policy. I'm The Caretaker, a synthetic presenter.",
+   "visual": {
+    "kind": "title",
+    "text": "Who keeps the agents in line?",
+    "sub": "A written policy"
+   },
+   "gesture": "present",
+   "facts": [
+    "https://github.com/SovereignWebsite/SovereignWebsite__Factory/blob/dev/policy/abp.json"
+   ]
+  },
+  {
+   "id": "b2",
+   "narration": "Every repository has an Agent Behaviour Policy: what each agent may change, where it may push, and what needs the owner's yes.",
+   "visual": {
+    "kind": "list",
+    "items": [
+     "What each agent may change",
+     "Which branches it may push to",
+     "What needs the owner's yes"
+    ],
+    "caption": "One file: abp.json"
+   },
+   "facts": [
+    "https://github.com/SovereignWebsite/SovereignWebsite__Factory/blob/dev/policy/abp.json",
+    "https://instagram.platform.sovereignweb.site/policy/"
+   ]
+  },
+  {
+   "id": "b3",
+   "narration": "And the most important line? Anything not listed is refused.",
+   "visual": {
+    "kind": "quote",
+    "text": "Anything not listed is refused.",
+    "by": "from the policy's own description"
+   },
+   "gesture": "nod",
+   "facts": [
+    "https://github.com/SovereignWebsite/SovereignWebsite__Factory#readme"
+   ]
+  },
+  {
+   "id": "b4",
+   "narration": "Every agent signs its work with its own key. Fifty-four keys are published in one place, and every commit names its agent and its session.",
+   "visual": {
+    "kind": "stat",
+    "value": "54",
+    "label": "agent keys published in one file",
+    "caption": "team/keys.json"
+   },
+   "gesture": "count",
+   "facts": [
+    "https://github.com/SovereignWebsite/SovereignWebsite__Factory/blob/dev/team/keys.json"
+   ]
+  },
+  {
+   "id": "b5",
+   "narration": "Checked, not trusted. Before a site goes live, its pipeline checks who signed every new commit. An unknown key stops the deploy.",
+   "visual": {
+    "kind": "flow",
+    "nodes": [
+     "New commit",
+     "Who signed it?",
+     "Links, leaks, HTML, access",
+     "Live"
+    ]
+   },
+   "gesture": "point",
+   "facts": [
+    "https://github.com/SovereignWebsite/Site__Platform__Instagram/blob/dev/.github/ci/signers.mjs"
+   ]
+  },
+  {
+   "id": "b6",
+   "narration": "On the twenty-second of November, a site went live from commits signed by an unpublished key. Nothing refused it. Only Dinis noticed.",
+   "visual": {
+    "kind": "timeline",
+    "items": [
+     {
+      "when": "22 Nov, 14:58 UTC",
+      "what": "A site goes live, key unknown"
+     },
+     {
+      "when": "15:28 UTC",
+      "what": "Incident written up"
+     },
+     {
+      "when": "16:33 UTC",
+      "what": "Signer check for every site"
+     }
+    ]
+   },
+   "gesture": "shake",
+   "facts": [
+    "https://github.com/SovereignWebsite/SovereignWebsite__Factory/blob/dev/board/incidents/2026-11-22__pushed-before-key-published.md"
+   ]
+  },
+  {
+   "id": "b7",
+   "narration": "Within two hours, a signer check was added for every site. That is the point. The policy learns.",
+   "visual": {
+    "kind": "compare",
+    "left": {
+     "title": "Before",
+     "points": [
+      "A key nobody knew",
+      "Nothing refused it"
+     ]
+    },
+    "right": {
+     "title": "After",
+     "points": [
+      "Every commit checked",
+      "Unknown key stops it"
+     ]
+    }
+   },
+   "gesture": "thumbsUp",
+   "facts": [
+    "https://github.com/SovereignWebsite/SovereignWebsite__Factory/commit/26793f8"
+   ]
+  },
+  {
+   "id": "b8",
+   "narration": "Same on this account. The posting agent needs the owner's yes. The studio only adds post folders. The designer only designs.",
+   "visual": {
+    "kind": "cards",
+    "items": [
+     {
+      "title": "Instagram",
+      "sub": "Posts with a yes",
+      "icon": "instagram"
+     },
+     {
+      "title": "Studio",
+      "sub": "Adds post folders",
+      "icon": "studio"
+     },
+     {
+      "title": "Design",
+      "sub": "Designs only",
+      "icon": "design"
+     },
+     {
+      "title": "Posting key",
+      "sub": "In GitHub only",
+      "icon": "key"
+     }
+    ]
+   },
+   "gesture": "present",
+   "facts": [
+    "https://instagram.platform.sovereignweb.site/policy/"
+   ]
+  },
+  {
+   "id": "b10",
+   "narration": "Changing the rules needs the owner's yes. RiskMandate: we can control your agents, from one to hundreds. Find us at riskmandate dot A I.",
+   "visual": {
+    "kind": "title",
+    "text": "riskmandate.ai",
+    "sub": "We can control your agents. From one to hundreds."
+   },
+   "gesture": "wave",
+   "facts": [
+    "https://riskmandate.ai/"
+   ]
+  }
+ ],
+ "caption": "Who keeps dozens of AI agents in line? A written policy.\n\nEvery repository behind Sovereign Website has an Agent Behaviour Policy: what each agent may change, where it may push, and what needs the owner's yes. Anything not listed is refused. Every agent signs its work with its own key, and every site checks who signed before it goes live.\n\nWhen a site once went live from a key nobody had published, a signer check was added for every site within two hours. The policy learns.\n\nChanging the rules needs the owner's yes.\n\nThe presenter, The Caretaker, is synthetic and the voice is AI-generated.\n\nriskmandate.ai\n\n#RiskMandate #AIagents #SovereignWebsite"
+}
