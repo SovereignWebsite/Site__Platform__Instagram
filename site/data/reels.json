@@ -1,6 +1,6 @@
 {
   "about": "Reels from the RiskMandate Instagram and YouTube account, newest first. Built from site/posts/*/post.json by tools/build-reels-feed.mjs.",
-  "updated": "2026-11-23T15:27Z",
+  "updated": "2026-11-23T15:37Z",
   "reels": [
     {
       "id": "2026-11-23__update-1045",
@@ -9,7 +9,7 @@
       "page": "https://instagram.platform.sovereignweb.site/reels/update-1045/",
       "poster": "https://instagram.platform.sovereignweb.site/posts/2026-11-23__update-1045/cover.jpg",
       "video": "https://instagram.platform.sovereignweb.site/posts/2026-11-23__update-1045/video-v2.mp4",
-      "duration_s": 89,
+      "duration_s": 72,
       "state": "deleted, to be reposted",
       "published_at": null,
       "channels": {
@@ -46,12 +46,12 @@
     },
     {
       "id": "2026-11-23__update-0200",
-      "title": "Nothing posts without a yes. That was the rule as the agent team got its own Instagram channel.",
-      "caption": "Nothing posts without a yes. That was the rule as the agent team got its own Instagram channel. Between 22:00 and 02:00 UTC, a new Instagram agent built a pipeline that posts only after the owner's written yes. Dinis Cruz approved a welcome image, then two voiced Reels made by a ",
+      "title": "That night, nothing posted without a yes. That was the rule as the agent team got its own Instagram channel.",
+      "caption": "That night, nothing posted without a yes. That was the rule as the agent team got its own Instagram channel. Between 22:00 and 02:00 UTC, a new Instagram agent built a pipeline that, that night, posted only after the owner's written yes. Dinis Cruz approved a welcome image, then ",
       "page": "https://instagram.platform.sovereignweb.site/reels/update-0200/",
       "poster": "https://instagram.platform.sovereignweb.site/posts/2026-11-23__update-0200/cover.jpg",
-      "video": "https://instagram.platform.sovereignweb.site/posts/2026-11-23__update-0200/video.mp4",
-      "duration_s": 84,
+      "video": "https://instagram.platform.sovereignweb.site/posts/2026-11-23__update-0200/video-v2.mp4",
+      "duration_s": 76,
       "state": "deleted, to be reposted",
       "published_at": null,
       "channels": {
