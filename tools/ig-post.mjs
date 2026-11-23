@@ -34,7 +34,13 @@ if (!a || !a.by || !a.at || !a.where) {
   if (why.length) fail(`no approval line, and the standing review rule is not met: ${why.join('; ')}`);
   a = { by: 'standing review rule (keeper, security, counsel)', at: new Date().toISOString().slice(0, 16) + 'Z' };
 }
-if (post.published) fail(`already sent: ${JSON.stringify(post.published)}`);
+const wanted = Array.isArray(post.channels) && post.channels.length ? post.channels : ['instagram'];
+for (const c of wanted) if (!['instagram', 'youtube'].includes(c)) fail(`unknown channel ${c}`);
+// Older records hold one Instagram send; newer ones hold one record per channel.
+const sent = post.published ? (post.published.channels || { instagram: post.published }) : {};
+const todo = wanted.filter((c) => !sent[c]);
+if (!todo.length) fail(`already sent to ${wanted.join(', ')}: ${JSON.stringify(post.published)}`);
+if (todo.includes('youtube') && post.kind !== 'reel') fail('YouTube takes a reel (one MP4) only');
 const kind = post.kind;
 if (!['image', 'reel', 'carousel'].includes(kind)) fail('kind must be image, reel or carousel');
 const caption = String(post.caption || '');
@@ -85,30 +91,41 @@ async function gql(query, variables = {}) {
 
 // Find the one Instagram channel in the key's organisations.
 const orgs = (await gql('query { account { organizations { id } } }')).account.organizations;
-const channels = [];
+const all = [];
 for (const o of orgs) {
   const d = await gql('query C($o: OrganizationId!) { channels(input: { organizationId: $o }) { id service isQueuePaused } }', { o: o.id });
-  channels.push(...d.channels.filter(c => c.service === 'instagram'));
+  all.push(...d.channels);
 }
-if (channels.length !== 1) fail(`expected one Instagram channel in Buffer, found ${channels.length}`);
-const channel = channels[0];
-if (channel.isQueuePaused) fail('the Instagram queue is paused in Buffer');
-console.log('Buffer: one Instagram channel found');
+const channelOf = {};
+for (const c of todo) {
+  const found = all.filter((x) => x.service === c);
+  if (found.length !== 1) fail(`expected one ${c} channel in Buffer, found ${found.length}`);
+  if (found[0].isQueuePaused) fail(`the ${c} queue is paused in Buffer`);
+  channelOf[c] = found[0];
+  console.log(`Buffer: one ${c} channel found`);
+}
 if (dry) { console.log('dry run: checks passed, nothing sent'); process.exit(0); }
 
 const assets = urls.map((u, i) => /\.mp4$/i.test(u)
   ? { video: { url: u, metadata: { thumbnailOffset: Number.isInteger(post.thumbnail_offset_ms) ? post.thumbnail_offset_ms : 600 } } }
   : { image: { url: u, metadata: { altText: (post.alt && post.alt[i]) || caption.slice(0, 120) } } });
-const input = {
-  text: caption, channelId: channel.id, schedulingType: 'automatic', mode, assets,
-  metadata: { instagram: { type: kind === 'reel' ? 'reel' : kind === 'carousel' ? 'carousel' : 'post', shouldShareToFeed: true } },
+const yt = post.youtube || {};
+const ytTitle = String(yt.title || caption.split('\n')[0]).slice(0, 100);
+const meta = {
+  instagram: { instagram: { type: kind === 'reel' ? 'reel' : kind === 'carousel' ? 'carousel' : 'post', shouldShareToFeed: true } },
+  youtube: { youtube: { title: ytTitle, categoryId: String(yt.categoryId || '28'), privacy: yt.privacy || 'public', madeForKids: false, isAiGenerated: yt.isAiGenerated !== false, notifySubscribers: yt.notifySubscribers !== false } },
 };
-if (post.due_at) input.dueAt = post.due_at;
-const res = (await gql(`mutation P($input: CreatePostInput!) { createPost(input: $input) {
-  ... on PostActionSuccess { post { id dueAt } }
-  ... on MutationError { message } } }`, { input })).createPost;
-if (!res.post) fail(`Buffer refused the post: ${res.message}`);
-console.log(`sent to Buffer: post ${res.post.id}, due ${res.post.dueAt || 'now'}`);
+const results = {};
+for (const c of todo) {
+  const input = { text: caption, channelId: channelOf[c].id, schedulingType: 'automatic', mode, assets, metadata: meta[c] };
+  if (post.due_at) input.dueAt = post.due_at;
+  const res = (await gql(`mutation P($input: CreatePostInput!) { createPost(input: $input) {
+    ... on PostActionSuccess { post { id dueAt } }
+    ... on MutationError { message } } }`, { input })).createPost;
+  if (!res.post) fail(`Buffer refused the ${c} post: ${res.message}`);
+  results[c] = res.post;
+  console.log(`sent to Buffer for ${c}: post ${res.post.id}, due ${res.post.dueAt || 'now'}`);
+}
 
 function jpegSize(b) {
   if (b[0] !== 0xff || b[1] !== 0xd8) return null;
