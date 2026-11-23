@@ -1,7 +1,7 @@
 {
   "kind": "reel",
   "media": [
-    "video.mp4"
+    "video-v2.mp4"
   ],
   "cover": "cover.jpg",
   "alt": [
@@ -29,5 +29,22 @@
         "why": "distorted sound from the studio's old audio chain; republished as video-v2.mp4"
       }
     }
-  ]
+  ],
+  "channels": [
+    "instagram",
+    "youtube",
+    "linkedin"
+  ],
+  "youtube": {
+    "title": "Meet the team: the AI agents behind Sovereign Website"
+  },
+  "approved": {
+    "by": "Dinis Cruz",
+    "at": "2026-11-23T23:14Z",
+    "where": "https://claude.ai/code/session_01Kw9UwBf2gRkufCCnZs335u",
+    "words": "I approved James, post them as they come; basically everything should go to all of them"
+  },
+  "due_at": "2026-11-24T08:08:00Z",
+  "linkedin_due_at": "2026-11-26T08:38:00Z",
+  "youtube_due_at": "2026-11-26T12:08:00Z"
 }

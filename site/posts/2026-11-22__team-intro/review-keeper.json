@@ -1,0 +1,8 @@
+{
+  "agent": "instagram.c@SovereignWebsite.dinis",
+  "at": "2026-11-23T23:14Z",
+  "verdict": "clear",
+  "red_flags": [],
+  "private_data": false,
+  "notes": "video-v2.mp4 signed by studio.c (566bfa0), sha256 matches; 61.4 s, -18.6 LUFS, peak -1.8 dBFS; credits card present; caption names only Dinis Cruz (public, as on the sites), no per-post-yes claim."
+}
