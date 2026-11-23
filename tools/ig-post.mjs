@@ -41,6 +41,7 @@ for (const m of media) {
     if (r < 0.8 - 1e-3 || r > 1.91 + 1e-3) fail(`${m} ratio ${r.toFixed(2)}; Instagram takes 4:5 to 1.91:1`);
   }
 }
+if (post.thumbnail_offset_ms !== undefined && !(Number.isInteger(post.thumbnail_offset_ms) && post.thumbnail_offset_ms >= 0)) fail('thumbnail_offset_ms must be a whole number of milliseconds');
 // The schedule: shareNow unless the post names a time (UTC, ISO 8601).
 const mode = post.due_at ? 'customScheduled' : 'shareNow';
 if (post.due_at && !(Date.parse(post.due_at) > Date.now())) fail('due_at must be a future UTC time');
@@ -81,7 +82,7 @@ console.log('Buffer: one Instagram channel found');
 if (dry) { console.log('dry run: checks passed, nothing sent'); process.exit(0); }
 
 const assets = urls.map((u, i) => /\.mp4$/i.test(u)
-  ? { video: { url: u } }
+  ? { video: { url: u, metadata: { thumbnailOffset: Number.isInteger(post.thumbnail_offset_ms) ? post.thumbnail_offset_ms : 600 } } }
   : { image: { url: u, metadata: { altText: (post.alt && post.alt[i]) || caption.slice(0, 120) } } });
 const input = {
   text: caption, channelId: channel.id, schedulingType: 'automatic', mode, assets,

@@ -6,6 +6,7 @@ One folder per post: `site/posts/<yyyy-mm-dd>__<slug>/`, holding the media (JPEG
 {
   "kind": "reel",
   "due_at": "optional, a future UTC time; without it the post goes now",
+  "thumbnail_offset_ms": "optional, for a Reel: the frame Instagram shows as the cover, in milliseconds (default 600, inside a cover held from the first frame)",
   "media": ["video.mp4"],
   "caption": "The caption, at most 2200 characters.",
   "source": "where the media came from and its licence",
