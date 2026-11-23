@@ -17,16 +17,17 @@
     "date": "2026-11-23",
     "plan": "OpenRouter pay-as-you-go on Dinis Cruz's key; openai/gpt-audio, voice verse; no music track"
   },
-  "approved": {
-    "by": "Dinis Cruz",
-    "at": "2026-11-23T11:42Z",
-    "where": "https://claude.ai/code/session_01Kw9UwBf2gRkufCCnZs335u",
-    "words": "yes push them"
-  },
-  "published": {
-    "via": "buffer",
-    "buffer_post_id": "6b0426b5d3122c0b6a58ddcc",
-    "scheduled_for": "2026-11-23T11:42:45Z",
-    "run": "https://github.com/SovereignWebsite/Site__Platform__Instagram/actions/runs/45167574642"
-  }
+  "previous_sends": [
+    {
+      "via": "buffer",
+      "buffer_post_id": "6b0426b5d3122c0b6a58ddcc",
+      "scheduled_for": "2026-11-23T11:42:45Z",
+      "run": "https://github.com/SovereignWebsite/Site__Platform__Instagram/actions/runs/45167574642",
+      "deleted": {
+        "by": "Dinis Cruz",
+        "at": "2026-11-23T13:14Z",
+        "why": "distorted sound from the studio's old audio chain; republished as video-v2.mp4"
+      }
+    }
+  ]
 }

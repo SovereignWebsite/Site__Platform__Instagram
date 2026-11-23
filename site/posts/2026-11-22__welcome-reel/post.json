@@ -16,16 +16,17 @@
     "date": "2026-11-23",
     "plan": "OpenRouter pay-as-you-go on Dinis Cruz's key; model openai/gpt-audio, voice cedar; no music track"
   },
-  "approved": {
-    "by": "Dinis Cruz",
-    "at": "2026-11-23T01:50Z",
-    "where": "https://claude.ai/code/session_01Kw9UwBf2gRkufCCnZs335u",
-    "words": "Yes, paste both. First the welcome, then the team intro. (first the welcome)"
-  },
-  "published": {
-    "via": "buffer",
-    "buffer_post_id": "6b039c0cd864a01105108043",
-    "sent_at": "2026-11-23T01:51:08Z",
-    "run": "https://github.com/SovereignWebsite/Site__Platform__Instagram/actions/runs/45096852337"
-  }
+  "previous_sends": [
+    {
+      "via": "buffer",
+      "buffer_post_id": "6b039c0cd864a01105108043",
+      "sent_at": "2026-11-23T01:51:08Z",
+      "run": "https://github.com/SovereignWebsite/Site__Platform__Instagram/actions/runs/45096852337",
+      "deleted": {
+        "by": "Dinis Cruz",
+        "at": "2026-11-23T13:14Z",
+        "why": "distorted sound from the studio's old audio chain; republished as video-v2.mp4"
+      }
+    }
+  ]
 }
