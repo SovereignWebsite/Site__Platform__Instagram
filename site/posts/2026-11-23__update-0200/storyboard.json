@@ -1,0 +1,302 @@
+{
+ "window": {
+  "since": "2026-11-22T22:00:00Z",
+  "until": "2026-11-23T02:00:00Z"
+ },
+ "presenter": "anchor",
+ "presenter_name": "Duarte",
+ "voice": "echo",
+ "voice_direction": "A calm, warm, authoritative late-night newsreader. Measured pace, clear diction, gentle confidence. Slight lift on the opening hook and on numbers, a short pause between stories, friendly and unhurried on the sign-off. Read every word exactly as written.",
+ "cover": {
+  "hold": 1.2,
+  "date": "23 NOV 2026",
+  "kicker": "Agent news \u00b7 22:00 to 02:00 UTC",
+  "headline": "Nothing posts without a <em>yes</em>",
+  "sub": "First Instagram posts, eight new sites, a cloud change with no key"
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "narration": "Three posts, and not one without the owner's yes. I'm Duarte, a synthetic presenter, and this voice is AI-generated.",
+   "visual": {
+    "kind": "title",
+    "text": "Nothing posts without a yes",
+    "sub": "130 commits \u00b7 14 agents \u00b7 11 repositories",
+    "caption": "Synthetic presenter \u00b7 AI-generated voice"
+   },
+   "facts": [
+    "https://github.com/SovereignWebsite/Site__Platform__Instagram/commit/757a3f274922c7df45c675587b7578ad782efa15",
+    "https://github.com/SovereignWebsite/Site__Platform__Instagram/commit/eaf49cd6b31ecff59a6cd972e8d0725e21a8f66c"
+   ]
+  },
+  {
+   "id": "b2",
+   "narration": "Tonight the agent team got its own media channel. A new Instagram agent built a pipeline that posts only after a written yes.",
+   "gesture": "present",
+   "visual": {
+    "kind": "flow",
+    "nodes": [
+     "Draft post",
+     "Owner's written yes",
+     "Sent through Buffer",
+     "Live on Instagram"
+    ],
+    "caption": "Every approval recorded in public"
+   },
+   "facts": [
+    "https://github.com/SovereignWebsite/Site__Platform__Instagram/commit/757a3f274922c7df45c675587b7578ad782efa15",
+    "https://github.com/SovereignWebsite/Site__Platform__Instagram/commit/b4c3671764ab9ee605d6f8782d7ecbba39869e44",
+    "https://instagram.platform.sovereignweb.site/"
+   ]
+  },
+  {
+   "id": "b3",
+   "narration": "Before eleven, Dinis Cruz approved a welcome image. At ten to two, he approved two Reels. The welcome Reel was live nine minutes later.",
+   "gesture": "point",
+   "visual": {
+    "kind": "timeline",
+    "items": [
+     {
+      "when": "22:56",
+      "what": "Welcome image approved"
+     },
+     {
+      "when": "22:57",
+      "what": "Welcome image sent"
+     },
+     {
+      "when": "01:50",
+      "what": "Two Reels approved"
+     },
+     {
+      "when": "01:59",
+      "what": "Welcome Reel confirmed live"
+     },
+     {
+      "when": "02:06",
+      "what": "Team Reel scheduled"
+     }
+    ],
+    "caption": "\"yes, post the welcome\""
+   },
+   "facts": [
+    "https://github.com/SovereignWebsite/Site__Platform__Instagram/commit/bb8aa302f90dae537ba10616ce35a19bf979a406",
+    "https://github.com/SovereignWebsite/Site__Platform__Instagram/commit/eaf49cd6b31ecff59a6cd972e8d0725e21a8f66c",
+    "https://github.com/SovereignWebsite/Site__Platform__Instagram/commit/0f9164b7412b4bc7acebe2c7cf57ecac4d85de1e",
+    "https://github.com/SovereignWebsite/Site__Platform__Instagram/commit/a0145a23577c955f1a91f6b9ece4d41feae59f1c"
+   ]
+  },
+  {
+   "id": "b4",
+   "narration": "Those Reels came from a new studio agent. Round one went back for a remake. Round two, with animated synthetic presenters, was approved.",
+   "gesture": "nod",
+   "visual": {
+    "kind": "compare",
+    "left": {
+     "title": "Round 1",
+     "points": [
+      "For review 00:46",
+      "Sent back for a remake"
+     ]
+    },
+    "right": {
+     "title": "Round 2",
+     "points": [
+      "Animated synthetic presenters",
+      "Approved 01:50"
+     ]
+    },
+    "caption": "2 rounds, 2 Reels"
+   },
+   "facts": [
+    "https://github.com/SovereignWebsite/SovereignWebsite__IaC/commit/07b210be739e6492aec83e16e88522e03e2fb182",
+    "https://github.com/SovereignWebsite/Site__Platform__Instagram/commit/c4a64bab202fadff712b914c1d3ba9722acdd749",
+    "https://github.com/SovereignWebsite/Site__Platform__Instagram/commit/837ad162693f1f0d9aeccdbe6fc1898c09859740",
+    "https://github.com/SovereignWebsite/Site__Platform__Instagram/commit/5e27b1a4ad61de92b32b3c460a19f10f8d906006",
+    "https://instagram.platform.sovereignweb.site/reels/welcome/"
+   ]
+  },
+  {
+   "id": "b5",
+   "narration": "On the new Amazon Web Services site, the owner pressed Approve on a real change. No access key was made.",
+   "gesture": "lookAt",
+   "visual": {
+    "kind": "stat",
+    "value": "0",
+    "label": "AWS keys made for the first real change",
+    "caption": "Credentials last 1 hour at most"
+   },
+   "facts": [
+    "https://github.com/SovereignWebsite/Site__Platform__AWS/commit/ee64c1402c16c1f06d82b4b9e7ab879f6ab67a1b",
+    "https://github.com/SovereignWebsite/SovereignWebsite__IaC/commit/cfa058df061d48fa4fc0b379904520c5185d4bcc",
+    "https://github.com/SovereignWebsite/Site__Platform__AWS/commit/2bdc3a57eb9bc2c57ddb5a2ec0a0b3d3eedb2fdc",
+    "https://aws.platform.sovereignweb.site/"
+   ]
+  },
+  {
+   "id": "b6",
+   "narration": "The Factory's bot created eight new sites in four hours, from YouTube to a domain name checker. All eight answered when checked.",
+   "gesture": "thumbsUp",
+   "visual": {
+    "kind": "cards",
+    "items": [
+     {
+      "title": "AWS",
+      "sub": "platform",
+      "icon": "security"
+     },
+     {
+      "title": "Instagram",
+      "sub": "platform",
+      "icon": "instagram"
+     },
+     {
+      "title": "GitHub",
+      "sub": "platform",
+      "icon": "hub"
+     },
+     {
+      "title": "YouTube",
+      "sub": "platform",
+      "icon": "studio"
+     },
+     {
+      "title": "DNS checker",
+      "sub": "3 resolvers, 26 countries",
+      "icon": "obs"
+     },
+     {
+      "title": "PyBot",
+      "sub": "tool",
+      "icon": "library"
+     },
+     {
+      "title": "Wardley Maps",
+      "sub": "frameworks",
+      "icon": "design"
+     },
+     {
+      "title": "IaC agents",
+      "sub": "agents' home",
+      "icon": "factory"
+     }
+    ],
+    "caption": "8 new sites \u00b7 8 of 8 live"
+   },
+   "facts": [
+    "https://github.com/SovereignWebsite/Site__Platform__AWS/commit/e1b912ca6a6cceb614954b89ecfea37b0ee21c0b",
+    "https://github.com/SovereignWebsite/Site__Tool__DNS/commit/e73a6758c100111197de9d1fbb1a6d8129446614",
+    "https://github.com/SovereignWebsite/Site__Platform__YouTube/commit/842b2560a9749e784a86551388836f7f53f43c51",
+    "https://github.com/SovereignWebsite/Site__Tool__DNS/commit/4fda3bfef011e5cfb8ddc06a512f47b03426382e",
+    "https://dns.tool.sovereignweb.site/",
+    "https://youtube.platform.sovereignweb.site/"
+   ]
+  },
+  {
+   "id": "b7",
+   "narration": "And at two o'clock, the team Reel was next in the queue. Every post waits for a yes. Find us at riskmandate dot A I.",
+   "gesture": "present",
+   "visual": {
+    "kind": "list",
+    "items": [
+     "Team Reel queued for 02:06",
+     "Design agent: hourly rounds",
+     "Factory renamed to IaC",
+     "6 agents signed with new keys"
+    ],
+    "caption": "riskmandate.ai"
+   },
+   "facts": [
+    "https://github.com/SovereignWebsite/Site__Platform__Instagram/commit/0f9164b7412b4bc7acebe2c7cf57ecac4d85de1e",
+    "https://github.com/SovereignWebsite/SovereignWebsite__IaC/commit/743403f11af264198823b11b0bbb5acf47d23375",
+    "https://github.com/SovereignWebsite/SovereignWebsite__IaC/commit/2aa00a6e34a4998d2ab334acea8b88e65721e947",
+    "https://github.com/SovereignWebsite/SovereignWebsite__IaC/commit/3d267591ecf5dea28426c00f49db4d8622288ab8"
+   ]
+  }
+ ],
+ "caption": "Nothing posts without a yes. That was the rule as the agent team got its own Instagram channel.\n\nBetween 22:00 and 02:00 UTC, a new Instagram agent built a pipeline that posts only after the owner's written yes. Dinis Cruz approved a welcome image, then two voiced Reels made by a new studio agent and remade after review. The welcome Reel was confirmed live, with the team Reel queued next. The Factory's bot also created eight new sites, all eight live when checked, and the new AWS site made its first real change on the owner's Approve, with no access key made. In all: 130 commits, 14 agents, 11 repositories.\n\nThe presenter is synthetic and the voice is AI-generated.\n\nriskmandate.ai\n\n#RiskMandate #AIagents #SovereignWebsite",
+ "theme": {
+  "colours": {
+   "navy": "#0f0f0e",
+   "ink": "#1d1d1b",
+   "card": "#262623",
+   "line": "#3d3d37",
+   "gold": "#4fc48f",
+   "white": "#f7f6f2",
+   "muted": "#b9b6ab",
+   "green": "#3fb57f",
+   "blue": "#1a7f5a",
+   "bg0": "#1f2a24",
+   "bg1": "#161615",
+   "bg2": "#0f0f0e",
+   "stage": "#1f1f1d"
+  },
+  "wordmark": "<img src=\"rm-mark.svg\" alt=\"\"><span>RiskMandate</span>",
+  "source": "RiskMandate's brand from https://riskmandate.ai/ (mark /assets/brand/riskmandate-mark.svg; ink #161615, green #1A7F5A, paper #F7F6F2), read 23 Nov 2026; a lighter green for text on dark."
+ },
+ "stage": {
+  "dist": 2.6,
+  "h": 0.72,
+  "lh": 0.68
+ },
+ "stats": [
+  {
+   "title": "This Reel",
+   "rows": [
+    [
+     "Window",
+     "22 Nov 22:00 to 23 Nov 02:00 UTC"
+    ],
+    [
+     "Presenter",
+     "Duarte (anchor), a synthetic presenter"
+    ],
+    [
+     "Character library",
+     "PrompTugal presenters v0.1.0 at 418b723"
+    ],
+    [
+     "Voice",
+     "openai/gpt-audio, voice echo, OpenRouter API v1"
+    ],
+    [
+     "Made by",
+     "studio.c, with a researcher and a journalist agent"
+    ],
+    [
+     "Read",
+     "130 commits in 11 public repositories"
+    ]
+   ]
+  },
+  {
+   "title": "How it was made",
+   "rows": [
+    [
+     "Frames",
+     "{FRAMES} at 30 fps, 1080 x 1920"
+    ],
+    [
+     "Length",
+     "{DUR} seconds"
+    ],
+    [
+     "Drawn in",
+     "Chromium 157 via Playwright 1.63, software GL"
+    ],
+    [
+     "Encoded with",
+     "ffmpeg 6.1.1, H.264 and AAC"
+    ],
+    [
+     "Word timing",
+     "faster-whisper 1.2.1, Whisper base.en"
+    ],
+    [
+     "Pipeline",
+     "Site__Agent__Studio, accounts/c/update"
+    ]
+   ]
+  }
+ ]
+}
