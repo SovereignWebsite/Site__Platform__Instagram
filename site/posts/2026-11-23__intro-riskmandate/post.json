@@ -17,5 +17,11 @@
     "at": "2026-11-23T13:25Z",
     "where": "https://claude.ai/code/session_01Kw9UwBf2gRkufCCnZs335u",
     "words": "yes, post the intro"
+  },
+  "published": {
+    "via": "buffer",
+    "buffer_post_id": "6b043f1bf3aecf260a978f03",
+    "sent_at": "2026-11-23T13:26:51Z",
+    "run": "https://github.com/SovereignWebsite/Site__Platform__Instagram/actions/runs/45183949699"
   }
 }
