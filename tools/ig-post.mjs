@@ -112,7 +112,7 @@ const assets = urls.map((u, i) => /\.mp4$/i.test(u)
 const yt = post.youtube || {};
 const ytTitle = String(yt.title || caption.split('\n')[0]).slice(0, 100);
 const meta = {
-  instagram: { instagram: { type: kind === 'reel' ? 'reel' : kind === 'carousel' ? 'carousel' : 'post', shouldShareToFeed: true } },
+  instagram: { instagram: { type: kind === 'reel' ? 'reel' : 'post', shouldShareToFeed: true } }, // a carousel is a 'post' with several images (Buffer: types are post, story, reel)
   youtube: { youtube: { title: ytTitle, categoryId: String(yt.categoryId || '28'), privacy: yt.privacy || 'public', madeForKids: false, isAiGenerated: yt.isAiGenerated !== false, notifySubscribers: yt.notifySubscribers !== false } },
 };
 const results = {};
