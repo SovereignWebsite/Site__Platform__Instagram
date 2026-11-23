@@ -46,5 +46,27 @@
   },
   "due_at": "2026-11-24T08:08:00Z",
   "linkedin_due_at": "2026-11-26T08:38:00Z",
-  "youtube_due_at": "2026-11-26T12:08:00Z"
+  "youtube_due_at": "2026-11-26T12:08:00Z",
+  "published": {
+    "channels": {
+      "instagram": {
+        "via": "buffer",
+        "buffer_post_id": "6b04c8de07fee37ee60d7d82",
+        "scheduled_for": "2026-11-24T08:08:00Z",
+        "run": "https://github.com/SovereignWebsite/Site__Platform__Instagram/actions/runs/45287025229"
+      },
+      "youtube": {
+        "via": "buffer",
+        "buffer_post_id": "6b04c8de07fee37ee60d7dad",
+        "scheduled_for": "2026-11-26T12:08:00Z",
+        "run": "https://github.com/SovereignWebsite/Site__Platform__Instagram/actions/runs/45287025229"
+      },
+      "linkedin": {
+        "via": "buffer",
+        "buffer_post_id": "6b04c8de8165ce395ba52f46",
+        "scheduled_for": "2026-11-26T08:38:00Z",
+        "run": "https://github.com/SovereignWebsite/Site__Platform__Instagram/actions/runs/45287025229"
+      }
+    }
+  }
 }

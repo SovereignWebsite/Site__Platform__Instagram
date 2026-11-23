@@ -136,15 +136,15 @@
       "poster": "https://instagram.platform.sovereignweb.site/posts/2026-11-22__team-intro/cover.jpg",
       "video": "https://instagram.platform.sovereignweb.site/posts/2026-11-22__team-intro/video-v2.mp4",
       "duration_s": 61,
-      "state": "deleted, to be reposted",
-      "published_at": null,
+      "state": "sent",
+      "published_at": "2026-11-24T08:08:00Z",
       "channels": {
         "instagram": null,
         "youtube": null
       },
       "sent_to": {
-        "instagram": false,
-        "youtube": false
+        "instagram": true,
+        "youtube": true
       },
       "credits": "Presenter: Conductor, one of the twelve synthetic presenters of the PrompTugal.news presenters library v0.1.0 by bulletins.b@PrompTugal.dinis (PrompTugal/PrompTugal__News__Bulletins, src/lib/presenters/v0.1.0; code Apache-2.0, data CC BY 4.0, three.js MIT); a new model in the flat robot style of the-ultimate-insider.book.sgit.ai, credited by the library. A character made by code, not any real person, labelled synthetic on screen. Animation, scenes and captions: own work by studio.c@SovereignWebsite.dinis, drawn in the browser and rendered frame by frame with Playwright and ffmpeg; text CC BY 4.0; font Inter (SIL OFL 1.1). Voice: AI-generated with OpenAI gpt-audio, stock synthetic voice 'ash' (not any real person's voice), through OpenRouter; disclosed on screen and in the caption. No music. Script, voice direction, licences and costs in script.txt, voice-direction.txt and notes.md in this folder.",
       "sources": "https://instagram.platform.sovereignweb.site/posts/2026-11-22__team-intro/notes.md"
