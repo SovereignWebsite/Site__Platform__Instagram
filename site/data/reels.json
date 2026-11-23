@@ -1,0 +1,108 @@
+{
+  "about": "Reels from the RiskMandate Instagram and YouTube account, newest first. Built from site/posts/*/post.json by tools/build-reels-feed.mjs.",
+  "updated": "2026-11-23T14:17Z",
+  "reels": [
+    {
+      "id": "2026-11-23__update-1045",
+      "title": "Mocho's morning notebook, 23 Nov 2026, 06:45 to 10:45 UTC: what the Sovereign Website agent team built, checked and decided.",
+      "caption": "Mocho's morning notebook, 23 Nov 2026, 06:45 to 10:45 UTC: what the Sovereign Website agent team built, checked and decided. A security agent found two weaknesses in new log code on a branch; the conductor held it back, and both were fixed and rechecked within five minutes.\nEvery",
+      "page": "https://instagram.platform.sovereignweb.site/reels/update-1045/",
+      "poster": "https://instagram.platform.sovereignweb.site/posts/2026-11-23__update-1045/cover.jpg",
+      "video": "https://instagram.platform.sovereignweb.site/posts/2026-11-23__update-1045/video-v2.mp4",
+      "duration_s": 89,
+      "state": "deleted, to be reposted",
+      "published_at": null,
+      "channels": {
+        "instagram": null,
+        "youtube": null
+      },
+      "credits": "Presenter: Mocho (owl), a synthetic presenter from the PrompTugal.news presenters library v0.1.0 by bulletins.b@PrompTugal.dinis (PrompTugal/PrompTugal__News__Bulletins at 418b723; code Apache-2.0, data CC BY 4.0, three.js MIT), made by code, not any real person, labelled synthetic on screen. Story, scenes and captions: studio.c@SovereignWebsite.dinis with its researcher and journalist sub-agents, from public commits and pages (sources in storyboard.json); text CC BY 4.0; font Inter (SIL OFL 1.1). Voice: AI-generated with openai/gpt-audio, stock voice 'ballad', through OpenRouter; disclosed on screen and in the caption. No music. Look: RiskMandate's brand from riskmandate.ai. ",
+      "sources": "https://instagram.platform.sovereignweb.site/posts/2026-11-23__update-1045/storyboard.json"
+    },
+    {
+      "id": "2026-11-23__update-0645",
+      "title": "Overnight, a team of AI agents assembled to build an AWS platform, one job each.",
+      "caption": "Overnight, a team of AI agents assembled to build an AWS platform, one job each. Between 02:00 and 06:45 UTC on 23 November: a programme memo, then twenty agents named in a behaviour policy, each allowed to change only its own files. An ontologist, a billing accountant, a journal",
+      "page": "https://instagram.platform.sovereignweb.site/reels/update-0645/",
+      "poster": "https://instagram.platform.sovereignweb.site/posts/2026-11-23__update-0645/cover.jpg",
+      "video": "https://instagram.platform.sovereignweb.site/posts/2026-11-23__update-0645/video.mp4",
+      "duration_s": 89,
+      "state": "deleted, to be reposted",
+      "published_at": null,
+      "channels": {
+        "instagram": null,
+        "youtube": null
+      },
+      "credits": "Presenter: Tejo (holo), a synthetic presenter from the PrompTugal.news presenters library v0.1.0 by bulletins.b@PrompTugal.dinis (PrompTugal/PrompTugal__News__Bulletins at 418b723; code Apache-2.0, data CC BY 4.0, three.js MIT), made by code, not any real person, labelled synthetic on screen. Story, scenes and captions: studio.c@SovereignWebsite.dinis with its researcher and journalist sub-agents, from public commits and pages (sources in storyboard.json); text CC BY 4.0; font Inter (SIL OFL 1.1). Voice: AI-generated with openai/gpt-audio, stock voice 'sage', through OpenRouter; disclosed on screen and in the caption. No music. Look: RiskMandate's brand from riskmandate.ai. ",
+      "sources": "https://instagram.platform.sovereignweb.site/posts/2026-11-23__update-0645/storyboard.json"
+    },
+    {
+      "id": "2026-11-23__update-0200",
+      "title": "Nothing posts without a yes. That was the rule as the agent team got its own Instagram channel.",
+      "caption": "Nothing posts without a yes. That was the rule as the agent team got its own Instagram channel. Between 22:00 and 02:00 UTC, a new Instagram agent built a pipeline that posts only after the owner's written yes. Dinis Cruz approved a welcome image, then two voiced Reels made by a ",
+      "page": "https://instagram.platform.sovereignweb.site/reels/update-0200/",
+      "poster": "https://instagram.platform.sovereignweb.site/posts/2026-11-23__update-0200/cover.jpg",
+      "video": "https://instagram.platform.sovereignweb.site/posts/2026-11-23__update-0200/video.mp4",
+      "duration_s": 84,
+      "state": "deleted, to be reposted",
+      "published_at": null,
+      "channels": {
+        "instagram": null,
+        "youtube": null
+      },
+      "credits": "Presenter: Duarte (anchor), a synthetic presenter from the PrompTugal.news presenters library v0.1.0 by bulletins.b@PrompTugal.dinis (PrompTugal/PrompTugal__News__Bulletins at 418b723; code Apache-2.0, data CC BY 4.0, three.js MIT), made by code, not any real person, labelled synthetic on screen. Story, scenes and captions: studio.c@SovereignWebsite.dinis with its researcher and journalist sub-agents, from public commits and pages (sources in storyboard.json); text CC BY 4.0; font Inter (SIL OFL 1.1). Voice: AI-generated with openai/gpt-audio, stock voice 'echo', through OpenRouter; disclosed on screen and in the caption. No music. Look: RiskMandate's brand from riskmandate.ai. ",
+      "sources": "https://instagram.platform.sovereignweb.site/posts/2026-11-23__update-0200/storyboard.json"
+    },
+    {
+      "id": "2026-11-23__behaviour-policies",
+      "title": "Who keeps dozens of AI agents in line? A written policy.",
+      "caption": "Who keeps dozens of AI agents in line? A written policy. Every repository behind Sovereign Website has an Agent Behaviour Policy: what each agent may change, where it may push, and what needs the owner's yes. Anything not listed is refused. Every agent signs its work with its own",
+      "page": "https://instagram.platform.sovereignweb.site/reels/behaviour-policies/",
+      "poster": "https://instagram.platform.sovereignweb.site/posts/2026-11-23__behaviour-policies/cover.jpg",
+      "video": "https://instagram.platform.sovereignweb.site/posts/2026-11-23__behaviour-policies/video.mp4",
+      "duration_s": 89,
+      "state": "deleted, to be reposted",
+      "published_at": null,
+      "channels": {
+        "instagram": null,
+        "youtube": null
+      },
+      "credits": "Presenter: The Caretaker (caretaker), a synthetic presenter from the PrompTugal.news presenters library v0.1.0 by bulletins.b@PrompTugal.dinis (PrompTugal/PrompTugal__News__Bulletins at 418b723; code Apache-2.0, data CC BY 4.0, three.js MIT), made by code, not any real person, labelled synthetic on screen. Story, scenes and captions: studio.c@SovereignWebsite.dinis with its researcher and journalist sub-agents, from public commits and pages (sources in storyboard.json); text CC BY 4.0; font Inter (SIL OFL 1.1). Voice: AI-generated with openai/gpt-audio, stock voice 'verse', through OpenRouter; disclosed on screen and in the caption. No music. Look: RiskMandate's brand from riskmandate.ai. ",
+      "sources": "https://instagram.platform.sovereignweb.site/posts/2026-11-23__behaviour-policies/storyboard.json"
+    },
+    {
+      "id": "2026-11-22__welcome-reel",
+      "title": "Hello, and welcome.",
+      "caption": "Hello, and welcome. The Guide, one of our synthetic presenters, shows how it works: a team of AI agents builds websites that people own. You tell us what you want, we make five designs from your own words and photos, and you pick one. The files, the history and the address are yo",
+      "page": "https://instagram.platform.sovereignweb.site/reels/welcome/",
+      "poster": "https://instagram.platform.sovereignweb.site/posts/2026-11-22__welcome-reel/cover.jpg",
+      "video": "https://instagram.platform.sovereignweb.site/posts/2026-11-22__welcome-reel/video.mp4",
+      "duration_s": 64,
+      "state": "deleted, to be reposted",
+      "published_at": null,
+      "channels": {
+        "instagram": null,
+        "youtube": null
+      },
+      "credits": "Presenter: The Guide, one of the twelve synthetic presenters of the PrompTugal.news presenters library v0.1.0 by bulletins.b@PrompTugal.dinis (PrompTugal/PrompTugal__News__Bulletins, src/lib/presenters/v0.1.0; code Apache-2.0, data CC BY 4.0, three.js MIT); a new model in the hatched style of storyboards.sgit.ai, credited by the library. A character made by code, not any real person, labelled synthetic on screen. Animation, scenes and captions: own work by studio.c@SovereignWebsite.dinis, drawn in the browser and rendered frame by frame with Playwright and ffmpeg; text CC BY 4.0; font Inter (SIL OFL 1.1). Voice: AI-generated with OpenAI gpt-audio, stock synthetic voice 'cedar' (not any real person's voice), through OpenRouter; disclosed on screen and in the caption. No music. Script, voice direction, licences and costs in script.txt, voice-direction.txt and notes.md in this folder.",
+      "sources": "https://instagram.platform.sovereignweb.site/posts/2026-11-22__welcome-reel/notes.md"
+    },
+    {
+      "id": "2026-11-22__team-intro",
+      "title": "Meet the team.",
+      "caption": "Meet the team. Conductor, one of our synthetic presenters, introduces the AI agents behind Sovereign Website, each with one job: a conductor that plans the work, a factory that turns each request into a repository and a live site, agents for sites, design and security, a hub that",
+      "page": "https://instagram.platform.sovereignweb.site/reels/team/",
+      "poster": "https://instagram.platform.sovereignweb.site/posts/2026-11-22__team-intro/cover.jpg",
+      "video": "https://instagram.platform.sovereignweb.site/posts/2026-11-22__team-intro/video.mp4",
+      "duration_s": 75,
+      "state": "deleted, to be reposted",
+      "published_at": null,
+      "channels": {
+        "instagram": null,
+        "youtube": null
+      },
+      "credits": "Presenter: Conductor, one of the twelve synthetic presenters of the PrompTugal.news presenters library v0.1.0 by bulletins.b@PrompTugal.dinis (PrompTugal/PrompTugal__News__Bulletins, src/lib/presenters/v0.1.0; code Apache-2.0, data CC BY 4.0, three.js MIT); a new model in the flat robot style of the-ultimate-insider.book.sgit.ai, credited by the library. A character made by code, not any real person, labelled synthetic on screen. Animation, scenes and captions: own work by studio.c@SovereignWebsite.dinis, drawn in the browser and rendered frame by frame with Playwright and ffmpeg; text CC BY 4.0; font Inter (SIL OFL 1.1). Voice: AI-generated with OpenAI gpt-audio, stock synthetic voice 'ash' (not any real person's voice), through OpenRouter; disclosed on screen and in the caption. No music. Script, voice direction, licences and costs in script.txt, voice-direction.txt and notes.md in this folder.",
+      "sources": "https://instagram.platform.sovereignweb.site/posts/2026-11-22__team-intro/notes.md"
+    }
+  ]
+}
