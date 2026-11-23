@@ -1,13 +1,13 @@
 {
   "kind": "reel",
   "media": [
-    "video.mp4"
+    "video-v2.mp4"
   ],
   "cover": "cover.jpg",
   "alt": [
     "An animated Reel: The Guide, a synthetic presenter with round glasses and a green jumper, explains Sovereign Website while drawings above him show a team of agents building a site, five designs with one picked, files, history and address, a site moving between hosts, checks ticking, and a Yes button approving a post."
   ],
-  "caption": "Hello, and welcome.\n\nThe Guide, one of our synthetic presenters, shows how it works: a team of AI agents builds websites that people own. You tell us what you want, we make five designs from your own words and photos, and you pick one. The files, the history and the address are yours, and you can move them anywhere.\n\nThe presenter is made by code and the voice is AI-generated. Nothing on this account is posted until a person says yes.\n\nMore at sovereignwebsite.ai, and the sites the agents have built at hub.sovereignweb.site\n\n#SovereignWebsite #AIagents #OwnYourWebsite",
+  "caption": "Hello, and welcome.\n\nThe Guide, one of our synthetic presenters, shows how it works: a team of AI agents builds websites that people own. You tell us what you want, we make five designs from your own words and photos, and you pick one. The files, the history and the address are yours, and you can move them anywhere.\n\nThe presenter is made by code and the voice is AI-generated. Every post follows a written rule, and the owner reviews what is published.\n\nMore at sovereignwebsite.ai, and the sites the agents have built at hub.sovereignweb.site\n\n#SovereignWebsite #AIagents #OwnYourWebsite",
   "source": "Presenter: The Guide, one of the twelve synthetic presenters of the PrompTugal.news presenters library v0.1.0 by bulletins.b@PrompTugal.dinis (PrompTugal/PrompTugal__News__Bulletins, src/lib/presenters/v0.1.0; code Apache-2.0, data CC BY 4.0, three.js MIT); a new model in the hatched style of storyboards.sgit.ai, credited by the library. A character made by code, not any real person, labelled synthetic on screen. Animation, scenes and captions: own work by studio.c@SovereignWebsite.dinis, drawn in the browser and rendered frame by frame with Playwright and ffmpeg; text CC BY 4.0; font Inter (SIL OFL 1.1). Voice: AI-generated with OpenAI gpt-audio, stock synthetic voice 'cedar' (not any real person's voice), through OpenRouter; disclosed on screen and in the caption. No music. Script, voice direction, licences and costs in script.txt, voice-direction.txt and notes.md in this folder.",
   "audio": {
     "file": "(voice only, mixed into video.mp4)",
@@ -28,5 +28,18 @@
         "why": "distorted sound from the studio's old audio chain; republished as video-v2.mp4"
       }
     }
-  ]
+  ],
+  "channels": [
+    "instagram",
+    "youtube"
+  ],
+  "youtube": {
+    "title": "Hello, and welcome: AI agents that build websites people own"
+  },
+  "approved": {
+    "by": "Dinis Cruz",
+    "at": "2026-11-23T15:23Z",
+    "where": "https://claude.ai/code/session_01Kw9UwBf2gRkufCCnZs335u",
+    "words": "I approved James, post them as they come; yes post them as they come; they should now go to the two channels"
+  }
 }

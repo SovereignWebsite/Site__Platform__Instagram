@@ -1,6 +1,6 @@
 {
   "about": "Reels from the RiskMandate Instagram and YouTube account, newest first. Built from site/posts/*/post.json by tools/build-reels-feed.mjs.",
-  "updated": "2026-11-23T14:17Z",
+  "updated": "2026-11-23T15:23Z",
   "reels": [
     {
       "id": "2026-11-23__update-1045",
@@ -25,8 +25,8 @@
       "caption": "Overnight, a team of AI agents assembled to build an AWS platform, one job each. Between 02:00 and 06:45 UTC on 23 November: a programme memo, then twenty agents named in a behaviour policy, each allowed to change only its own files. An ontologist, a billing accountant, a journal",
       "page": "https://instagram.platform.sovereignweb.site/reels/update-0645/",
       "poster": "https://instagram.platform.sovereignweb.site/posts/2026-11-23__update-0645/cover.jpg",
-      "video": "https://instagram.platform.sovereignweb.site/posts/2026-11-23__update-0645/video.mp4",
-      "duration_s": 89,
+      "video": "https://instagram.platform.sovereignweb.site/posts/2026-11-23__update-0645/video-v2.mp4",
+      "duration_s": 78,
       "state": "deleted, to be reposted",
       "published_at": null,
       "channels": {
@@ -59,8 +59,8 @@
       "caption": "Who keeps dozens of AI agents in line? A written policy. Every repository behind Sovereign Website has an Agent Behaviour Policy: what each agent may change, where it may push, and what needs the owner's yes. Anything not listed is refused. Every agent signs its work with its own",
       "page": "https://instagram.platform.sovereignweb.site/reels/behaviour-policies/",
       "poster": "https://instagram.platform.sovereignweb.site/posts/2026-11-23__behaviour-policies/cover.jpg",
-      "video": "https://instagram.platform.sovereignweb.site/posts/2026-11-23__behaviour-policies/video.mp4",
-      "duration_s": 89,
+      "video": "https://instagram.platform.sovereignweb.site/posts/2026-11-23__behaviour-policies/video-v2.mp4",
+      "duration_s": 81,
       "state": "deleted, to be reposted",
       "published_at": null,
       "channels": {
@@ -76,8 +76,8 @@
       "caption": "Hello, and welcome. The Guide, one of our synthetic presenters, shows how it works: a team of AI agents builds websites that people own. You tell us what you want, we make five designs from your own words and photos, and you pick one. The files, the history and the address are yo",
       "page": "https://instagram.platform.sovereignweb.site/reels/welcome/",
       "poster": "https://instagram.platform.sovereignweb.site/posts/2026-11-22__welcome-reel/cover.jpg",
-      "video": "https://instagram.platform.sovereignweb.site/posts/2026-11-22__welcome-reel/video.mp4",
-      "duration_s": 64,
+      "video": "https://instagram.platform.sovereignweb.site/posts/2026-11-22__welcome-reel/video-v2.mp4",
+      "duration_s": 55,
       "state": "deleted, to be reposted",
       "published_at": null,
       "channels": {

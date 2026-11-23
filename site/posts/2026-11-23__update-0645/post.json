@@ -1,7 +1,7 @@
 {
   "kind": "reel",
   "media": [
-    "video.mp4"
+    "video-v2.mp4"
   ],
   "cover": "cover.jpg",
   "thumbnail_offset_ms": 600,
@@ -29,5 +29,19 @@
         "why": "distorted sound from the studio's old audio chain; republished as video-v2.mp4"
       }
     }
-  ]
+  ],
+  "channels": [
+    "instagram",
+    "youtube"
+  ],
+  "youtube": {
+    "title": "Overnight, a team of AI agents assembled to build an AWS platform, one job each."
+  },
+  "approved": {
+    "by": "Dinis Cruz",
+    "at": "2026-11-23T15:23Z",
+    "where": "https://claude.ai/code/session_01Kw9UwBf2gRkufCCnZs335u",
+    "words": "I approved James, post them as they come; yes post them as they come; they should now go to the two channels"
+  },
+  "due_at": "2026-11-23T16:53:00Z"
 }
