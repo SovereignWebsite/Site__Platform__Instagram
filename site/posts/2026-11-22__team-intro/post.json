@@ -15,5 +15,11 @@
     "prompt": "script.txt read word for word, with voice-direction.txt",
     "date": "2026-11-23",
     "plan": "OpenRouter pay-as-you-go on Dinis Cruz's key; model openai/gpt-audio, voice ash; no music track"
+  },
+  "approved": {
+    "by": "Dinis Cruz",
+    "at": "2026-11-23T01:50Z",
+    "where": "https://claude.ai/code/session_01Kw9UwBf2gRkufCCnZs335u",
+    "words": "Yes, paste both. First the welcome, then the team intro. (then the team intro)"
   }
 }
