@@ -43,5 +43,16 @@
     "where": "https://claude.ai/code/session_01Kw9UwBf2gRkufCCnZs335u",
     "words": "I approved James, post them as they come; yes post them as they come; they should now go to the two channels"
   },
-  "due_at": "2026-11-23T16:53:00Z"
+  "due_at": "2026-11-23T16:53:00Z",
+  "published": {
+    "channels": {
+      "instagram": {
+        "via": "buffer",
+        "buffer_post_id": "6b045b3595a2771f4ac2a7c9",
+        "scheduled_for": "2026-11-23T16:53:00Z",
+        "run": "https://github.com/SovereignWebsite/Site__Platform__Instagram/actions/runs/45205226734"
+      }
+    }
+  },
+  "youtube_pending": "Buffer refused: YouTube allows 2 scheduled posts a day on this channel; send to YouTube on another day (the script skips Instagram, already sent)."
 }

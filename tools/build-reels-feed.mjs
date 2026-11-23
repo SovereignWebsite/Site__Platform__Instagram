@@ -17,7 +17,7 @@ for (const id of readdirSync('site/posts').sort().reverse()) {
   const slug = pages[id] || id.split('__')[1];
   const pub = p.published || null;
   const ch = pub ? (pub.channels || { instagram: pub }) : {};
-  const state = pub ? 'sent' : (p.previous_sends || []).length ? 'deleted, to be reposted' : 'waiting';
+  const state = pub ? (p.youtube_pending ? 'sent to Instagram; YouTube pending' : 'sent') : (p.previous_sends || []).length ? 'deleted, to be reposted' : 'waiting';
   out.push({
     id, title: p.caption.split('\n')[0],
     caption: p.caption.split('\n\n').slice(0, 2).join(' ').slice(0, 280),
@@ -26,8 +26,9 @@ for (const id of readdirSync('site/posts').sort().reverse()) {
     video: `${SITE}/posts/${id}/${video}`,
     duration_s: duration,
     state,
-    published_at: pub ? (pub.scheduled_for || pub.sent_at || null) : null,
+    published_at: pub ? (() => { const x = pub.channels ? (pub.channels.instagram || pub.channels.youtube) : pub; return x.scheduled_for || x.sent_at || null; })() : null,
     channels: { instagram: (ch.instagram && ch.instagram.url) || null, youtube: (ch.youtube && ch.youtube.url) || null },
+    sent_to: { instagram: !!ch.instagram, youtube: !!ch.youtube },
     credits: p.source || null,
     sources: existsSync(`site/posts/${id}/storyboard.json`) ? `${SITE}/posts/${id}/storyboard.json` : (existsSync(`site/posts/${id}/notes.md`) ? `${SITE}/posts/${id}/notes.md` : null),
   });

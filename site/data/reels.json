@@ -1,6 +1,6 @@
 {
   "about": "Reels from the RiskMandate Instagram and YouTube account, newest first. Built from site/posts/*/post.json by tools/build-reels-feed.mjs.",
-  "updated": "2026-11-23T15:23Z",
+  "updated": "2026-11-23T15:27Z",
   "reels": [
     {
       "id": "2026-11-23__update-1045",
@@ -16,6 +16,10 @@
         "instagram": null,
         "youtube": null
       },
+      "sent_to": {
+        "instagram": false,
+        "youtube": false
+      },
       "credits": "Presenter: Mocho (owl), a synthetic presenter from the PrompTugal.news presenters library v0.1.0 by bulletins.b@PrompTugal.dinis (PrompTugal/PrompTugal__News__Bulletins at 418b723; code Apache-2.0, data CC BY 4.0, three.js MIT), made by code, not any real person, labelled synthetic on screen. Story, scenes and captions: studio.c@SovereignWebsite.dinis with its researcher and journalist sub-agents, from public commits and pages (sources in storyboard.json); text CC BY 4.0; font Inter (SIL OFL 1.1). Voice: AI-generated with openai/gpt-audio, stock voice 'ballad', through OpenRouter; disclosed on screen and in the caption. No music. Look: RiskMandate's brand from riskmandate.ai. ",
       "sources": "https://instagram.platform.sovereignweb.site/posts/2026-11-23__update-1045/storyboard.json"
     },
@@ -27,11 +31,15 @@
       "poster": "https://instagram.platform.sovereignweb.site/posts/2026-11-23__update-0645/cover.jpg",
       "video": "https://instagram.platform.sovereignweb.site/posts/2026-11-23__update-0645/video-v2.mp4",
       "duration_s": 78,
-      "state": "deleted, to be reposted",
-      "published_at": null,
+      "state": "sent to Instagram; YouTube pending",
+      "published_at": "2026-11-23T16:53:00Z",
       "channels": {
         "instagram": null,
         "youtube": null
+      },
+      "sent_to": {
+        "instagram": true,
+        "youtube": false
       },
       "credits": "Presenter: Tejo (holo), a synthetic presenter from the PrompTugal.news presenters library v0.1.0 by bulletins.b@PrompTugal.dinis (PrompTugal/PrompTugal__News__Bulletins at 418b723; code Apache-2.0, data CC BY 4.0, three.js MIT), made by code, not any real person, labelled synthetic on screen. Story, scenes and captions: studio.c@SovereignWebsite.dinis with its researcher and journalist sub-agents, from public commits and pages (sources in storyboard.json); text CC BY 4.0; font Inter (SIL OFL 1.1). Voice: AI-generated with openai/gpt-audio, stock voice 'sage', through OpenRouter; disclosed on screen and in the caption. No music. Look: RiskMandate's brand from riskmandate.ai. ",
       "sources": "https://instagram.platform.sovereignweb.site/posts/2026-11-23__update-0645/storyboard.json"
@@ -50,6 +58,10 @@
         "instagram": null,
         "youtube": null
       },
+      "sent_to": {
+        "instagram": false,
+        "youtube": false
+      },
       "credits": "Presenter: Duarte (anchor), a synthetic presenter from the PrompTugal.news presenters library v0.1.0 by bulletins.b@PrompTugal.dinis (PrompTugal/PrompTugal__News__Bulletins at 418b723; code Apache-2.0, data CC BY 4.0, three.js MIT), made by code, not any real person, labelled synthetic on screen. Story, scenes and captions: studio.c@SovereignWebsite.dinis with its researcher and journalist sub-agents, from public commits and pages (sources in storyboard.json); text CC BY 4.0; font Inter (SIL OFL 1.1). Voice: AI-generated with openai/gpt-audio, stock voice 'echo', through OpenRouter; disclosed on screen and in the caption. No music. Look: RiskMandate's brand from riskmandate.ai. ",
       "sources": "https://instagram.platform.sovereignweb.site/posts/2026-11-23__update-0200/storyboard.json"
     },
@@ -61,11 +73,15 @@
       "poster": "https://instagram.platform.sovereignweb.site/posts/2026-11-23__behaviour-policies/cover.jpg",
       "video": "https://instagram.platform.sovereignweb.site/posts/2026-11-23__behaviour-policies/video-v2.mp4",
       "duration_s": 81,
-      "state": "deleted, to be reposted",
-      "published_at": null,
+      "state": "sent",
+      "published_at": "2026-11-23T16:08:00Z",
       "channels": {
         "instagram": null,
         "youtube": null
+      },
+      "sent_to": {
+        "instagram": true,
+        "youtube": true
       },
       "credits": "Presenter: The Caretaker (caretaker), a synthetic presenter from the PrompTugal.news presenters library v0.1.0 by bulletins.b@PrompTugal.dinis (PrompTugal/PrompTugal__News__Bulletins at 418b723; code Apache-2.0, data CC BY 4.0, three.js MIT), made by code, not any real person, labelled synthetic on screen. Story, scenes and captions: studio.c@SovereignWebsite.dinis with its researcher and journalist sub-agents, from public commits and pages (sources in storyboard.json); text CC BY 4.0; font Inter (SIL OFL 1.1). Voice: AI-generated with openai/gpt-audio, stock voice 'verse', through OpenRouter; disclosed on screen and in the caption. No music. Look: RiskMandate's brand from riskmandate.ai. ",
       "sources": "https://instagram.platform.sovereignweb.site/posts/2026-11-23__behaviour-policies/storyboard.json"
@@ -78,11 +94,15 @@
       "poster": "https://instagram.platform.sovereignweb.site/posts/2026-11-22__welcome-reel/cover.jpg",
       "video": "https://instagram.platform.sovereignweb.site/posts/2026-11-22__welcome-reel/video-v2.mp4",
       "duration_s": 55,
-      "state": "deleted, to be reposted",
-      "published_at": null,
+      "state": "sent",
+      "published_at": "2026-11-23T15:25:14Z",
       "channels": {
         "instagram": null,
         "youtube": null
+      },
+      "sent_to": {
+        "instagram": true,
+        "youtube": true
       },
       "credits": "Presenter: The Guide, one of the twelve synthetic presenters of the PrompTugal.news presenters library v0.1.0 by bulletins.b@PrompTugal.dinis (PrompTugal/PrompTugal__News__Bulletins, src/lib/presenters/v0.1.0; code Apache-2.0, data CC BY 4.0, three.js MIT); a new model in the hatched style of storyboards.sgit.ai, credited by the library. A character made by code, not any real person, labelled synthetic on screen. Animation, scenes and captions: own work by studio.c@SovereignWebsite.dinis, drawn in the browser and rendered frame by frame with Playwright and ffmpeg; text CC BY 4.0; font Inter (SIL OFL 1.1). Voice: AI-generated with OpenAI gpt-audio, stock synthetic voice 'cedar' (not any real person's voice), through OpenRouter; disclosed on screen and in the caption. No music. Script, voice direction, licences and costs in script.txt, voice-direction.txt and notes.md in this folder.",
       "sources": "https://instagram.platform.sovereignweb.site/posts/2026-11-22__welcome-reel/notes.md"
@@ -100,6 +120,10 @@
       "channels": {
         "instagram": null,
         "youtube": null
+      },
+      "sent_to": {
+        "instagram": false,
+        "youtube": false
       },
       "credits": "Presenter: Conductor, one of the twelve synthetic presenters of the PrompTugal.news presenters library v0.1.0 by bulletins.b@PrompTugal.dinis (PrompTugal/PrompTugal__News__Bulletins, src/lib/presenters/v0.1.0; code Apache-2.0, data CC BY 4.0, three.js MIT); a new model in the flat robot style of the-ultimate-insider.book.sgit.ai, credited by the library. A character made by code, not any real person, labelled synthetic on screen. Animation, scenes and captions: own work by studio.c@SovereignWebsite.dinis, drawn in the browser and rendered frame by frame with Playwright and ffmpeg; text CC BY 4.0; font Inter (SIL OFL 1.1). Voice: AI-generated with OpenAI gpt-audio, stock synthetic voice 'ash' (not any real person's voice), through OpenRouter; disclosed on screen and in the caption. No music. Script, voice direction, licences and costs in script.txt, voice-direction.txt and notes.md in this folder.",
       "sources": "https://instagram.platform.sovereignweb.site/posts/2026-11-22__team-intro/notes.md"

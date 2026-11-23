@@ -41,5 +41,21 @@
     "at": "2026-11-23T15:23Z",
     "where": "https://claude.ai/code/session_01Kw9UwBf2gRkufCCnZs335u",
     "words": "I approved James, post them as they come; yes post them as they come; they should now go to the two channels"
+  },
+  "published": {
+    "channels": {
+      "instagram": {
+        "via": "buffer",
+        "buffer_post_id": "6b045adafb49201520eacf69",
+        "sent_at": "2026-11-23T15:25:14Z",
+        "run": "https://github.com/SovereignWebsite/Site__Platform__Instagram/actions/runs/45204930349"
+      },
+      "youtube": {
+        "via": "buffer",
+        "buffer_post_id": "6b045ae4cc3eaafce791f317",
+        "sent_at": "2026-11-23T15:25:24Z",
+        "run": "https://github.com/SovereignWebsite/Site__Platform__Instagram/actions/runs/45204930349"
+      }
+    }
   }
 }
