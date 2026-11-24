@@ -28,13 +28,15 @@
         "via": "buffer",
         "buffer_post_id": "6b043f1bf3aecf260a978f03",
         "sent_at": "2026-11-23T13:26:51Z",
-        "run": "https://github.com/SovereignWebsite/Site__Platform__Instagram/actions/runs/45183949699"
+        "run": "https://github.com/SovereignWebsite/Site__Platform__Instagram/actions/runs/45183949699",
+        "url": "https://www.instagram.com/p/DgFfExllo7Z/"
       },
       "linkedin": {
         "via": "buffer",
         "buffer_post_id": "6b04614182358053926d0925",
         "sent_at": "2026-11-23T15:52:33Z",
-        "run": "https://github.com/SovereignWebsite/Site__Platform__Instagram/actions/runs/45210046577"
+        "run": "https://github.com/SovereignWebsite/Site__Platform__Instagram/actions/runs/45210046577",
+        "url": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7530659657447575552"
       }
     }
   },

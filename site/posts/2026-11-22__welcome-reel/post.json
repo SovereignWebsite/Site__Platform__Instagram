@@ -53,20 +53,22 @@
         "via": "buffer",
         "buffer_post_id": "6b045adafb49201520eacf69",
         "sent_at": "2026-11-23T15:25:14Z",
-        "run": "https://github.com/SovereignWebsite/Site__Platform__Instagram/actions/runs/45204930349"
+        "run": "https://github.com/SovereignWebsite/Site__Platform__Instagram/actions/runs/45204930349",
+        "url": "https://www.instagram.com/reel/DgFsnAvqT18/"
       },
       "youtube": {
         "via": "buffer",
         "buffer_post_id": "6b045ae4cc3eaafce791f317",
         "sent_at": "2026-11-23T15:25:24Z",
         "run": "https://github.com/SovereignWebsite/Site__Platform__Instagram/actions/runs/45204930349",
-        "url": "https://www.youtube.com/shorts/9nlQYOPfMYE"
+        "url": "https://www.youtube.com/shorts/9nIQYOPfMYE"
       },
       "linkedin": {
         "via": "buffer",
         "buffer_post_id": "6b04616682358053926d19a8",
         "sent_at": "2026-11-23T15:53:10Z",
-        "run": "https://github.com/SovereignWebsite/Site__Platform__Instagram/actions/runs/45210166177"
+        "run": "https://github.com/SovereignWebsite/Site__Platform__Instagram/actions/runs/45210166177",
+        "url": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7530659812137701376"
       }
     }
   }

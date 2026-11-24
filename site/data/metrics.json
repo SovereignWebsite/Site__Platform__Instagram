@@ -1,0 +1,491 @@
+{
+  "read_at": "2026-11-24T15:47Z",
+  "posts": [
+    {
+      "id": "2026-11-22__team-intro",
+      "channel": "instagram",
+      "buffer_post_id": "6b04c8de07fee37ee60d7d82",
+      "status": "sent",
+      "sent_at": "2026-11-24T08:08:57.457Z",
+      "link": "https://www.instagram.com/reel/DgHfXi7hCml/",
+      "metrics_updated": "2026-11-23T23:14:38.090Z",
+      "metrics": null,
+      "error": null
+    },
+    {
+      "id": "2026-11-22__team-intro",
+      "channel": "youtube",
+      "buffer_post_id": "6b04c8de07fee37ee60d7dad",
+      "status": "scheduled",
+      "sent_at": null,
+      "link": null,
+      "metrics_updated": "2026-11-23T23:14:38.533Z",
+      "metrics": {
+        "reactions": 0,
+        "comments": 0,
+        "engagementRate": 0,
+        "views": 0
+      },
+      "error": null
+    },
+    {
+      "id": "2026-11-22__team-intro",
+      "channel": "linkedin",
+      "buffer_post_id": "6b04c8de8165ce395ba52f46",
+      "status": "scheduled",
+      "sent_at": null,
+      "link": null,
+      "metrics_updated": "2026-11-23T23:14:38.998Z",
+      "metrics": {
+        "reactions": 0,
+        "comments": 0
+      },
+      "error": null
+    },
+    {
+      "id": "2026-11-22__welcome",
+      "channel": "instagram",
+      "buffer_post_id": "6b03734cd5eabfb8cce752f6",
+      "status": "sent",
+      "sent_at": "2026-11-22T22:57:25.759Z",
+      "link": "https://www.instagram.com/p/DgD7igSn88v/",
+      "metrics_updated": "2026-11-22T22:57:16.680Z",
+      "metrics": null,
+      "error": null
+    },
+    {
+      "id": "2026-11-22__welcome-reel",
+      "channel": "instagram",
+      "buffer_post_id": "6b045adafb49201520eacf69",
+      "status": "sent",
+      "sent_at": "2026-11-23T15:26:09.788Z",
+      "link": "https://www.instagram.com/reel/DgFsnAvqT18/",
+      "metrics_updated": "2026-11-23T21:56:03.702Z",
+      "metrics": {
+        "reactions": 0,
+        "comments": 0,
+        "engagementRate": 0,
+        "views": 1,
+        "shares": 0,
+        "saves": 0,
+        "totalTimeWatched": 0.01,
+        "averageTimeWatched": 0.47,
+        "reach": 1
+      },
+      "error": null
+    },
+    {
+      "id": "2026-11-22__welcome-reel",
+      "channel": "youtube",
+      "buffer_post_id": "6b045ae4cc3eaafce791f317",
+      "status": "sent",
+      "sent_at": "2026-11-23T15:25:26.620Z",
+      "link": "https://www.youtube.com/shorts/9nIQYOPfMYE",
+      "metrics_updated": "2026-11-24T14:40:03.082Z",
+      "metrics": {
+        "reactions": 1,
+        "comments": 0,
+        "engagementRate": 5.56,
+        "views": 18
+      },
+      "error": null
+    },
+    {
+      "id": "2026-11-22__welcome-reel",
+      "channel": "linkedin",
+      "buffer_post_id": "6b04616682358053926d19a8",
+      "status": "sent",
+      "sent_at": "2026-11-23T15:53:32.637Z",
+      "link": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7530659812137701376",
+      "metrics_updated": "2026-11-24T15:03:41.385Z",
+      "metrics": {
+        "reactions": 0,
+        "comments": 0,
+        "engagementRate": 0,
+        "impressions": 14,
+        "reach": 13,
+        "views": 4,
+        "totalTimeWatched": 0.39,
+        "viewers": 4
+      },
+      "error": null
+    },
+    {
+      "id": "2026-11-23__behaviour-policies",
+      "channel": "instagram",
+      "buffer_post_id": "6b045b0dcc3eaafce7920522",
+      "status": "sent",
+      "sent_at": "2026-11-23T16:09:28.943Z",
+      "link": "https://www.instagram.com/reel/DgFxg7Xy1_V/",
+      "metrics_updated": "2026-11-23T21:56:03.708Z",
+      "metrics": {
+        "reactions": 0,
+        "comments": 0,
+        "engagementRate": 0,
+        "views": 3,
+        "shares": 0,
+        "saves": 0,
+        "totalTimeWatched": 2.22,
+        "averageTimeWatched": 33.33,
+        "reach": 3
+      },
+      "error": null
+    },
+    {
+      "id": "2026-11-23__behaviour-policies",
+      "channel": "youtube",
+      "buffer_post_id": "6b045b0e386e40cc7f074947",
+      "status": "sent",
+      "sent_at": "2026-11-23T16:08:04.980Z",
+      "link": "https://www.youtube.com/shorts/ATIKPmnTkHE",
+      "metrics_updated": "2026-11-24T14:40:03.082Z",
+      "metrics": {
+        "reactions": 0,
+        "comments": 0,
+        "engagementRate": 0,
+        "views": 0
+      },
+      "error": null
+    },
+    {
+      "id": "2026-11-23__behaviour-policies",
+      "channel": "linkedin",
+      "buffer_post_id": "6b04a924c0a1a00006df49e6",
+      "status": "sent",
+      "sent_at": "2026-11-23T20:59:39.468Z",
+      "link": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7530736848143319040",
+      "metrics_updated": "2026-11-24T15:03:41.385Z",
+      "metrics": {
+        "reactions": 1,
+        "comments": 0,
+        "engagementRate": 0.72,
+        "impressions": 138,
+        "reach": 78,
+        "views": 35,
+        "totalTimeWatched": 8.55,
+        "viewers": 29
+      },
+      "error": null
+    },
+    {
+      "id": "2026-11-23__intro-riskmandate",
+      "channel": "instagram",
+      "buffer_post_id": "6b043f1bf3aecf260a978f03",
+      "status": "sent",
+      "sent_at": "2026-11-23T13:27:14.831Z",
+      "link": "https://www.instagram.com/p/DgFfExllo7Z/",
+      "metrics_updated": "2026-11-23T21:56:03.700Z",
+      "metrics": {
+        "reactions": 0,
+        "comments": 0,
+        "engagementRate": 0,
+        "views": 4,
+        "shares": 0,
+        "saves": 0,
+        "follows": 0,
+        "reach": 2
+      },
+      "error": null
+    },
+    {
+      "id": "2026-11-23__intro-riskmandate",
+      "channel": "linkedin",
+      "buffer_post_id": "6b04614182358053926d0925",
+      "status": "sent",
+      "sent_at": "2026-11-23T15:52:55.722Z",
+      "link": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7530659657447575552",
+      "metrics_updated": "2026-11-24T15:03:41.385Z",
+      "metrics": {
+        "reactions": 3,
+        "comments": 0,
+        "engagementRate": 30,
+        "impressions": 10,
+        "reach": 6
+      },
+      "error": null
+    },
+    {
+      "id": "2026-11-23__update-0200",
+      "channel": "instagram",
+      "buffer_post_id": "6b045f26e5918dfd0f6a7ff3",
+      "status": "sent",
+      "sent_at": "2026-11-23T17:40:59.824Z",
+      "link": "https://www.instagram.com/reel/DgF75b-A8R3/",
+      "metrics_updated": "2026-11-23T21:56:03.710Z",
+      "metrics": {
+        "reactions": 0,
+        "comments": 0,
+        "engagementRate": 0,
+        "views": 0,
+        "shares": 0,
+        "saves": 0,
+        "totalTimeWatched": 0,
+        "averageTimeWatched": 0,
+        "reach": 0
+      },
+      "error": null
+    },
+    {
+      "id": "2026-11-23__update-0200",
+      "channel": "youtube",
+      "buffer_post_id": "6b045fb5a17868cf45bb55cc",
+      "status": "scheduled",
+      "sent_at": null,
+      "link": null,
+      "metrics_updated": "2026-11-23T15:45:57.644Z",
+      "metrics": {
+        "reactions": 0,
+        "comments": 0,
+        "engagementRate": 0,
+        "views": 0
+      },
+      "error": null
+    },
+    {
+      "id": "2026-11-23__update-0200",
+      "channel": "linkedin",
+      "buffer_post_id": "6b04a97818db0405bda364e0",
+      "status": "sent",
+      "sent_at": "2026-11-24T14:38:26.272Z",
+      "link": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7531003298997469184",
+      "metrics_updated": "2026-11-24T15:03:41.385Z",
+      "metrics": {
+        "reactions": 0,
+        "comments": 0
+      },
+      "error": null
+    },
+    {
+      "id": "2026-11-23__update-0645",
+      "channel": "instagram",
+      "buffer_post_id": "6b045b3595a2771f4ac2a7c9",
+      "status": "sent",
+      "sent_at": "2026-11-23T16:53:59.768Z",
+      "link": "https://www.instagram.com/reel/DgF2qRQvRpy/",
+      "metrics_updated": "2026-11-23T21:56:03.704Z",
+      "metrics": {
+        "reactions": 0,
+        "comments": 0,
+        "engagementRate": 0,
+        "views": 2,
+        "shares": 0,
+        "saves": 0,
+        "totalTimeWatched": 0.02,
+        "averageTimeWatched": 0.72,
+        "reach": 2
+      },
+      "error": null
+    },
+    {
+      "id": "2026-11-23__update-0645",
+      "channel": "youtube",
+      "buffer_post_id": "6b045f93560763d91f0f19a8",
+      "status": "error",
+      "sent_at": null,
+      "link": null,
+      "metrics_updated": "2026-11-23T15:45:23.055Z",
+      "metrics": {
+        "reactions": 0,
+        "comments": 0,
+        "engagementRate": 0,
+        "views": 0
+      },
+      "error": null
+    },
+    {
+      "id": "2026-11-23__update-0645",
+      "channel": "linkedin",
+      "buffer_post_id": "6b04a95707fee37ee6ffc149",
+      "status": "sent",
+      "sent_at": "2026-11-24T08:38:24.813Z",
+      "link": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7530912695731032064",
+      "metrics_updated": "2026-11-24T15:03:41.385Z",
+      "metrics": {
+        "reactions": 0,
+        "comments": 0,
+        "engagementRate": 0,
+        "impressions": 9,
+        "reach": 6,
+        "views": 2,
+        "totalTimeWatched": 0.15,
+        "viewers": 2
+      },
+      "error": null
+    },
+    {
+      "id": "2026-11-23__update-1045",
+      "channel": "instagram",
+      "buffer_post_id": "6b045f4f83a0436033421dd7",
+      "status": "sent",
+      "sent_at": "2026-11-23T18:26:01.165Z",
+      "link": "https://www.instagram.com/reel/DgGA_rxztMI/",
+      "metrics_updated": "2026-11-23T21:56:03.706Z",
+      "metrics": {
+        "reactions": 0,
+        "comments": 0,
+        "engagementRate": 0,
+        "views": 0,
+        "shares": 0,
+        "saves": 0,
+        "totalTimeWatched": 0,
+        "averageTimeWatched": 0,
+        "reach": 0
+      },
+      "error": null
+    },
+    {
+      "id": "2026-11-23__update-1045",
+      "channel": "youtube",
+      "buffer_post_id": "6b045fd182358053926c68ee",
+      "status": "scheduled",
+      "sent_at": null,
+      "link": null,
+      "metrics_updated": "2026-11-23T15:46:25.395Z",
+      "metrics": {
+        "reactions": 0,
+        "comments": 0,
+        "engagementRate": 0,
+        "views": 0
+      },
+      "error": null
+    },
+    {
+      "id": "2026-11-23__update-1045",
+      "channel": "linkedin",
+      "buffer_post_id": "6b04a99458d65b8ef8ca56e0",
+      "status": "scheduled",
+      "sent_at": null,
+      "link": null,
+      "metrics_updated": "2026-11-23T21:01:08.392Z",
+      "metrics": {
+        "reactions": 0,
+        "comments": 0
+      },
+      "error": null
+    },
+    {
+      "id": "2026-11-23__update-2245",
+      "channel": "instagram",
+      "buffer_post_id": "6b04c884f72f10e1883ea8b4",
+      "status": "sent",
+      "sent_at": "2026-11-23T23:16:05.034Z",
+      "link": "https://www.instagram.com/reel/DgGiN1ENH1X/",
+      "metrics_updated": "2026-11-23T23:13:08.982Z",
+      "metrics": null,
+      "error": null
+    },
+    {
+      "id": "2026-11-23__update-2245",
+      "channel": "youtube",
+      "buffer_post_id": "6b04c88f18db0405bdb0ce47",
+      "status": "scheduled",
+      "sent_at": null,
+      "link": null,
+      "metrics_updated": "2026-11-23T23:13:19.458Z",
+      "metrics": {
+        "reactions": 0,
+        "comments": 0,
+        "engagementRate": 0,
+        "views": 0
+      },
+      "error": null
+    },
+    {
+      "id": "2026-11-23__update-2245",
+      "channel": "linkedin",
+      "buffer_post_id": "6b04c88f18db0405bdb0ce86",
+      "status": "scheduled",
+      "sent_at": null,
+      "link": null,
+      "metrics_updated": "2026-11-23T23:13:19.825Z",
+      "metrics": {
+        "reactions": 0,
+        "comments": 0
+      },
+      "error": null
+    },
+    {
+      "id": "2026-11-24__web-summit-galaxy",
+      "channel": "instagram",
+      "buffer_post_id": "6b056b9ef2684b72514b2b52",
+      "status": "sent",
+      "sent_at": "2026-11-24T10:49:59.011Z",
+      "link": "https://www.instagram.com/reel/DgHxysPNAsk/",
+      "metrics_updated": "2026-11-24T10:49:02.056Z",
+      "metrics": null,
+      "error": null
+    },
+    {
+      "id": "2026-11-24__web-summit-galaxy",
+      "channel": "youtube",
+      "buffer_post_id": "6b056ba85c81d3bca033ba45",
+      "status": "scheduled",
+      "sent_at": null,
+      "link": null,
+      "metrics_updated": "2026-11-24T10:49:12.636Z",
+      "metrics": {
+        "reactions": 0,
+        "comments": 0,
+        "engagementRate": 0,
+        "views": 0
+      },
+      "error": null
+    },
+    {
+      "id": "2026-11-24__web-summit-galaxy",
+      "channel": "linkedin",
+      "buffer_post_id": "6b056ba97681a3d3bb335406",
+      "status": "scheduled",
+      "sent_at": null,
+      "link": null,
+      "metrics_updated": "2026-11-24T10:49:13.074Z",
+      "metrics": {
+        "reactions": 0,
+        "comments": 0
+      },
+      "error": null
+    },
+    {
+      "id": "2026-11-24__why-websites",
+      "channel": "instagram",
+      "buffer_post_id": "6b056bcb7681a3d3bb33617c",
+      "status": "sent",
+      "sent_at": "2026-11-24T13:49:58.338Z",
+      "link": "https://www.instagram.com/reel/DgIGQT3BEjX/",
+      "metrics_updated": "2026-11-24T10:49:47.619Z",
+      "metrics": null,
+      "error": null
+    },
+    {
+      "id": "2026-11-24__why-websites",
+      "channel": "youtube",
+      "buffer_post_id": "6b056bccf58b414a3733e373",
+      "status": "scheduled",
+      "sent_at": null,
+      "link": null,
+      "metrics_updated": "2026-11-24T10:49:48.108Z",
+      "metrics": {
+        "reactions": 0,
+        "comments": 0,
+        "engagementRate": 0,
+        "views": 0
+      },
+      "error": null
+    },
+    {
+      "id": "2026-11-24__why-websites",
+      "channel": "linkedin",
+      "buffer_post_id": "6b056bccf58b414a3733e39e",
+      "status": "scheduled",
+      "sent_at": null,
+      "link": null,
+      "metrics_updated": "2026-11-24T10:49:48.472Z",
+      "metrics": {
+        "reactions": 0,
+        "comments": 0
+      },
+      "error": null
+    }
+  ],
+  "about": "Buffer's record of every post sent from this site: status, public link and counts. No names or comment text. Read by .github/workflows/read-metrics.yml."
+}

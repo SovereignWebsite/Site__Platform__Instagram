@@ -55,22 +55,28 @@
         "via": "buffer",
         "buffer_post_id": "6b045b3595a2771f4ac2a7c9",
         "scheduled_for": "2026-11-23T16:53:00Z",
-        "run": "https://github.com/SovereignWebsite/Site__Platform__Instagram/actions/runs/45205226734"
-      },
-      "youtube": {
-        "via": "buffer",
-        "buffer_post_id": "6b045f93560763d91f0f19a8",
-        "scheduled_for": "2026-11-24T12:08:00Z",
-        "run": "https://github.com/SovereignWebsite/Site__Platform__Instagram/actions/runs/45208669942"
+        "run": "https://github.com/SovereignWebsite/Site__Platform__Instagram/actions/runs/45205226734",
+        "url": "https://www.instagram.com/reel/DgF2qRQvRpy/"
       },
       "linkedin": {
         "via": "buffer",
         "buffer_post_id": "6b04a95707fee37ee6ffc149",
         "scheduled_for": "2026-11-24T08:38:00Z",
-        "run": "https://github.com/SovereignWebsite/Site__Platform__Instagram/actions/runs/45265032379"
+        "run": "https://github.com/SovereignWebsite/Site__Platform__Instagram/actions/runs/45265032379",
+        "url": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7530912695731032064"
       }
     }
   },
-  "youtube_due_at": "2026-11-24T12:08:00Z",
-  "linkedin_due_at": "2026-11-24T08:38:00Z"
+  "youtube_due_at": "2026-11-27T17:38:00Z",
+  "linkedin_due_at": "2026-11-24T08:38:00Z",
+  "failed_sends": [
+    {
+      "channel": "youtube",
+      "via": "buffer",
+      "buffer_post_id": "6b045f93560763d91f0f19a8",
+      "scheduled_for": "2026-11-24T12:08:00Z",
+      "run": "https://github.com/SovereignWebsite/Site__Platform__Instagram/actions/runs/45208669942",
+      "status": "error (Buffer, read 24 Nov 15:47 UTC)"
+    }
+  ]
 }
