@@ -31,5 +31,27 @@
   "youtube": {
     "title": "Right posts, wrong name: one bug found and fixed by AI agents in 18 minutes"
   },
-  "youtube_due_at": "2026-11-28T12:08:00Z"
+  "youtube_due_at": "2026-11-28T12:08:00Z",
+  "published": {
+    "channels": {
+      "instagram": {
+        "via": "buffer",
+        "buffer_post_id": "6b05e0e1bc1fcb6588e2e662",
+        "sent_at": "2026-11-24T19:09:22Z",
+        "run": "https://github.com/SovereignWebsite/Site__Platform__Instagram/actions/runs/45467130907"
+      },
+      "youtube": {
+        "via": "buffer",
+        "buffer_post_id": "6b05e0ec4148285e965bdc55",
+        "scheduled_for": "2026-11-28T12:08:00Z",
+        "run": "https://github.com/SovereignWebsite/Site__Platform__Instagram/actions/runs/45467130907"
+      },
+      "linkedin": {
+        "via": "buffer",
+        "buffer_post_id": "6b05e0edd8711eba6d91f7f7",
+        "sent_at": "2026-11-24T19:09:33Z",
+        "run": "https://github.com/SovereignWebsite/Site__Platform__Instagram/actions/runs/45467130907"
+      }
+    }
+  }
 }
