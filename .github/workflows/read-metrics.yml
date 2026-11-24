@@ -1,0 +1,22 @@
+# Reads Buffer's status, public link and metrics (counts only) for every post sent from this site.
+# By hand only. Read-only: it sends, edits and deletes nothing. The key is never echoed.
+name: Read metrics
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  read:
+    runs-on: ubuntu-latest
+    environment: instagram
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: dev
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Read
+        env:
+          BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
+        run: node tools/read-metrics.mjs
