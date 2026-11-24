@@ -32,5 +32,27 @@
     "title": "The Galaxy at Web Summit: 117 AI agents, and how we manage them"
   },
   "linkedin_due_at": "2026-11-26T14:38:00Z",
-  "youtube_due_at": "2026-11-26T17:38:00Z"
+  "youtube_due_at": "2026-11-26T17:38:00Z",
+  "published": {
+    "channels": {
+      "instagram": {
+        "via": "buffer",
+        "buffer_post_id": "6b056b9ef2684b72514b2b52",
+        "sent_at": "2026-11-24T10:49:02Z",
+        "run": "https://github.com/SovereignWebsite/Site__Platform__Instagram/actions/runs/45378291092"
+      },
+      "youtube": {
+        "via": "buffer",
+        "buffer_post_id": "6b056ba85c81d3bca033ba45",
+        "scheduled_for": "2026-11-26T17:38:00Z",
+        "run": "https://github.com/SovereignWebsite/Site__Platform__Instagram/actions/runs/45378291092"
+      },
+      "linkedin": {
+        "via": "buffer",
+        "buffer_post_id": "6b056ba97681a3d3bb335406",
+        "scheduled_for": "2026-11-26T14:38:00Z",
+        "run": "https://github.com/SovereignWebsite/Site__Platform__Instagram/actions/runs/45378291092"
+      }
+    }
+  }
 }
