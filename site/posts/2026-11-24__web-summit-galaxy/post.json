@@ -16,5 +16,21 @@
     "prompt": "script.txt read word for word, with voice-direction.txt",
     "date": "2026-11-24",
     "plan": "Mistral API on Dinis Cruz's key; mistral:voxtral-mini-tts-3:voice_3150; no music track"
-  }
+  },
+  "approved": {
+    "by": "Dinis Cruz",
+    "at": "2026-11-24T10:47Z",
+    "where": "https://claude.ai/code/session_01Kw9UwBf2gRkufCCnZs335u",
+    "words": "yes post them as they come; basically everything should go to all of them (and, in studio.c's session after watching these two: \"Yes post let's post those videos\")"
+  },
+  "channels": [
+    "instagram",
+    "youtube",
+    "linkedin"
+  ],
+  "youtube": {
+    "title": "The Galaxy at Web Summit: 117 AI agents, and how we manage them"
+  },
+  "linkedin_due_at": "2026-11-26T14:38:00Z",
+  "youtube_due_at": "2026-11-26T17:38:00Z"
 }

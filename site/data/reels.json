@@ -1,7 +1,49 @@
 {
   "about": "Reels from the RiskMandate Instagram and YouTube account, newest first. Built from site/posts/*/post.json by tools/build-reels-feed.mjs.",
-  "updated": "2026-11-23T23:14Z",
+  "updated": "2026-11-24T10:47Z",
   "reels": [
+    {
+      "id": "2026-11-24__why-websites",
+      "title": "Why does RiskMandate sell websites?",
+      "caption": "Why does RiskMandate sell websites? At Web Summit, people loved seeing our agents at work, but nobody could try it the next day. So we built small websites, each with five designs, that owners edit with Claude and publish themselves. That was the click: we sell RiskMandate's Agen",
+      "page": null,
+      "poster": "https://instagram.platform.sovereignweb.site/posts/2026-11-24__why-websites/cover.jpg",
+      "video": "https://instagram.platform.sovereignweb.site/posts/2026-11-24__why-websites/video.mp4",
+      "duration_s": 73,
+      "state": "waiting",
+      "published_at": null,
+      "channels": {
+        "instagram": null,
+        "youtube": null
+      },
+      "sent_to": {
+        "instagram": false,
+        "youtube": false
+      },
+      "credits": "Presenter: The Agent (agent), a synthetic presenter from the PrompTugal.news presenters library v0.1.0 by bulletins.b@PrompTugal.dinis (PrompTugal/PrompTugal__News__Bulletins at 418b723; code Apache-2.0, data CC BY 4.0, three.js MIT), made by code, not any real person, labelled synthetic on screen. Story, scenes and captions: studio.c@SovereignWebsite.dinis with its researcher and journalist sub-agents, from public commits and pages (sources in storyboard.json); text CC BY 4.0; font Inter (SIL OFL 1.1). Voice: AI-generated with Mistral Voxtral Mini TTS (voxtral-mini-tts-3), preset voice James, which Mistral lists as a professional voice clone offered for use with its speech model; disclosed on screen and in the caption. No music. Look: RiskMandate's brand from riskmandate.ai. ",
+      "sources": "https://instagram.platform.sovereignweb.site/posts/2026-11-24__why-websites/storyboard.json"
+    },
+    {
+      "id": "2026-11-24__web-summit-galaxy",
+      "title": "At Web Summit, our stand showed a galaxy: six suns, our human team, and every planet around them an AI agent. 117 of them on 20 November.",
+      "caption": "At Web Summit, our stand showed a galaxy: six suns, our human team, and every planet around them an AI agent. 117 of them on 20 November. Everyone asked the same question: how do you manage them? Our answer: Agent Behaviour Policies. Every agent has written limits and escalates b",
+      "page": null,
+      "poster": "https://instagram.platform.sovereignweb.site/posts/2026-11-24__web-summit-galaxy/cover.jpg",
+      "video": "https://instagram.platform.sovereignweb.site/posts/2026-11-24__web-summit-galaxy/video.mp4",
+      "duration_s": 65,
+      "state": "waiting",
+      "published_at": null,
+      "channels": {
+        "instagram": null,
+        "youtube": null
+      },
+      "sent_to": {
+        "instagram": false,
+        "youtube": false
+      },
+      "credits": "Presenter: Rowan (rowan), a synthetic presenter from the PrompTugal.news presenters library v0.1.0 by bulletins.b@PrompTugal.dinis (PrompTugal/PrompTugal__News__Bulletins at 418b723; code Apache-2.0, data CC BY 4.0, three.js MIT), made by code, not any real person, labelled synthetic on screen. Story, scenes and captions: studio.c@SovereignWebsite.dinis with its researcher and journalist sub-agents, from public commits and pages (sources in storyboard.json); text CC BY 4.0; font Inter (SIL OFL 1.1). Voice: AI-generated with Mistral Voxtral Mini TTS (voxtral-mini-tts-3), preset voice James, which Mistral lists as a professional voice clone offered for use with its speech model; disclosed on screen and in the caption. No music. Look: RiskMandate's brand from riskmandate.ai. ",
+      "sources": "https://instagram.platform.sovereignweb.site/posts/2026-11-24__web-summit-galaxy/storyboard.json"
+    },
     {
       "id": "2026-11-23__update-2245",
       "title": "The last twelve hours, 23 Nov 2026, 10:46 to 22:46 UTC: 414 commits in 27 public repositories, by 30 agents and one factory bot. We followed one new website through its first two hours.",
