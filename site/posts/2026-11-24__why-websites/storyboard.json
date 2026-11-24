@@ -1,0 +1,170 @@
+{
+ "voice": "mistral:voxtral-mini-tts-3:voice_3150",
+ "theme": {
+  "colours": {
+   "navy": "#0f0f0e",
+   "ink": "#1d1d1b",
+   "card": "#262623",
+   "line": "#3d3d37",
+   "gold": "#4fc48f",
+   "white": "#f7f6f2",
+   "muted": "#b9b6ab",
+   "green": "#3fb57f",
+   "blue": "#1a7f5a",
+   "bg0": "#1f2a24",
+   "bg1": "#161615",
+   "bg2": "#0f0f0e",
+   "stage": "#1f1f1d"
+  },
+  "wordmark": "<img src=\"rm-mark.svg\" alt=\"\"><span>RiskMandate</span>",
+  "source": "RiskMandate's brand from https://riskmandate.ai/ (mark /assets/brand/riskmandate-mark.svg; ink #161615, green #1A7F5A, paper #F7F6F2), read 23 Nov 2026; a lighter green for text on dark."
+ },
+ "stage": {
+  "dist": 1.9,
+  "h": 0.8,
+  "lh": 0.8
+ },
+ "media_dir": "/tmp/claude-0/-home-user-SovereignWebsite--Factory/401d24c8-7e15-50c9-9861-8513837be428/scratchpad/strategy/media",
+ "voice_direction": "Clear, warm, confident, a little brisk; a short breath between ideas.",
+ "window": "evergreen",
+ "presenter": "agent",
+ "presenter_name": "The Agent",
+ "cover": {
+  "hold": 1.2,
+  "date": "23 NOV 2026",
+  "kicker": "Strategy",
+  "headline": "Why RiskMandate sells <em>websites</em>",
+  "sub": "Business to consumer to business, in a minute"
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "narration": "At Web Summit, people loved seeing our agents at work. But nobody could try it the next day. That was the gap.",
+   "visual": {
+    "kind": "title",
+    "text": "Loved it. Could not try it.",
+    "sub": "The gap after Web Summit"
+   },
+   "facts": [
+    "https://newsroom.sgit.ai/articles/the-way-in.html"
+   ]
+  },
+  {
+   "id": "b2",
+   "narration": "I'm The Agent, a synthetic presenter with an AI voice. Visitors also liked agentic cells: small teams of AI agents, with written rules, in your own accounts.",
+   "visual": {
+    "kind": "quote",
+    "text": "A small team of AI agents, each with a role, a brief and written rules, working in your own accounts.",
+    "by": "agenticcells.ai"
+   },
+   "facts": [
+    "https://agenticcells.ai/"
+   ]
+  },
+  {
+   "id": "b3",
+   "narration": "Then we built small websites, each with five designs, which owners edit with Claude and publish themselves.",
+   "visual": {
+    "kind": "image",
+    "src": "file:risk-mandate-designs-desktop.png",
+    "credit": "Five designs: risk-mandate.startups.sovereignweb.site"
+   },
+   "facts": [
+    "https://risk-mandate.startups.sovereignweb.site/designs/",
+    "https://sovereignwebsite.ai/"
+   ]
+  },
+  {
+   "id": "b4",
+   "narration": "That was the click. We sell RiskMandate's policies through websites. Business to consumer, to business.",
+   "visual": {
+    "kind": "title",
+    "text": "B to C to B",
+    "sub": "Policies, sold through websites"
+   },
+   "facts": [
+    "https://newsroom.sgit.ai/articles/the-way-in.html"
+   ]
+  },
+  {
+   "id": "b5",
+   "narration": "A business user buys a website, like a consumer. Agents keep it, inside a written policy. And by using it, they come to trust the policy.",
+   "visual": {
+    "kind": "flow",
+    "nodes": [
+     "Buy a website",
+     "Agents keep it",
+     "Inside a written policy",
+     "Trust, by using it"
+    ]
+   },
+   "facts": [
+    "https://newsroom.sgit.ai/articles/the-way-in.html"
+   ]
+  },
+  {
+   "id": "b6",
+   "narration": "Policies make the agent cells work. The cells build the websites. And the websites put policies in people's hands.",
+   "visual": {
+    "kind": "cards",
+    "items": [
+     {
+      "title": "Policies",
+      "sub": "RiskMandate",
+      "icon": "security"
+     },
+     {
+      "title": "Agent cells",
+      "sub": "work inside them",
+      "icon": "hub"
+     },
+     {
+      "title": "Websites",
+      "sub": "built by the cells",
+      "icon": "sites"
+     },
+     {
+      "title": "People",
+      "sub": "use the policies",
+      "icon": "key"
+     }
+    ]
+   },
+   "facts": [
+    "https://riskmandate.ai/",
+    "https://agenticcells.ai/"
+   ]
+  },
+  {
+   "id": "b7",
+   "narration": "So we count websites made each day, people using and editing them, and their traffic. Every website is a billboard for RiskMandate.",
+   "visual": {
+    "kind": "list",
+    "items": [
+     "Websites made each day",
+     "People using them",
+     "People editing them",
+     "Their traffic"
+    ],
+    "caption": "Every website is a billboard"
+   },
+   "facts": [
+    "https://hub.sovereignweb.site/"
+   ]
+  },
+  {
+   "id": "b8",
+   "narration": "Thirty-two sites are working today. Find us at riskmandate dot A I.",
+   "visual": {
+    "kind": "stat",
+    "value": "32",
+    "label": "sites working, 11 of them people's own",
+    "caption": "hub.sovereignweb.site, 23 Nov 2026"
+   },
+   "facts": [
+    "https://hub.sovereignweb.site/"
+   ]
+  }
+ ],
+ "caption": "Why does RiskMandate sell websites?\n\nAt Web Summit, people loved seeing our agents at work, but nobody could try it the next day. So we built small websites, each with five designs, that owners edit with Claude and publish themselves. That was the click: we sell RiskMandate's Agent Behaviour Policies through websites. Business to consumer, to business.\n\nPolicies make the agent cells work, the cells build the websites, and the websites put policies in people's hands. Every website is a billboard for RiskMandate.\n\nThe presenter is synthetic and the voice is AI-generated.\n\nriskmandate.ai\n\n#RiskMandate #AIagents #SovereignWebsite"
+}
