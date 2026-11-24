@@ -64,6 +64,12 @@
         "scheduled_for": "2026-11-24T08:38:00Z",
         "run": "https://github.com/SovereignWebsite/Site__Platform__Instagram/actions/runs/45265032379",
         "url": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7530912695731032064"
+      },
+      "youtube": {
+        "via": "buffer",
+        "buffer_post_id": "6b05b1b8f32a3bc0e4e9066b",
+        "scheduled_for": "2026-11-27T17:38:00Z",
+        "run": "https://github.com/SovereignWebsite/Site__Platform__Instagram/actions/runs/45429635310"
       }
     }
   },

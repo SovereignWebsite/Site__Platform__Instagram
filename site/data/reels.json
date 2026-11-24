@@ -1,6 +1,6 @@
 {
   "about": "Reels from the RiskMandate Instagram and YouTube account, newest first. Built from site/posts/*/post.json by tools/build-reels-feed.mjs.",
-  "updated": "2026-11-24T15:47Z",
+  "updated": "2026-11-24T15:48Z",
   "reels": [
     {
       "id": "2026-11-24__why-websites",
@@ -94,7 +94,7 @@
       "poster": "https://instagram.platform.sovereignweb.site/posts/2026-11-23__update-0645/cover.jpg",
       "video": "https://instagram.platform.sovereignweb.site/posts/2026-11-23__update-0645/video-v2.mp4",
       "duration_s": 78,
-      "state": "sent to Instagram; YouTube scheduled for 2026-11-27T17:38:00Z",
+      "state": "sent",
       "published_at": "2026-11-23T16:53:00Z",
       "channels": {
         "instagram": "https://www.instagram.com/reel/DgF2qRQvRpy/",
@@ -102,7 +102,7 @@
       },
       "sent_to": {
         "instagram": true,
-        "youtube": false
+        "youtube": true
       },
       "credits": "Presenter: Tejo (holo), a synthetic presenter from the PrompTugal.news presenters library v0.1.0 by bulletins.b@PrompTugal.dinis (PrompTugal/PrompTugal__News__Bulletins at 418b723; code Apache-2.0, data CC BY 4.0, three.js MIT), made by code, not any real person, labelled synthetic on screen. Story, scenes and captions: studio.c@SovereignWebsite.dinis with its researcher and journalist sub-agents, from public commits and pages (sources in storyboard.json); text CC BY 4.0; font Inter (SIL OFL 1.1). Voice: AI-generated with openai/gpt-audio, stock voice 'sage', through OpenRouter; disclosed on screen and in the caption. No music. Look: RiskMandate's brand from riskmandate.ai. ",
       "sources": "https://instagram.platform.sovereignweb.site/posts/2026-11-23__update-0645/storyboard.json"
