@@ -1,0 +1,139 @@
+{
+ "voice": "mistral:voxtral-mini-tts-3:voice_3150",
+ "theme": {
+  "colours": {
+   "navy": "#0f0f0e",
+   "ink": "#1d1d1b",
+   "card": "#262623",
+   "line": "#3d3d37",
+   "gold": "#4fc48f",
+   "white": "#f7f6f2",
+   "muted": "#b9b6ab",
+   "green": "#3fb57f",
+   "blue": "#1a7f5a",
+   "bg0": "#1f2a24",
+   "bg1": "#161615",
+   "bg2": "#0f0f0e",
+   "stage": "#1f1f1d"
+  },
+  "wordmark": "<img src=\"rm-mark.svg\" alt=\"\"><span>RiskMandate</span>",
+  "source": "RiskMandate's brand from https://riskmandate.ai/ (mark /assets/brand/riskmandate-mark.svg; ink #161615, green #1A7F5A, paper #F7F6F2), read 23 Nov 2026; a lighter green for text on dark."
+ },
+ "stage": {
+  "dist": 1.9,
+  "h": 0.8,
+  "lh": 0.8
+ },
+ "media_dir": "/tmp/claude-0/-home-user-SovereignWebsite--Factory/401d24c8-7e15-50c9-9861-8513837be428/scratchpad/strategy/media",
+ "voice_direction": "Clear, warm, confident, a little brisk; a short breath between ideas.",
+ "window": "evergreen",
+ "presenter": "rowan",
+ "presenter_name": "Rowan",
+ "cover": {
+  "hold": 1.2,
+  "date": "23 NOV 2026",
+  "kicker": "Web Summit \u00b7 the stand",
+  "headline": "117 agents. One <em>question.</em>",
+  "sub": "How do you manage them? Rowan tells it"
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "narration": "At Web Summit, our stand showed a galaxy. Six suns were our human team, and every planet around them was an AI agent.",
+   "visual": {
+    "kind": "video",
+    "src": "file:galaxy.webm",
+    "crop": "760:760:160:170",
+    "fps": 15,
+    "start": 3,
+    "credit": "The Galaxy, web-summit.sgit.ai, built by Silvio's dashboard agent"
+   },
+   "facts": [
+    "https://web-summit.sgit.ai/people/dinis/app/",
+    "https://newsroom.sgit.ai/articles/a-galaxy-of-agents.html"
+   ]
+  },
+  {
+   "id": "b2",
+   "narration": "I'm Rowan, a synthetic presenter, and this voice is AI-generated. On the twentieth of November, the Galaxy counted one hundred and seventeen agents.",
+   "visual": {
+    "kind": "stat",
+    "value": "117",
+    "label": "agents around six people, 20 Nov 2026",
+    "caption": "From Dinis Cruz's article on the Galaxy"
+   },
+   "facts": [
+    "https://newsroom.sgit.ai/articles/a-galaxy-of-agents.html"
+   ]
+  },
+  {
+   "id": "b3",
+   "narration": "People stopped, filmed it, and asked the same question every time. How do you manage them?",
+   "visual": {
+    "kind": "title",
+    "text": "How do you manage them?",
+    "sub": "The question at the stand"
+   },
+   "facts": [
+    "https://newsroom.sgit.ai/articles/a-galaxy-of-agents.html"
+   ]
+  },
+  {
+   "id": "b4",
+   "narration": "Our answer: Agent Behaviour Policies. Every agent has written limits, and must escalate before it goes any further.",
+   "visual": {
+    "kind": "list",
+    "items": [
+     "What each agent may change",
+     "Where it may push",
+     "When it must ask first",
+     "Anything else: refused"
+    ]
+   },
+   "facts": [
+    "https://riskmandate.ai/"
+   ]
+  },
+  {
+   "id": "b5",
+   "narration": "Vicky ran a whole newsroom, with developers and many agents. Each agent kept to its lane, and escalated to another agent, or to Dinis.",
+   "visual": {
+    "kind": "flow",
+    "nodes": [
+     "An agent in its lane",
+     "Needs more?",
+     "Ask another agent",
+     "Or ask Dinis"
+    ]
+   },
+   "facts": [
+    "https://web-summit.sgit.ai/"
+   ]
+  },
+  {
+   "id": "b6",
+   "narration": "The stand said it in one line. Ask me how I control my agents.",
+   "visual": {
+    "kind": "quote",
+    "text": "Ask me how I control my agents.",
+    "by": "The RiskMandate stand, Web Summit, November 2026"
+   },
+   "facts": [
+    "https://riskmandate.ai/"
+   ]
+  },
+  {
+   "id": "b7",
+   "narration": "What was missing was a way to try it the next day. That is our next story. Find us at riskmandate dot A I.",
+   "visual": {
+    "kind": "image",
+    "src": "file:riskmandate-desktop.png",
+    "credit": "riskmandate.ai, 23 Nov 2026"
+   },
+   "facts": [
+    "https://riskmandate.ai/"
+   ]
+  }
+ ],
+ "caption": "At Web Summit, our stand showed a galaxy: six suns, our human team, and every planet around them an AI agent. 117 of them on 20 November.\n\nEveryone asked the same question: how do you manage them? Our answer: Agent Behaviour Policies. Every agent has written limits and escalates before it goes further. That is how Vicky ran a whole newsroom with developers and many agents.\n\nThe Galaxy: web-summit.sgit.ai\n\nThe presenter is synthetic and the voice is AI-generated.\n\nriskmandate.ai\n\n#RiskMandate #AIagents #SovereignWebsite"
+}

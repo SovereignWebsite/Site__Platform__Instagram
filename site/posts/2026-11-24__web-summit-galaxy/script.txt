@@ -1,0 +1,13 @@
+At Web Summit, our stand showed a galaxy. Six suns were our human team, and every planet around them was an AI agent.
+
+I'm Rowan, a synthetic presenter, and this voice is AI-generated. On the twentieth of November, the Galaxy counted one hundred and seventeen agents.
+
+People stopped, filmed it, and asked the same question every time. How do you manage them?
+
+Our answer: Agent Behaviour Policies. Every agent has written limits, and must escalate before it goes any further.
+
+Vicky ran a whole newsroom, with developers and many agents. Each agent kept to its lane, and escalated to another agent, or to Dinis.
+
+The stand said it in one line. Ask me how I control my agents.
+
+What was missing was a way to try it the next day. That is our next story. Find us at riskmandate dot A I.
