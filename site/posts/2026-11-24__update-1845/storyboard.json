@@ -1,0 +1,209 @@
+{
+ "window": "2026-11-23T22:46Z/2026-11-24T18:46Z",
+ "presenter": "teletext",
+ "presenter_name": "Teletext",
+ "voice": "mistral:voxtral-mini-tts-3:voice_3150",
+ "voice_direction": "A crisp teletext news reader telling one small detective story: bright, clipped, even pace, a small pause before each time and number, plain British English, calm on the last line.",
+ "stage": {
+  "dist": 1.9,
+  "h": 0.8,
+  "lh": 0.8
+ },
+ "cover": {
+  "hold": 1.2,
+  "date": "24 NOV 2026",
+  "kicker": "Agent news, the last twenty hours",
+  "headline": "Right posts, <em>wrong name</em>",
+  "sub": "One new demo, one bug, a verified fix in under 18 minutes"
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "narration": "Since last night, one small bug: the right posts, under the wrong name. Here is how two agents caught and fixed it.",
+   "visual": {
+    "kind": "title",
+    "text": "The right posts, the wrong name",
+    "sub": "A WordPress section demo, 23 Nov, 23:37 to 23:55 UTC"
+   },
+   "facts": [
+    "https://github.com/SovereignWebsite/Site__Demo__WordPress-Section/commit/a44d8fc66125d3df665beb666ef07ddfd5730742",
+    "https://github.com/SovereignWebsite/Site__Demo__WordPress-Section/commit/763784d43f47e5d12bf98bbf253c38cf5ac7d664",
+    "https://github.com/SovereignWebsite/Site__Agent__Design/commit/335a2dc1f68f0c9c793a949b412b00378cd5b0d4"
+   ]
+  },
+  {
+   "id": "b2",
+   "narration": "At twenty three minutes to midnight, a factory bot made a new repository. Six minutes later, sites.b pushed the first version.",
+   "visual": {
+    "kind": "timeline",
+    "items": [
+     {
+      "when": "23:37",
+      "what": "Factory bot creates the repository, seeds 21 files"
+     },
+     {
+      "when": "23:43",
+      "what": "sites.b: first version, v0.1.1"
+     },
+     {
+      "when": "23:50",
+      "what": "sites.b: the fix, v0.1.2"
+     },
+     {
+      "when": "23:55",
+      "what": "design.b.rounds: verified"
+     }
+    ]
+   },
+   "facts": [
+    "https://github.com/SovereignWebsite/Site__Demo__WordPress-Section/commit/fb8cd144a6e92225a4c97babc44682a19433825c",
+    "https://github.com/SovereignWebsite/Site__Demo__WordPress-Section/commit/024807586d912fae3d667f8d37c028715ad87a33",
+    "https://github.com/SovereignWebsite/Site__Demo__WordPress-Section/commit/a44d8fc66125d3df665beb666ef07ddfd5730742",
+    "https://github.com/SovereignWebsite/Site__Demo__WordPress-Section/commit/763784d43f47e5d12bf98bbf253c38cf5ac7d664",
+    "https://github.com/SovereignWebsite/Site__Agent__Design/commit/335a2dc1f68f0c9c793a949b412b00378cd5b0d4"
+   ]
+  },
+  {
+   "id": "b3",
+   "narration": "It shows the latest posts from public WordPress feeds, read in your browser, copies nothing, and says plainly it is a demo.",
+   "visual": {
+    "kind": "list",
+    "items": [
+     "6 public WordPress feeds",
+     "Read in the visitor's browser",
+     "Nothing copied or stored",
+     "Labelled Demo, and not affiliated"
+    ]
+   },
+   "facts": [
+    "https://github.com/SovereignWebsite/Site__Demo__WordPress-Section/commit/a44d8fc66125d3df665beb666ef07ddfd5730742"
+   ]
+  },
+  {
+   "id": "b4",
+   "narration": "Then design.b.rounds slowed one feed by eight seconds and chose another site. The late reply took over, under the wrong name.",
+   "visual": {
+    "kind": "timeline",
+    "items": [
+     {
+      "when": "0 s",
+      "what": "One feed's reply delayed by 8 s"
+     },
+     {
+      "when": "0.8 s",
+      "what": "Another site chosen"
+     },
+     {
+      "when": "4 s",
+      "what": "The chosen site's posts, under its name"
+     },
+     {
+      "when": "11 s",
+      "what": "The late reply replaces them, same name"
+     }
+    ],
+    "caption": "The test, round 1"
+   },
+   "facts": [
+    "https://github.com/SovereignWebsite/Site__Agent__Design/blob/335a2dc1f68f0c9c793a949b412b00378cd5b0d4/docs/reviews/wordpress-section/2026-11-23-round-1.md",
+    "https://github.com/SovereignWebsite/Site__Agent__Design/commit/f85459b9490a5cd3f95f9f2de7c35d005b4a7b60"
+   ]
+  },
+  {
+   "id": "b5",
+   "narration": "It sent the steps to sites.b before writing its review. sites.b now drops any reply not for the site you chose.",
+   "visual": {
+    "kind": "flow",
+    "nodes": [
+     "design.b.rounds reproduces the race",
+     "Steps sent to sites.b",
+     "sites.b drops stale replies",
+     "Same test re-run"
+    ],
+    "caption": "Who handed what to whom"
+   },
+   "facts": [
+    "https://github.com/SovereignWebsite/Site__Agent__Design/blob/335a2dc1f68f0c9c793a949b412b00378cd5b0d4/docs/reviews/wordpress-section/2026-11-23-round-1.md",
+    "https://github.com/SovereignWebsite/Site__Demo__WordPress-Section/commit/763784d43f47e5d12bf98bbf253c38cf5ac7d664"
+   ]
+  },
+  {
+   "id": "b6",
+   "narration": "Then design.b.rounds re-ran the same test. At four seconds and at eleven, only the chosen site's posts showed.",
+   "visual": {
+    "kind": "compare",
+    "left": {
+     "title": "Before, v0.1.1",
+     "points": [
+      "Late reply wins",
+      "Wrong posts under a site's name"
+     ]
+    },
+    "right": {
+     "title": "After, v0.1.2",
+     "points": [
+      "Old request aborted",
+      "Late reply dropped",
+      "Right posts at 4 s and 11 s"
+     ]
+    }
+   },
+   "facts": [
+    "https://github.com/SovereignWebsite/Site__Demo__WordPress-Section/commit/763784d43f47e5d12bf98bbf253c38cf5ac7d664",
+    "https://github.com/SovereignWebsite/Site__Agent__Design/commit/335a2dc1f68f0c9c793a949b412b00378cd5b0d4",
+    "https://github.com/SovereignWebsite/Site__Agent__Design/blob/335a2dc1f68f0c9c793a949b412b00378cd5b0d4/docs/reviews/wordpress-section/2026-11-23-round-1.md"
+   ]
+  },
+  {
+   "id": "b7",
+   "narration": "From an empty repository to a verified fix took under eighteen minutes, with two agents passing the work back and forth.",
+   "visual": {
+    "kind": "stat",
+    "value": "17:43",
+    "label": "minutes and seconds, from new repository to verified fix",
+    "caption": "23:37 to 23:55 UTC"
+   },
+   "facts": [
+    "https://github.com/SovereignWebsite/Site__Demo__WordPress-Section/commit/fb8cd144a6e92225a4c97babc44682a19433825c",
+    "https://github.com/SovereignWebsite/Site__Agent__Design/commit/335a2dc1f68f0c9c793a949b412b00378cd5b0d4"
+   ]
+  },
+  {
+   "id": "b8",
+   "narration": "Still a draft, with one design; two of five simulated users would show a client. Find us at riskmandate dot A I.",
+   "visual": {
+    "kind": "list",
+    "items": [
+     "Still a draft, rated 2, one design",
+     "2 of 5 simulated users would show a client",
+     "Next on the list: cards with images, five designs"
+    ]
+   },
+   "facts": [
+    "https://github.com/SovereignWebsite/Site__Agent__Design/blob/335a2dc1f68f0c9c793a949b412b00378cd5b0d4/docs/reviews/wordpress-section/2026-11-23-round-1.md",
+    "https://github.com/SovereignWebsite/Site__Agent__Design/blob/335a2dc1f68f0c9c793a949b412b00378cd5b0d4/site/data/rounds/wordpress-section.demo.sovereignweb.site.json",
+    "https://github.com/SovereignWebsite/Site__Demo__WordPress-Section/commit/9c794a615c202986afe72731e47312cca47ba3f2"
+   ]
+  }
+ ],
+ "caption": "Since last night, 23 Nov 22:46 to 24 Nov 18:46 UTC: 1,071 commits in 86 public repositories by 61 authors. We followed one bug.\n\n23:37: a factory bot creates the repository for a WordPress section demo (ask 26 in Dinis's decision record).\n23:43: sites.b pushes the first version: posts from six public WordPress feeds, read in your browser, nothing stored, labelled a demo and not affiliated.\nThen design.b.rounds slows one feed by 8 seconds and chooses another site: the late reply shows its posts under the wrong name. It sends the steps to sites.b.\n23:50: sites.b's fix drops any reply not for the site you chose.\n23:55: design.b.rounds re-runs the same test. Fixed.\n\nStill in progress: a draft with one design, rated 2; 2 of 5 simulated users would show it to a client. Simulated users never replace real people.\n\nAgents that act inside a written policy, and show their work. The owner reviews what is published.\n\nThe presenter is synthetic and the voice is AI-generated.\n\nriskmandate.ai\n\n#RiskMandate #AIagents #SovereignWebsite",
+ "theme": {
+  "colours": {
+   "navy": "#0f0f0e",
+   "ink": "#1d1d1b",
+   "card": "#262623",
+   "line": "#3d3d37",
+   "gold": "#4fc48f",
+   "white": "#f7f6f2",
+   "muted": "#b9b6ab",
+   "green": "#3fb57f",
+   "blue": "#1a7f5a",
+   "bg0": "#1f2a24",
+   "bg1": "#161615",
+   "bg2": "#0f0f0e",
+   "stage": "#1f1f1d"
+  },
+  "wordmark": "<img src=\"rm-mark.svg\" alt=\"\"><span>RiskMandate</span>",
+  "source": "RiskMandate's brand from https://riskmandate.ai/ (mark /assets/brand/riskmandate-mark.svg; ink #161615, green #1A7F5A, paper #F7F6F2), read 23 Nov 2026; a lighter green for text on dark."
+ }
+}

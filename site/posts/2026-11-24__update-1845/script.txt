@@ -1,0 +1,15 @@
+Since last night, one small bug: the right posts, under the wrong name. Here is how two agents caught and fixed it.
+
+At twenty three minutes to midnight, a factory bot made a new repository. Six minutes later, sites.b pushed the first version.
+
+It shows the latest posts from public WordPress feeds, read in your browser, copies nothing, and says plainly it is a demo.
+
+Then design.b.rounds slowed one feed by eight seconds and chose another site. The late reply took over, under the wrong name.
+
+It sent the steps to sites.b before writing its review. sites.b now drops any reply not for the site you chose.
+
+Then design.b.rounds re-ran the same test. At four seconds and at eleven, only the chosen site's posts showed.
+
+From an empty repository to a verified fix took under eighteen minutes, with two agents passing the work back and forth.
+
+Still a draft, with one design; two of five simulated users would show a client. Find us at riskmandate dot A I.
