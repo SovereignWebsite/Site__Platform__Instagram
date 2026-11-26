@@ -46,6 +46,10 @@ if (!['image', 'reel', 'carousel'].includes(kind)) fail('kind must be image, ree
 const caption = String(post.caption || '');
 if (caption.length > 2200) fail('caption over 2200 characters');
 if (/[–—]/.test(caption)) fail('caption has an en or em dash');
+// b.security ruling 2026-11-26__presenter-stills-in-public-posts: captions say 'synthetic presenter' and, where there is speech, 'voice made by AI'
+if (post.presenter !== false && !/synthetic presenter/i.test(caption)) fail("caption must say 'synthetic presenter' (or set \"presenter\": false when no presenter appears)");
+if (kind === 'reel' && post.speech !== false && !/voice made by AI/i.test(caption)) fail("a reel caption must say 'voice made by AI' (or set \"speech\": false when nothing is spoken)");
+if (post.youtube && post.youtube.isAiGenerated === false) fail('YouTube posts must keep the AI-content label (isAiGenerated)');
 const media = post.media || [];
 if (!media.length) fail('no media');
 if (kind === 'carousel' && (media.length < 2 || media.length > 10)) fail('a carousel has 2 to 10 items');
@@ -53,6 +57,7 @@ if (kind === 'reel' && (media.length !== 1 || !/\.mp4$/i.test(media[0]))) fail('
 for (const m of media) {
   if (!/^[a-z0-9._-]+\.(jpe?g|mp4)$/i.test(m)) fail(`media must be JPEG or MP4 in the post folder: ${m}`);
   const s = readFileSync(`site/posts/${id}/${m}`);
+  for (const k of ['Exif\0', 'http://ns.adobe.com/xap', 'Photoshop 3.0', '\xa9ART', '\xa9nam', '\xa9cmt', '\xa9day']) if (s.indexOf(Buffer.from(k, 'latin1')) !== -1) fail(`${m} carries metadata (${JSON.stringify(k)}); strip EXIF and authoring fields before upload`);
   if (/\.jpe?g$/i.test(m)) {
     if (s.length > 8 * 1024 * 1024) fail(`${m} over 8 MB`);
     const d = jpegSize(s);
