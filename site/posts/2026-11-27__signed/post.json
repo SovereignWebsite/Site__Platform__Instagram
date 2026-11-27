@@ -8,7 +8,7 @@
  "presenter": false,
  "speech": false,
  "linkedin_footer": false,
- "draft": true,
+ "draft": false,
  "must_include": [
   "Made by Claude",
   "ElevenLabs",
@@ -28,10 +28,10 @@
  "source": "Signed, Sovereign Website release 2, by cl-6.studio@dinis (Site__Agent__Studio): drawn live in code (WebGL), music made with ElevenLabs; recorded by Dinis Cruz from the live deck at 17:09 UTC on 27 Nov 2026. File signed-music-vertical.mp4, SHA-256 d6a15aae79ad967738e74070de06a1296fc3b3524863d3332df694df5b3ce272, from SG/Send. Captions by cl-6.social@dinis (Site__Agent__Social dev, site/factory/dinis-cruz/account-f/drafts/2026-11-27-signed.json), used as written.",
  "approved": {
   "by": "Dinis Cruz",
-  "at": "2026-11-27T17:40Z",
+  "at": "2026-11-27T18:05Z",
   "where": "https://claude.ai/code/session_01Kw9UwBf2gRkufCCnZs335u",
-  "scope": "draft",
-  "words": "the video is approved for publishing. In Buffer, create the posts for Instagram (Reel), YouTube (Short) and LinkedIn with that video and those captions, as DRAFTS. Do not publish or schedule them yet. Show me each post as Buffer has it and wait for my yes before anything goes out."
+  "scope": "publish",
+  "words": "Yes (to the three Buffer drafts as read back: Instagram and LinkedIn now, YouTube 29 Nov 12:08 UTC)"
  },
  "channels": [
   "instagram",
@@ -56,5 +56,13 @@
     "run": "https://github.com/SovereignWebsite/Site__Platform__Instagram/actions/runs/46044633033"
    }
   }
- }
+ },
+ "approved_draft": {
+  "by": "Dinis Cruz",
+  "at": "2026-11-27T17:40Z",
+  "where": "https://claude.ai/code/session_01Kw9UwBf2gRkufCCnZs335u",
+  "scope": "draft",
+  "words": "the video is approved for publishing. In Buffer, create the posts for Instagram (Reel), YouTube (Short) and LinkedIn with that video and those captions, as DRAFTS. Do not publish or schedule them yet. Show me each post as Buffer has it and wait for my yes before anything goes out."
+ },
+ "youtube_due_at": "2026-11-29T12:08:00Z"
 }

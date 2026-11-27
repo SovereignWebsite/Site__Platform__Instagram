@@ -153,9 +153,16 @@ for (const c of todo) {
   if (due) input.dueAt = due;
   // A draft waits in Buffer, unscheduled, until a person schedules it.
   if (post.draft === true) { input.saveToDraft = true; input.mode = 'addToQueue'; delete input.dueAt; }
-  const res = (await gql(`mutation P($input: CreatePostInput!) { createPost(input: $input) {
+  // Publishing a reviewed draft: switch that same Buffer post from draft to scheduled, so what goes out is what was reviewed.
+  const d = post.draft !== true && post.drafts && post.drafts.channels && post.drafts.channels[c];
+  const res = d
+    ? (await gql(`mutation E($input: EditPostInput!) { editPost(input: $input) {
+    ... on PostActionSuccess { post { id dueAt status } }
+    ... on MutationError { message } } }`, { input: { id: d.buffer_post_id, saveToDraft: false, schedulingType: 'automatic', mode: input.mode, ...(input.dueAt ? { dueAt: input.dueAt } : {}) } })).editPost
+    : (await gql(`mutation P($input: CreatePostInput!) { createPost(input: $input) {
     ... on PostActionSuccess { post { id dueAt status } }
     ... on MutationError { message } } }`, { input })).createPost;
+  if (d && res.post && res.post.id !== d.buffer_post_id) fail(`Buffer returned a different post for ${c}`);
   if (!res.post) fail(`Buffer refused the ${c} post: ${res.message}`);
   results[c] = res.post;
   console.log(post.draft === true ? `saved as a draft in Buffer for ${c}: post ${res.post.id}, status ${res.post.status}` : `sent to Buffer for ${c}: post ${res.post.id}, due ${res.post.dueAt || 'now'}`);
