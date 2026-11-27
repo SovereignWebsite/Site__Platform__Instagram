@@ -37,18 +37,32 @@ if (!a || !a.by || !a.at || !a.where) {
 const wanted = Array.isArray(post.channels) && post.channels.length ? post.channels : ['instagram'];
 for (const c of wanted) if (!['instagram', 'youtube', 'linkedin'].includes(c)) fail(`unknown channel ${c}`);
 // Older records hold one Instagram send; newer ones hold one record per channel.
-const sent = post.published ? (post.published.channels || { instagram: post.published }) : {};
+const sent = post.published ? { ...(post.published.channels || { instagram: post.published }) } : {};
+// A draft run skips channels that already hold a draft; drafts never count as sent for a real run.
+if (post.draft === true && post.drafts && post.drafts.channels) Object.assign(sent, post.drafts.channels);
+if (a && a.scope === 'draft' && post.draft !== true) fail('the approval covers Buffer drafts only; set "draft": true, or get the owner\'s yes to publish');
 const todo = wanted.filter((c) => !sent[c]);
 if (!todo.length) fail(`already sent to ${wanted.join(', ')}: ${JSON.stringify(post.published)}`);
 if (todo.includes('youtube') && post.kind !== 'reel') fail('YouTube takes a reel (one MP4) only');
 const kind = post.kind;
 if (!['image', 'reel', 'carousel'].includes(kind)) fail('kind must be image, reel or carousel');
-const caption = String(post.caption || '');
-if (caption.length > 2200) fail('caption over 2200 characters');
-if (/[–—]/.test(caption)) fail('caption has an en or em dash');
-// b.security ruling 2026-11-26__presenter-stills-in-public-posts: captions say 'synthetic presenter' and, where there is speech, 'voice made by AI'
-if (post.presenter !== false && !/synthetic presenter/i.test(caption)) fail("caption must say 'synthetic presenter' (or set \"presenter\": false when no presenter appears)");
-if (kind === 'reel' && post.speech !== false && !/voice made by AI/i.test(caption)) fail("a reel caption must say 'voice made by AI' (or set \"speech\": false when nothing is spoken)");
+const caption = String(post.caption || (post.captions && post.captions.instagram) || '');
+// Each channel's text: post.captions[channel] as written when given (no footer added), else the caption
+// (LinkedIn adds the mentions footer unless "linkedin_footer": false).
+const liCfg = JSON.parse(readFileSync('tools/linkedin-mentions.json', 'utf8'));
+const textFor = (c) => (post.captions && post.captions[c] !== undefined) ? String(post.captions[c])
+  : (c === 'linkedin' && post.linkedin_footer !== false ? `${caption}\n\n${liCfg.footer}` : caption);
+const limits = { instagram: 2200, youtube: 5000, linkedin: 3000 };
+for (const c of todo) {
+  const t = textFor(c);
+  if (!t.trim()) fail(`no text for ${c}`);
+  if (t.length > limits[c]) fail(`${c} text over ${limits[c]} characters`);
+  if (/[–—]/.test(t)) fail(`${c} text has an en or em dash`);
+  // b.security ruling 2026-11-26__presenter-stills-in-public-posts: captions say 'synthetic presenter' and, where there is speech, 'voice made by AI'
+  if (post.presenter !== false && !/synthetic presenter/i.test(t)) fail(`${c} text must say 'synthetic presenter' (or set "presenter": false when no presenter appears)`);
+  if (kind === 'reel' && post.speech !== false && !/voice made by AI/i.test(t)) fail(`${c} text must say 'voice made by AI' (or set "speech": false when nothing is spoken)`);
+  for (const m of post.must_include || []) if (!t.includes(m)) fail(`${c} text lacks "${m}"`);
+}
 if (post.youtube && post.youtube.isAiGenerated === false) fail('YouTube posts must keep the AI-content label (isAiGenerated)');
 const media = post.media || [];
 if (!media.length) fail('no media');
@@ -118,13 +132,13 @@ const assets = urls.map((u, i) => /\.mp4$/i.test(u)
 const yt = post.youtube || {};
 const ytTitle = String(yt.title || caption.split('\n')[0]).slice(0, 100);
 const meta = {
-  instagram: { instagram: { type: kind === 'reel' ? 'reel' : 'post', shouldShareToFeed: true } }, // a carousel is a 'post' with several images (Buffer: types are post, story, reel)
+  instagram: { instagram: { type: kind === 'reel' ? 'reel' : 'post', shouldShareToFeed: true, isAiGenerated: post.instagram_ai_label !== false } }, // a carousel is a 'post' with several images (Buffer: types are post, story, reel)
   youtube: { youtube: { title: ytTitle, categoryId: String(yt.categoryId || '28'), privacy: yt.privacy || 'public', madeForKids: false, isAiGenerated: yt.isAiGenerated !== false, notifySubscribers: yt.notifySubscribers !== false } },
 };
 // LinkedIn: the caption plus a footer naming and linking the people and page to tag (tools/linkedin-mentions.json);
 // a real tag (annotation) only for entries whose URN is known.
-const li = JSON.parse(readFileSync('tools/linkedin-mentions.json', 'utf8'));
-const liText = `${caption}\n\n${li.footer}`;
+const li = liCfg;
+const liText = textFor('linkedin');
 const liAnnotations = li.mentions.filter((m) => m.urn).map((m) => {
   const start = liText.indexOf(m.name);
   return start < 0 ? null : { id: m.urn.split(':').pop(), entity: m.urn, start, length: m.name.length, link: m.link, localizedName: m.name, vanityName: m.vanity };
@@ -132,17 +146,19 @@ const liAnnotations = li.mentions.filter((m) => m.urn).map((m) => {
 meta.linkedin = { linkedin: liAnnotations.length ? { annotations: liAnnotations } : {} };
 const results = {};
 for (const c of todo) {
-  const input = { text: c === 'linkedin' ? liText : caption, channelId: channelOf[c].id, schedulingType: 'automatic', mode, assets, metadata: meta[c] };
+  const input = { text: textFor(c), channelId: channelOf[c].id, schedulingType: 'automatic', mode, assets, metadata: meta[c] };
   // A channel may have its own time (YouTube allows 2 scheduled posts a day on this channel).
   const due = post[`${c}_due_at`] || post.due_at;
   input.mode = due ? 'customScheduled' : 'shareNow';
   if (due) input.dueAt = due;
+  // A draft waits in Buffer, unscheduled, until a person schedules it.
+  if (post.draft === true) { input.saveToDraft = true; input.mode = 'addToQueue'; delete input.dueAt; }
   const res = (await gql(`mutation P($input: CreatePostInput!) { createPost(input: $input) {
-    ... on PostActionSuccess { post { id dueAt } }
+    ... on PostActionSuccess { post { id dueAt status } }
     ... on MutationError { message } } }`, { input })).createPost;
   if (!res.post) fail(`Buffer refused the ${c} post: ${res.message}`);
   results[c] = res.post;
-  console.log(`sent to Buffer for ${c}: post ${res.post.id}, due ${res.post.dueAt || 'now'}`);
+  console.log(post.draft === true ? `saved as a draft in Buffer for ${c}: post ${res.post.id}, status ${res.post.status}` : `sent to Buffer for ${c}: post ${res.post.id}, due ${res.post.dueAt || 'now'}`);
 }
 
 function jpegSize(b) {
