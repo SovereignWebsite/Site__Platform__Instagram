@@ -1,6 +1,6 @@
 {
   "about": "Reels from the RiskMandate Instagram and YouTube account, newest first. Built from site/posts/*/post.json by tools/build-reels-feed.mjs.",
-  "updated": "2026-11-27T17:52Z",
+  "updated": "2026-11-27T17:53Z",
   "reels": [
     {
       "id": "2026-11-27__whose-website",
@@ -32,9 +32,9 @@
       "video": "https://instagram.platform.sovereignweb.site/posts/2026-11-27__signed/video.mp4",
       "duration_s": 99,
       "state": "sent",
-      "published_at": "2026-11-27T17:52:00Z",
+      "published_at": "2026-11-27T17:52:47Z",
       "channels": {
-        "instagram": null,
+        "instagram": "https://www.instagram.com/reel/DgQQj7TBRAT/",
         "youtube": null
       },
       "sent_to": {
