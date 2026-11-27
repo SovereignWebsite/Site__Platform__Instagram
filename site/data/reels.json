@@ -1,6 +1,6 @@
 {
   "about": "Reels from the RiskMandate Instagram and YouTube account, newest first. Built from site/posts/*/post.json by tools/build-reels-feed.mjs.",
-  "updated": "2026-11-27T03:21Z",
+  "updated": "2026-11-27T03:23Z",
   "reels": [
     {
       "id": "2026-11-27__whose-website",
@@ -10,15 +10,15 @@
       "poster": "https://instagram.platform.sovereignweb.site/posts/2026-11-27__whose-website/cover.jpg",
       "video": "https://instagram.platform.sovereignweb.site/posts/2026-11-27__whose-website/video.mp4",
       "duration_s": 99,
-      "state": "waiting",
-      "published_at": null,
+      "state": "sent",
+      "published_at": "2026-11-27T03:23:17Z",
       "channels": {
         "instagram": null,
         "youtube": null
       },
       "sent_to": {
-        "instagram": false,
-        "youtube": false
+        "instagram": true,
+        "youtube": true
       },
       "credits": "Made by cl-6.studio@SovereignWebsite.dinis (Claude): live WebGL in one HTML file, no images and no video, recorded in the browser and cut to 9:16; sound generated in code, no voice. Inspired by The Last Boring Slide, made by Claude, prompted by Nikita (fluxxrider). Handed over by Dinis Cruz on 27 Nov 2026.",
       "sources": null

@@ -1,11 +1,15 @@
 {
  "kind": "reel",
- "media": ["video.mp4"],
+ "media": [
+  "video.mp4"
+ ],
  "cover": "cover.jpg",
  "thumbnail_offset_ms": 12000,
  "presenter": false,
  "speech": false,
- "alt": ["A 99-second animated story told live in the browser, titled Whose website is it?: a plain slide (your website on someone else's server, template and terms), then A site you own over moving cloud, Rented against Owned with a sliding divider, Static files over a field of 3D tiles, No server code, no cookies, no tracking, every step kept on a curved filmstrip, The history is yours, Move it anywhere at any time with a glowing ring, and credits. Sound only, no voice."],
+ "alt": [
+  "A 99-second animated story told live in the browser, titled Whose website is it?: a plain slide (your website on someone else's server, template and terms), then A site you own over moving cloud, Rented against Owned with a sliding divider, Static files over a field of 3D tiles, No server code, no cookies, no tracking, every step kept on a curved filmstrip, The history is yours, Move it anywhere at any time with a glowing ring, and credits. Sound only, no voice."
+ ],
  "caption": "Whose website is it?\n\nA story told live in the browser: no video files, no images. Every frame and sound is made in code by Claude, as the cl-6.studio agent.\n\nRented: their server, their template, their terms. Owned: your files, your history, your address. Static files, no server code, no cookies, no tracking. Move it anywhere, at any time.\n\nInspired by The Last Boring Slide by Nikita (fluxxrider).\nLandscape version: youtube.com/watch?v=Lp1ICb2kUgA\nThe open-source side: sovereignwebsite.org\n\nGet a website you own: sovereignwebsite.ai\n\n#SovereignWebsite #AIagents #OwnYourWebsite",
  "source": "Made by cl-6.studio@SovereignWebsite.dinis (Claude): live WebGL in one HTML file, no images and no video, recorded in the browser and cut to 9:16; sound generated in code, no voice. Inspired by The Last Boring Slide, made by Claude, prompted by Nikita (fluxxrider). Handed over by Dinis Cruz on 27 Nov 2026.",
  "approved": {
@@ -14,7 +18,35 @@
   "where": "https://claude.ai/code/session_01Kw9UwBf2gRkufCCnZs335u",
   "words": "Yes, posted. (Posts should point to sovereignwebsite.ai, because that is what sells it.)"
  },
- "channels": ["instagram", "youtube", "linkedin"],
- "youtube": { "title": "Whose website is it? A story told live in the browser, made by Claude" },
- "youtube_due_at": "2026-11-28T17:38:00Z"
+ "channels": [
+  "instagram",
+  "youtube",
+  "linkedin"
+ ],
+ "youtube": {
+  "title": "Whose website is it? A story told live in the browser, made by Claude"
+ },
+ "youtube_due_at": "2026-11-28T17:38:00Z",
+ "published": {
+  "channels": {
+   "instagram": {
+    "via": "buffer",
+    "buffer_post_id": "6b08f7a51fd46e62e70b38fc",
+    "sent_at": "2026-11-27T03:23:17Z",
+    "run": "https://github.com/SovereignWebsite/Site__Platform__Instagram/actions/runs/45933832623"
+   },
+   "youtube": {
+    "via": "buffer",
+    "buffer_post_id": "6b08f7af776ce21276dff1e4",
+    "scheduled_for": "2026-11-28T17:38:00Z",
+    "run": "https://github.com/SovereignWebsite/Site__Platform__Instagram/actions/runs/45933832623"
+   },
+   "linkedin": {
+    "via": "buffer",
+    "buffer_post_id": "6b08f7af776ce21276dff22d",
+    "sent_at": "2026-11-27T03:23:28Z",
+    "run": "https://github.com/SovereignWebsite/Site__Platform__Instagram/actions/runs/45933832623"
+   }
+  }
+ }
 }
