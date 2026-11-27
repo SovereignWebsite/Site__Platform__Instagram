@@ -19,8 +19,8 @@ for (const id of readdirSync('site/posts').sort().reverse()) {
   const ch = pub ? (pub.channels || { instagram: pub }) : {};
   const state = pub ? (!ch.youtube && (p.channels || []).includes('youtube') ? 'sent to Instagram; YouTube scheduled' + (p.youtube_due_at ? ' for ' + p.youtube_due_at : '') : 'sent') : (p.previous_sends || []).length ? 'deleted, to be reposted' : 'waiting';
   out.push({
-    id, title: p.caption.split('\n')[0],
-    caption: p.caption.split('\n\n').slice(0, 2).join(' ').slice(0, 280),
+    id, title: p.caption ? p.caption.split('\n')[0] : ((p.youtube && p.youtube.title) || String(p.captions.instagram).split('. ')[0]),
+    caption: String(p.caption || p.captions.instagram).split('\n\n').slice(0, 2).join(' ').slice(0, 280),
     page: existsSync(`site/reels/${slug}/index.html`) ? `${SITE}/reels/${slug}/` : null,
     poster: existsSync(`site/posts/${id}/cover.jpg`) ? `${SITE}/posts/${id}/cover.jpg` : null,
     video: `${SITE}/posts/${id}/${video}`,

@@ -64,5 +64,30 @@
   "scope": "draft",
   "words": "the video is approved for publishing. In Buffer, create the posts for Instagram (Reel), YouTube (Short) and LinkedIn with that video and those captions, as DRAFTS. Do not publish or schedule them yet. Show me each post as Buffer has it and wait for my yes before anything goes out."
  },
- "youtube_due_at": "2026-11-29T12:08:00Z"
+ "youtube_due_at": "2026-11-29T12:08:00Z",
+ "published": {
+  "channels": {
+   "instagram": {
+    "via": "buffer",
+    "buffer_post_id": "6b09c276446d2e47aaa8daad",
+    "sent_at": "2026-11-27T17:52:00Z",
+    "run": "https://github.com/SovereignWebsite/Site__Platform__Instagram/actions/runs/46045039952",
+    "from_draft": true
+   },
+   "linkedin": {
+    "via": "buffer",
+    "buffer_post_id": "6b09c277d5bf252ef53edf77",
+    "sent_at": "2026-11-27T17:52:00Z",
+    "run": "https://github.com/SovereignWebsite/Site__Platform__Instagram/actions/runs/46045039952",
+    "from_draft": true
+   },
+   "youtube": {
+    "via": "buffer",
+    "buffer_post_id": "6b09c2772b8a129ed8160b4b",
+    "scheduled_for": "2026-11-29T12:08:00Z",
+    "run": "https://github.com/SovereignWebsite/Site__Platform__Instagram/actions/runs/46045039952",
+    "from_draft": true
+   }
+  }
+ }
 }

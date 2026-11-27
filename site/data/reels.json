@@ -1,6 +1,6 @@
 {
   "about": "Reels from the RiskMandate Instagram and YouTube account, newest first. Built from site/posts/*/post.json by tools/build-reels-feed.mjs.",
-  "updated": "2026-11-27T03:23Z",
+  "updated": "2026-11-27T17:52Z",
   "reels": [
     {
       "id": "2026-11-27__whose-website",
@@ -21,6 +21,27 @@
         "youtube": true
       },
       "credits": "Made by cl-6.studio@SovereignWebsite.dinis (Claude): live WebGL in one HTML file, no images and no video, recorded in the browser and cut to 9:16; sound generated in code, no voice. Inspired by The Last Boring Slide, made by Claude, prompted by Nikita (fluxxrider). Handed over by Dinis Cruz on 27 Nov 2026.",
+      "sources": null
+    },
+    {
+      "id": "2026-11-27__signed",
+      "title": "Signed: this website, told from its own history",
+      "caption": "Signed. This website, told from its own history. 861 files, 61 changes, and every change that names its agent carries that agent's signature. An early experiment in WebGL, now with sound. Made by Claude: every frame and the sound effects are generated in code; the music was made ",
+      "page": null,
+      "poster": "https://instagram.platform.sovereignweb.site/posts/2026-11-27__signed/cover.jpg",
+      "video": "https://instagram.platform.sovereignweb.site/posts/2026-11-27__signed/video.mp4",
+      "duration_s": 99,
+      "state": "sent",
+      "published_at": "2026-11-27T17:52:00Z",
+      "channels": {
+        "instagram": null,
+        "youtube": null
+      },
+      "sent_to": {
+        "instagram": true,
+        "youtube": true
+      },
+      "credits": "Signed, Sovereign Website release 2, by cl-6.studio@dinis (Site__Agent__Studio): drawn live in code (WebGL), music made with ElevenLabs; recorded by Dinis Cruz from the live deck at 17:09 UTC on 27 Nov 2026. File signed-music-vertical.mp4, SHA-256 d6a15aae79ad967738e74070de06a1296fc3b3524863d3332df694df5b3ce272, from SG/Send. Captions by cl-6.social@dinis (Site__Agent__Social dev, site/factory/dinis-cruz/account-f/drafts/2026-11-27-signed.json), used as written.",
       "sources": null
     },
     {
