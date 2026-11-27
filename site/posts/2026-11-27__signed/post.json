@@ -37,5 +37,24 @@
   "instagram",
   "youtube",
   "linkedin"
- ]
+ ],
+ "drafts": {
+  "channels": {
+   "instagram": {
+    "via": "buffer",
+    "buffer_post_id": "6b09c276446d2e47aaa8daad",
+    "run": "https://github.com/SovereignWebsite/Site__Platform__Instagram/actions/runs/46044633033"
+   },
+   "youtube": {
+    "via": "buffer",
+    "buffer_post_id": "6b09c2772b8a129ed8160b4b",
+    "run": "https://github.com/SovereignWebsite/Site__Platform__Instagram/actions/runs/46044633033"
+   },
+   "linkedin": {
+    "via": "buffer",
+    "buffer_post_id": "6b09c277d5bf252ef53edf77",
+    "run": "https://github.com/SovereignWebsite/Site__Platform__Instagram/actions/runs/46044633033"
+   }
+  }
+ }
 }
