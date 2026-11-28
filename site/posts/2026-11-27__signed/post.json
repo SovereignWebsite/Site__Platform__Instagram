@@ -78,9 +78,10 @@
    "linkedin": {
     "via": "buffer",
     "buffer_post_id": "6b09c277d5bf252ef53edf77",
-    "sent_at": "2026-11-27T17:52:00Z",
+    "sent_at": "2026-11-27T17:53:22Z",
     "run": "https://github.com/SovereignWebsite/Site__Platform__Instagram/actions/runs/46045039952",
-    "from_draft": true
+    "from_draft": true,
+    "url": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7532139518066626560"
    },
    "youtube": {
     "via": "buffer",
