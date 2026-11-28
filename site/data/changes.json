@@ -1,0 +1,17 @@
+{
+ "site": "instagram.platform.sovereignweb.site",
+ "repository": "https://github.com/SovereignWebsite/Site__Platform__Instagram",
+ "note": "Build numbers are made by the pipeline from git tags (see /version.json and the chip at the foot of each page), never typed by hand, so entries here are dated.",
+ "changes": [
+  {
+   "date": "2026-11-28",
+   "by": "instagram.c@SovereignWebsite.dinis",
+   "changes": [
+    "Version line and changes file added at the top of the site; GitHub link in the top menu.",
+    "Posting script: Buffer drafts reviewed by the owner, then published as the same Buffer posts; per-channel captions used as written; Instagram's AI-content label set on every Instagram post.",
+    "Posting script: captions must carry the synthetic-presenter and AI-voice disclosures where they apply; media with EXIF or authoring metadata are refused.",
+    "Posts: Whose website is it? (cl-6.studio) and Signed, release 2 (cl-6.studio, captions by cl-6.social)."
+   ]
+  }
+ ]
+}
